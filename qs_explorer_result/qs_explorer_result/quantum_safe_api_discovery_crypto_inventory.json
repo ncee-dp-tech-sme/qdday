@@ -1,8 +1,8 @@
 {
-  "scanId": "df0c271b-7767-4232-afda-373f0e57e339",
+  "scanId": "ce5bec98-2128-4bf0-b082-a7227a8f37d2",
   "applicationId": "Quantum-DDay",
-  "applicationVersion": "1.0.1",
-  "scanTime": "2026-11-17T02:18:30.714243505Z",
+  "applicationVersion": "1.0.2",
+  "scanTime": "2026-11-17T02:24:33.428797851Z",
   "totalCryptoArtifacts": "13",
   "findings": [
     {

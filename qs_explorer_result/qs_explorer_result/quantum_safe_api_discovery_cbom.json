@@ -1,386 +1,386 @@
 {
-  "bomFormat" : "CycloneDX",
-  "specVersion" : "1.6",
-  "serialNumber" : "fc33756d-ce3f-4343-a3a2-df829fc37425",
-  "version" : 1,
-  "metadata" : {
-    "timestamp" : "2026-11-17T02:18:29Z",
-    "tools" : {
-      "services" : [
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "699a78cb-f91e-4bbe-87c7-44d9c9b54943",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-11-17T02:24:32Z",
+    "tools": {
+      "services": [
         {
-          "provider" : {
-            "name" : "IBM Corporation."
+          "provider": {
+            "name": "IBM Corporation."
           },
-          "name" : "IBM Quantum Safe Explorer",
-          "version" : "2.2.3"
+          "name": "IBM Quantum Safe Explorer",
+          "version": "2.2.3"
         }
       ]
     },
-    "component" : {
-      "type" : "application",
-      "name" : "Quantum-DDay",
-      "version" : "1.0.1"
+    "component": {
+      "type": "application",
+      "name": "Quantum-DDay",
+      "version": "1.0.2"
     },
-    "properties" : [
+    "properties": [
       {
-        "name" : "language",
-        "value" : "python"
+        "name": "language",
+        "value": "python"
       },
       {
-        "name" : "gitUrl",
-        "value" : ""
+        "name": "gitUrl",
+        "value": "https://github.com/ncee-dp-tech-sme/qdday"
       }
     ]
   },
-  "components" : [
+  "components": [
     {
-      "type" : "cryptographic-asset",
-      "bom-ref" : "7713f6c0-4c6f-4778-a6ee-b33eab8832ef",
-      "name" : "hashlib.sha1",
-      "evidence" : {
-        "occurrences" : [
+      "type": "cryptographic-asset",
+      "bom-ref": "4d71873d-c024-4526-89b1-3a9f3b2c9f57",
+      "name": "hashlib.sha1",
+      "evidence": {
+        "occurrences": [
           {
-            "line" : 35,
-            "offset" : 17,
-            "location" : "Quantum-DDay/quantum_dday/services/auth.py"
+            "line": 35,
+            "offset": 17,
+            "location": "Quantum-DDay/quantum_dday/services/auth.py"
           }
         ]
       },
-      "cryptoProperties" : {
-        "assetType" : "algorithm",
-        "algorithmProperties" : {
-          "primitive" : "hash"
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "hash"
         },
-        "oid" : "1.2.840.10045.4.3.2"
+        "oid": "1.2.840.10045.4.3.2"
       }
     },
     {
-      "type" : "cryptographic-asset",
-      "bom-ref" : "22b14648-033c-4670-bd56-780fa3c01262",
-      "name" : "hashlib.hash.update",
-      "evidence" : {
-        "occurrences" : [
+      "type": "cryptographic-asset",
+      "bom-ref": "4d9b11d3-5b3f-43d3-bdb6-a24d8b904c17",
+      "name": "hashlib.hash.update",
+      "evidence": {
+        "occurrences": [
           {
-            "line" : 38,
-            "offset" : 15,
-            "location" : "Quantum-DDay/quantum_dday/services/auth.py"
+            "line": 38,
+            "offset": 15,
+            "location": "Quantum-DDay/quantum_dday/services/auth.py"
           }
         ]
       },
-      "cryptoProperties" : {
-        "assetType" : "algorithm",
-        "algorithmProperties" : {
-          "primitive" : "hash"
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "hash"
         },
-        "oid" : "1.2.840.10045.4.3.2"
+        "oid": "1.2.840.10045.4.3.2"
       }
     },
     {
-      "type" : "cryptographic-asset",
-      "bom-ref" : "43053990-e957-4ce8-a623-957fc6b28845",
-      "name" : "hashlib.hash.hexdigest",
-      "evidence" : {
-        "occurrences" : [
+      "type": "cryptographic-asset",
+      "bom-ref": "3aa2cc2d-a392-4e08-b6a8-25c28224b43c",
+      "name": "hashlib.hash.hexdigest",
+      "evidence": {
+        "occurrences": [
           {
-            "line" : 39,
-            "offset" : 14,
-            "location" : "Quantum-DDay/quantum_dday/services/auth.py"
+            "line": 39,
+            "offset": 14,
+            "location": "Quantum-DDay/quantum_dday/services/auth.py"
           }
         ]
       },
-      "cryptoProperties" : {
-        "assetType" : "algorithm",
-        "algorithmProperties" : {
-          "primitive" : "hash",
-          "cryptoFunctions" : [
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "hash",
+          "cryptoFunctions": [
             "digest"
           ]
         },
-        "oid" : "1.2.840.10045.4.3.2"
+        "oid": "1.2.840.10045.4.3.2"
       }
     },
     {
-      "type" : "cryptographic-asset",
-      "bom-ref" : "4aa18a8e-bd1c-4eae-b82b-dfb953f70d16",
-      "name" : "cryptography.hazmat.primitives.asymmetric.rsa.generate_private_key",
-      "evidence" : {
-        "occurrences" : [
+      "type": "cryptographic-asset",
+      "bom-ref": "46f1500c-ee78-4dfb-baea-acc658a6ef57",
+      "name": "cryptography.hazmat.primitives.asymmetric.rsa.generate_private_key",
+      "evidence": {
+        "occurrences": [
           {
-            "line" : 25,
-            "offset" : 16,
-            "location" : "Quantum-DDay/quantum_dday/api/routes.py"
+            "line": 25,
+            "offset": 16,
+            "location": "Quantum-DDay/quantum_dday/api/routes.py"
           }
         ]
       },
-      "cryptoProperties" : {
-        "assetType" : "algorithm",
-        "algorithmProperties" : {
-          "primitive" : "signature",
-          "cryptoFunctions" : [
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "signature",
+          "cryptoFunctions": [
             "keygen"
           ]
         },
-        "oid" : "1.2.840.10045.4.3.2"
+        "oid": "1.2.840.10045.4.3.2"
       }
     },
     {
-      "type" : "cryptographic-asset",
-      "bom-ref" : "ff14a264-78ff-4e28-a4b2-5cd5067fd2f6",
-      "name" : "Crypto.Cipher.AES.new",
-      "evidence" : {
-        "occurrences" : [
+      "type": "cryptographic-asset",
+      "bom-ref": "afbfd32f-92e2-4681-9389-1b79d0c73587",
+      "name": "Crypto.Cipher.AES.new",
+      "evidence": {
+        "occurrences": [
           {
-            "line" : 38,
-            "offset" : 18,
-            "location" : "Quantum-DDay/quantum_dday/api/routes.py"
+            "line": 38,
+            "offset": 18,
+            "location": "Quantum-DDay/quantum_dday/api/routes.py"
           }
         ]
       },
-      "cryptoProperties" : {
-        "assetType" : "algorithm",
-        "algorithmProperties" : { },
-        "oid" : "1.2.840.10045.4.3.2"
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {},
+        "oid": "1.2.840.10045.4.3.2"
       }
     },
     {
-      "type" : "cryptographic-asset",
-      "bom-ref" : "c40dccae-760c-4277-81e7-90870c821484",
-      "name" : "Crypto.Cipher._mode_cbc.CbcMode.encrypt",
-      "evidence" : {
-        "occurrences" : [
+      "type": "cryptographic-asset",
+      "bom-ref": "d31053fa-2436-407e-a5a8-4eb1f0a16837",
+      "name": "Crypto.Cipher._mode_cbc.CbcMode.encrypt",
+      "evidence": {
+        "occurrences": [
           {
-            "line" : 40,
-            "offset" : 24,
-            "location" : "Quantum-DDay/quantum_dday/api/routes.py"
+            "line": 40,
+            "offset": 24,
+            "location": "Quantum-DDay/quantum_dday/api/routes.py"
           }
         ]
       },
-      "cryptoProperties" : {
-        "assetType" : "algorithm",
-        "algorithmProperties" : {
-          "primitive" : "block-cipher",
-          "mode" : "cbc",
-          "cryptoFunctions" : [
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "block-cipher",
+          "mode": "cbc",
+          "cryptoFunctions": [
             "encrypt"
           ]
         },
-        "oid" : "1.2.840.10045.4.3.2"
+        "oid": "1.2.840.10045.4.3.2"
       }
     },
     {
-      "type" : "cryptographic-asset",
-      "bom-ref" : "ae4301de-31f3-4a9f-ba13-9b944410ab55",
-      "name" : "Crypto.Cipher.AES.new",
-      "evidence" : {
-        "occurrences" : [
+      "type": "cryptographic-asset",
+      "bom-ref": "bdb8806c-b509-44e8-9f9e-75ae2adb14fc",
+      "name": "Crypto.Cipher.AES.new",
+      "evidence": {
+        "occurrences": [
           {
-            "line" : 37,
-            "offset" : 18,
-            "location" : "Quantum-DDay/quantum_dday/services/user.py"
+            "line": 37,
+            "offset": 18,
+            "location": "Quantum-DDay/quantum_dday/services/user.py"
           }
         ]
       },
-      "cryptoProperties" : {
-        "assetType" : "algorithm",
-        "algorithmProperties" : { },
-        "oid" : "1.2.840.10045.4.3.2"
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {},
+        "oid": "1.2.840.10045.4.3.2"
       }
     },
     {
-      "type" : "cryptographic-asset",
-      "bom-ref" : "946c296e-6750-4036-8f6d-a802fa7adce4",
-      "name" : "Crypto.Cipher._mode_ecb.EcbMode.encrypt",
-      "evidence" : {
-        "occurrences" : [
+      "type": "cryptographic-asset",
+      "bom-ref": "fdc807f3-a407-4ab8-93c3-dd8b7bf0b02e",
+      "name": "Crypto.Cipher._mode_ecb.EcbMode.encrypt",
+      "evidence": {
+        "occurrences": [
           {
-            "line" : 39,
-            "offset" : 36,
-            "location" : "Quantum-DDay/quantum_dday/services/user.py"
+            "line": 39,
+            "offset": 36,
+            "location": "Quantum-DDay/quantum_dday/services/user.py"
           }
         ]
       },
-      "cryptoProperties" : {
-        "assetType" : "algorithm",
-        "algorithmProperties" : {
-          "primitive" : "block-cipher",
-          "mode" : "ecb",
-          "cryptoFunctions" : [
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "block-cipher",
+          "mode": "ecb",
+          "cryptoFunctions": [
             "encrypt"
           ]
         },
-        "oid" : "1.2.840.10045.4.3.2"
+        "oid": "1.2.840.10045.4.3.2"
       }
     },
     {
-      "type" : "cryptographic-asset",
-      "bom-ref" : "55d5d548-3d5e-4cb2-9d89-bac2af09be59",
-      "name" : "hashlib.pbkdf2_hmac",
-      "evidence" : {
-        "occurrences" : [
+      "type": "cryptographic-asset",
+      "bom-ref": "d1436c29-558a-4d10-92bc-296cc108869a",
+      "name": "hashlib.pbkdf2_hmac",
+      "evidence": {
+        "occurrences": [
           {
-            "line" : 47,
-            "offset" : 20,
-            "location" : "Quantum-DDay/quantum_dday/services/user.py"
+            "line": 47,
+            "offset": 20,
+            "location": "Quantum-DDay/quantum_dday/services/user.py"
           }
         ]
       },
-      "cryptoProperties" : {
-        "assetType" : "algorithm",
-        "algorithmProperties" : {
-          "primitive" : "kdf",
-          "cryptoFunctions" : [
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "kdf",
+          "cryptoFunctions": [
             "keyderive"
           ]
         },
-        "oid" : "1.2.840.10045.4.3.2"
+        "oid": "1.2.840.10045.4.3.2"
       }
     },
     {
-      "type" : "cryptographic-asset",
-      "bom-ref" : "0ac2d9bd-613d-416d-94a2-45c02a7f8fe5",
-      "name" : "cryptography.hazmat.primitives.asymmetric.ec.generate_private_key",
-      "evidence" : {
-        "occurrences" : [
+      "type": "cryptographic-asset",
+      "bom-ref": "fcc4295d-cf60-4db9-bf93-10f6dc83b4cf",
+      "name": "cryptography.hazmat.primitives.asymmetric.ec.generate_private_key",
+      "evidence": {
+        "occurrences": [
           {
-            "line" : 16,
-            "offset" : 17,
-            "location" : "Quantum-DDay/quantum_dday/crypto/keys.py"
+            "line": 16,
+            "offset": 17,
+            "location": "Quantum-DDay/quantum_dday/crypto/keys.py"
           }
         ]
       },
-      "cryptoProperties" : {
-        "assetType" : "algorithm",
-        "algorithmProperties" : {
-          "primitive" : "key-agree",
-          "cryptoFunctions" : [
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "key-agree",
+          "cryptoFunctions": [
             "keygen"
           ]
         },
-        "oid" : "1.2.840.10045.4.3.2"
+        "oid": "1.2.840.10045.4.3.2"
       }
     },
     {
-      "type" : "cryptographic-asset",
-      "bom-ref" : "32a25c7f-0286-4bda-ab50-df7424620360",
-      "name" : "cryptography.hazmat.primitives.asymmetric.ec.ECDH",
-      "evidence" : {
-        "occurrences" : [
+      "type": "cryptographic-asset",
+      "bom-ref": "20318e85-e466-4b69-844e-7b92e8770888",
+      "name": "cryptography.hazmat.primitives.asymmetric.ec.ECDH",
+      "evidence": {
+        "occurrences": [
           {
-            "line" : 17,
-            "offset" : 31,
-            "location" : "Quantum-DDay/quantum_dday/crypto/keys.py"
+            "line": 17,
+            "offset": 31,
+            "location": "Quantum-DDay/quantum_dday/crypto/keys.py"
           }
         ]
       },
-      "cryptoProperties" : {
-        "assetType" : "algorithm",
-        "algorithmProperties" : {
-          "primitive" : "key-agree"
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "key-agree"
         },
-        "oid" : "1.2.840.10045.4.3.2"
+        "oid": "1.2.840.10045.4.3.2"
       }
     },
     {
-      "type" : "cryptographic-asset",
-      "bom-ref" : "6c2dfb48-e90e-46bf-b94f-aceadde60c0c",
-      "name" : "Crypto.Cipher.AES.new",
-      "evidence" : {
-        "occurrences" : [
+      "type": "cryptographic-asset",
+      "bom-ref": "e5d28624-51cd-4ede-a1d2-12275a146cf7",
+      "name": "Crypto.Cipher.AES.new",
+      "evidence": {
+        "occurrences": [
           {
-            "line" : 31,
-            "offset" : 18,
-            "location" : "Quantum-DDay/quantum_dday/config/settings.py"
+            "line": 31,
+            "offset": 18,
+            "location": "Quantum-DDay/quantum_dday/config/settings.py"
           }
         ]
       },
-      "cryptoProperties" : {
-        "assetType" : "algorithm",
-        "algorithmProperties" : { },
-        "oid" : "1.2.840.10045.4.3.2"
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {},
+        "oid": "1.2.840.10045.4.3.2"
       }
     },
     {
-      "type" : "cryptographic-asset",
-      "bom-ref" : "2c47e05b-9d20-4f0e-95e8-f9c9550d58d0",
-      "name" : "Crypto.Cipher._mode_cbc.CbcMode.encrypt",
-      "evidence" : {
-        "occurrences" : [
+      "type": "cryptographic-asset",
+      "bom-ref": "7c5cec29-d92b-4ece-a132-8ff292947dd7",
+      "name": "Crypto.Cipher._mode_cbc.CbcMode.encrypt",
+      "evidence": {
+        "occurrences": [
           {
-            "line" : 33,
-            "offset" : 19,
-            "location" : "Quantum-DDay/quantum_dday/config/settings.py"
+            "line": 33,
+            "offset": 19,
+            "location": "Quantum-DDay/quantum_dday/config/settings.py"
           }
         ]
       },
-      "cryptoProperties" : {
-        "assetType" : "algorithm",
-        "algorithmProperties" : {
-          "primitive" : "block-cipher",
-          "mode" : "cbc",
-          "cryptoFunctions" : [
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "block-cipher",
+          "mode": "cbc",
+          "cryptoFunctions": [
             "encrypt"
           ]
         },
-        "oid" : "1.2.840.10045.4.3.2"
+        "oid": "1.2.840.10045.4.3.2"
       }
     }
   ],
-  "vulnerabilities" : [
+  "vulnerabilities": [
     {
-      "id" : "CWE-327",
-      "source" : {
-        "name" : "CWE",
-        "url" : "https://cwe.mitre.org/data/definitions/327.html"
+      "id": "CWE-327",
+      "source": {
+        "name": "CWE",
+        "url": "https://cwe.mitre.org/data/definitions/327.html"
       },
-      "ratings" : [
+      "ratings": [
         {
-          "severity" : "high"
+          "severity": "high"
         }
       ],
-      "cwes" : [
+      "cwes": [
         327
       ],
-      "affects" : [
+      "affects": [
         {
-          "ref" : "7713f6c0-4c6f-4778-a6ee-b33eab8832ef"
+          "ref": "4d71873d-c024-4526-89b1-3a9f3b2c9f57"
         },
         {
-          "ref" : "4aa18a8e-bd1c-4eae-b82b-dfb953f70d16"
+          "ref": "46f1500c-ee78-4dfb-baea-acc658a6ef57"
         },
         {
-          "ref" : "0ac2d9bd-613d-416d-94a2-45c02a7f8fe5"
+          "ref": "fcc4295d-cf60-4db9-bf93-10f6dc83b4cf"
         },
         {
-          "ref" : "32a25c7f-0286-4bda-ab50-df7424620360"
+          "ref": "20318e85-e466-4b69-844e-7b92e8770888"
         }
       ]
     },
     {
-      "id" : "CWE-328",
-      "source" : {
-        "name" : "CWE",
-        "url" : "https://cwe.mitre.org/data/definitions/328.html"
+      "id": "CWE-328",
+      "source": {
+        "name": "CWE",
+        "url": "https://cwe.mitre.org/data/definitions/328.html"
       },
-      "ratings" : [
+      "ratings": [
         {
-          "severity" : "high"
+          "severity": "high"
         }
       ],
-      "cwes" : [
+      "cwes": [
         328
       ],
-      "affects" : [
+      "affects": [
         {
-          "ref" : "7713f6c0-4c6f-4778-a6ee-b33eab8832ef"
+          "ref": "4d71873d-c024-4526-89b1-3a9f3b2c9f57"
         },
         {
-          "ref" : "4aa18a8e-bd1c-4eae-b82b-dfb953f70d16"
+          "ref": "46f1500c-ee78-4dfb-baea-acc658a6ef57"
         },
         {
-          "ref" : "0ac2d9bd-613d-416d-94a2-45c02a7f8fe5"
+          "ref": "fcc4295d-cf60-4db9-bf93-10f6dc83b4cf"
         },
         {
-          "ref" : "32a25c7f-0286-4bda-ab50-df7424620360"
+          "ref": "20318e85-e466-4b69-844e-7b92e8770888"
         }
       ]
     }
