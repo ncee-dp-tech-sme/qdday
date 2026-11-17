@@ -13,3 +13,4 @@ platform_guard.py
 .bob/skills/qse/SKILL.md
 __pycache__/platform_guard.cpython-314.pyc
 Quantum-DDay/.DS_Store
+.venv/
