@@ -17,3 +17,4 @@ qs_explorer_result/quantum_safe_api_discovery_crypto_inventory.json
 qs_explorer_result/quantum_safe_api_discovery_findings.json
 qs_explorer_result/quantum_safe_api_discovery_report.json
 Quantum-DDay/.DS_Store
+.venv/
