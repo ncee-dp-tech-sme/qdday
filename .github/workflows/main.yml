@@ -70,6 +70,7 @@
 #   2026-11-17 02:33:19 - Set LicenseAcceptance to true in LicenseAcceptance.config before the scan
 #   2026-11-17 02:40:00 - Target the exact key RSP_LICENSE_ACCEPTED (safety net if not set before upload)
 #   2026-11-17 02:12:23 - Set gitUrl in CBOM and repositoryId/repositoryUrl in findings; GCM upload: Python=findings, Java=CBOM only
+#   2026-11-17 02:21:38 - Locate result files recursively (QSE nests them in qs_explorer_result/qs_explorer_result/)
 # =============================================================================
 
 name: QSE Scan
@@ -371,8 +372,10 @@ jobs:
             fi
           }
 
-          cbom="${OUT_DIR}/quantum_safe_api_discovery_cbom.json"
-          if [[ -f "${cbom}" ]]; then
+          # QSE may write into a sub-directory of the output dir
+          # (e.g. qs_explorer_result/qs_explorer_result/), so search recursively.
+          cbom="$(find "${OUT_DIR}" -type f -name 'quantum_safe_api_discovery_cbom.json' -print -quit)"
+          if [[ -n "${cbom}" ]]; then
             patch_json "${cbom}" 'walk(if type == "object" and .name? == "gitUrl" then .value = $url else . end)' || exit 1
             if [[ "$(jq -r --arg url "${repo_url}" '[.. | objects | select(.name? == "gitUrl" and .value? == $url)] | length' "${cbom}")" -eq 0 ]]; then
               echo "::warning title=gitUrl not found::No \"gitUrl\" property found in ${cbom##*/}; value not set."
@@ -381,8 +384,8 @@ jobs:
             fi
           fi
 
-          findings="${OUT_DIR}/quantum_safe_api_discovery_findings.json"
-          if [[ -f "${findings}" ]]; then
+          findings="$(find "${OUT_DIR}" -type f -name 'quantum_safe_api_discovery_findings.json' -print -quit)"
+          if [[ -n "${findings}" ]]; then
             patch_json "${findings}" 'walk(if type == "object" then (if has("repositoryId") then .repositoryId = $id else . end | if has("repositoryUrl") then .repositoryUrl = $url else . end) else . end)' || exit 1
             if [[ "$(jq -r '[.. | objects | select(has("repositoryId") or has("repositoryUrl"))] | length' "${findings}")" -eq 0 ]]; then
               echo "::warning title=repository keys not found::No repositoryId/repositoryUrl keys found in ${findings##*/}; values not set."
@@ -485,18 +488,19 @@ jobs:
 
           # Python -> quantum_safe_api_discovery_findings.json only
           # Java   -> quantum_safe_api_discovery_cbom.json only
+          # (files are searched recursively: QSE may nest them in a sub-directory)
           to_upload=()
           if [[ ",${QSE_LANG_FLAG}," == *",.py,"* ]]; then
-            to_upload+=("${OUT_DIR}/quantum_safe_api_discovery_findings.json")
+            to_upload+=("$(find "${OUT_DIR}" -type f -name 'quantum_safe_api_discovery_findings.json' -print -quit)")
           fi
           if [[ ",${QSE_LANG_FLAG}," == *",.java,"* ]]; then
-            to_upload+=("${OUT_DIR}/quantum_safe_api_discovery_cbom.json")
+            to_upload+=("$(find "${OUT_DIR}" -type f -name 'quantum_safe_api_discovery_cbom.json' -print -quit)")
           fi
 
           uploaded=0
           for f in "${to_upload[@]}"; do
-            if [[ ! -f "${f}" ]]; then
-              echo "::warning::Expected file ${f} not found - skipping."
+            if [[ -z "${f}" || ! -f "${f}" ]]; then
+              echo "::warning::Expected QSE result file not found under ${OUT_DIR}/ - skipping."
               continue
             fi
             post_file "${base}/discovery?repositoryUrl=${enc}" "${f}"
