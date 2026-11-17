@@ -1,0 +1,187 @@
+{
+  "scanId": "7b0acffb-fb04-44ab-b974-0a2a4a53e5ea",
+  "applicationId": "",
+  "applicationVersion": "",
+  "scanTime": "2026-11-16T21:48:54.473412Z",
+  "totalCryptoArtifacts": "13",
+  "findings": [
+    {
+      "fileType": "py",
+      "children": [
+        {
+          "fileName": "/Users/erwin/development/qse/Quantum-DDay/quantum_dday/crypto/keys.py",
+          "cryptoArtifacts": 2,
+          "cryptoInfo": [
+            {
+              "functionName": "cryptography.hazmat.primitives.asymmetric.ec.generate_private_key",
+              "library": "cryptography",
+              "locations": [
+                {
+                  "line": 16,
+                  "startColumn": 17,
+                  "endColumn": 37
+                }
+              ]
+            },
+            {
+              "functionName": "cryptography.hazmat.primitives.asymmetric.ec.ECDH",
+              "library": "cryptography",
+              "locations": [
+                {
+                  "line": 17,
+                  "startColumn": 31,
+                  "endColumn": 35
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fileName": "/Users/erwin/development/qse/Quantum-DDay/quantum_dday/api/routes.py",
+          "cryptoArtifacts": 3,
+          "cryptoInfo": [
+            {
+              "functionName": "cryptography.hazmat.primitives.asymmetric.rsa.generate_private_key",
+              "library": "cryptography",
+              "locations": [
+                {
+                  "line": 25,
+                  "startColumn": 16,
+                  "endColumn": 36
+                }
+              ]
+            },
+            {
+              "functionName": "Crypto.Cipher.AES.new",
+              "library": "Crypto",
+              "locations": [
+                {
+                  "line": 38,
+                  "startColumn": 18,
+                  "endColumn": 21
+                }
+              ]
+            },
+            {
+              "functionName": "Crypto.Cipher._mode_cbc.CbcMode.encrypt",
+              "library": "Crypto",
+              "locations": [
+                {
+                  "line": 40,
+                  "startColumn": 24,
+                  "endColumn": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fileName": "/Users/erwin/development/qse/Quantum-DDay/quantum_dday/config/settings.py",
+          "cryptoArtifacts": 2,
+          "cryptoInfo": [
+            {
+              "functionName": "Crypto.Cipher.AES.new",
+              "library": "Crypto",
+              "locations": [
+                {
+                  "line": 30,
+                  "startColumn": 18,
+                  "endColumn": 21
+                }
+              ]
+            },
+            {
+              "functionName": "Crypto.Cipher._mode_cbc.CbcMode.encrypt",
+              "library": "Crypto",
+              "locations": [
+                {
+                  "line": 32,
+                  "startColumn": 19,
+                  "endColumn": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fileName": "/Users/erwin/development/qse/Quantum-DDay/quantum_dday/services/user.py",
+          "cryptoArtifacts": 3,
+          "cryptoInfo": [
+            {
+              "functionName": "Crypto.Cipher.AES.new",
+              "library": "Crypto",
+              "locations": [
+                {
+                  "line": 37,
+                  "startColumn": 18,
+                  "endColumn": 21
+                }
+              ]
+            },
+            {
+              "functionName": "Crypto.Cipher._mode_ecb.EcbMode.encrypt",
+              "library": "Crypto",
+              "locations": [
+                {
+                  "line": 39,
+                  "startColumn": 36,
+                  "endColumn": 43
+                }
+              ]
+            },
+            {
+              "functionName": "hashlib.pbkdf2_hmac",
+              "library": "hashlib",
+              "locations": [
+                {
+                  "line": 47,
+                  "startColumn": 20,
+                  "endColumn": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fileName": "/Users/erwin/development/qse/Quantum-DDay/quantum_dday/services/auth.py",
+          "cryptoArtifacts": 3,
+          "cryptoInfo": [
+            {
+              "functionName": "hashlib.sha1",
+              "library": "hashlib",
+              "locations": [
+                {
+                  "line": 35,
+                  "startColumn": 17,
+                  "endColumn": 21
+                }
+              ]
+            },
+            {
+              "functionName": "hashlib.hash.update",
+              "library": "hashlib",
+              "locations": [
+                {
+                  "line": 38,
+                  "startColumn": 15,
+                  "endColumn": 21
+                }
+              ]
+            },
+            {
+              "functionName": "hashlib.hash.hexdigest",
+              "library": "hashlib",
+              "locations": [
+                {
+                  "line": 39,
+                  "startColumn": 14,
+                  "endColumn": 23
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

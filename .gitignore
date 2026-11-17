@@ -12,8 +12,4 @@ platform_guard.py
 .bob/skills/qse/6_qcm_integration.md
 .bob/skills/qse/SKILL.md
 __pycache__/platform_guard.cpython-314.pyc
-qs_explorer_result/quantum_safe_api_discovery_cbom.json
-qs_explorer_result/quantum_safe_api_discovery_crypto_inventory.json
-qs_explorer_result/quantum_safe_api_discovery_findings.json
-qs_explorer_result/quantum_safe_api_discovery_report.json
 Quantum-DDay/.DS_Store
