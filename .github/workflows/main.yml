@@ -14,7 +14,9 @@
 #   4. Runs the QSE scan with output in <repo-root>/qs_explorer_result
 #   5. Commits qs_explorer_result back to the branch so results are available
 #      after a local `git pull`
-#   6. OPTIONALLY uploads the findings to Guardium Cryptography Manager (GCM)
+#   6. OPTIONALLY uploads to Guardium Cryptography Manager (GCM): Python scans
+#      upload quantum_safe_api_discovery_findings.json, Java scans upload
+#      quantum_safe_api_discovery_cbom.json (repository URL/ID stamped first)
 #
 # -----------------------------------------------------------------------------
 # REQUIRED CONFIGURATION  (Settings > Secrets and variables > Actions)
@@ -65,6 +67,9 @@
 #
 # Changes:
 #   2026-11-17 01:13:40 - Initial creation (template, not active in qse_pod)
+#   2026-11-17 02:33:19 - Set LicenseAcceptance to true in LicenseAcceptance.config before the scan
+#   2026-11-17 02:40:00 - Target the exact key RSP_LICENSE_ACCEPTED (safety net if not set before upload)
+#   2026-11-17 02:12:23 - Set gitUrl in CBOM and repositoryId/repositoryUrl in findings; GCM upload: Python=findings, Java=CBOM only
 # =============================================================================
 
 name: QSE Scan
@@ -267,6 +272,28 @@ jobs:
             echo "::endgroup::"
           fi
 
+      # ---- Mark the QSE license as accepted (LicenseAcceptance.config) -------
+      # Preferably RSP_LICENSE_ACCEPTED=true is already set in the CLI package
+      # before it is uploaded; this step is a safety net. By running this
+      # workflow you confirm your organisation is entitled to use the IBM QSE
+      # CLI and accepts its license terms.
+      - name: Accept QSE license
+        run: |
+          cfg="$(find "${QSE_HOME}" -type f -name 'LicenseAcceptance.config' -print -quit)"
+          if [[ -z "${cfg}" ]]; then
+            echo "::error title=License file not found::LicenseAcceptance.config does not exist in the QSE CLI package (${QSE_CLI_SUBDIR})."
+            exit 1
+          fi
+
+          sed -E -i.bak 's/^([[:space:]]*RSP_LICENSE_ACCEPTED[[:space:]]*=[[:space:]]*).*/\1true/' "${cfg}"
+          rm -f "${cfg}.bak"
+
+          if ! grep -qE '^[[:space:]]*RSP_LICENSE_ACCEPTED[[:space:]]*=[[:space:]]*true[[:space:]]*$' "${cfg}"; then
+            echo "::error title=License acceptance failed::RSP_LICENSE_ACCEPTED=true is not set in ${cfg##*/}. Check that the key exists in the file."
+            exit 1
+          fi
+          echo "QSE license acceptance set in ${cfg##*/}."
+
       # ---- Run the scan; output goes to <repo-root>/qs_explorer_result -------
       - name: Run QSE scan
         id: scan
@@ -322,6 +349,47 @@ jobs:
           fi
           echo "QSE scan completed. Results: ${OUT_DIR}/"
           ls -1 "${out}"
+
+      # ---- Stamp the repository identity into the files GCM needs ------------
+      # CBOM:     properties[name=gitUrl].value  -> repository URL
+      # Findings: repositoryId, repositoryUrl    -> repository slug / URL
+      # Done before the commit so the committed files match what is uploaded.
+      - name: Set repository metadata in result files
+        run: |
+          repo_url="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}"
+          repo_id="${GITHUB_REPOSITORY}"
+
+          patch_json() {
+            local file="$1" filter="$2" tmp
+            tmp="$(mktemp)"
+            if jq --arg url "${repo_url}" --arg id "${repo_id}" "${filter}" "${file}" > "${tmp}"; then
+              mv "${tmp}" "${file}"
+            else
+              rm -f "${tmp}"
+              echo "::error title=Metadata update failed::Could not update ${file##*/} with jq."
+              return 1
+            fi
+          }
+
+          cbom="${OUT_DIR}/quantum_safe_api_discovery_cbom.json"
+          if [[ -f "${cbom}" ]]; then
+            patch_json "${cbom}" 'walk(if type == "object" and .name? == "gitUrl" then .value = $url else . end)' || exit 1
+            if [[ "$(jq -r --arg url "${repo_url}" '[.. | objects | select(.name? == "gitUrl" and .value? == $url)] | length' "${cbom}")" -eq 0 ]]; then
+              echo "::warning title=gitUrl not found::No \"gitUrl\" property found in ${cbom##*/}; value not set."
+            else
+              echo "gitUrl set in ${cbom##*/}."
+            fi
+          fi
+
+          findings="${OUT_DIR}/quantum_safe_api_discovery_findings.json"
+          if [[ -f "${findings}" ]]; then
+            patch_json "${findings}" 'walk(if type == "object" then (if has("repositoryId") then .repositoryId = $id else . end | if has("repositoryUrl") then .repositoryUrl = $url else . end) else . end)' || exit 1
+            if [[ "$(jq -r '[.. | objects | select(has("repositoryId") or has("repositoryUrl"))] | length' "${findings}")" -eq 0 ]]; then
+              echo "::warning title=repository keys not found::No repositoryId/repositoryUrl keys found in ${findings##*/}; values not set."
+            else
+              echo "repositoryId/repositoryUrl set in ${findings##*/}."
+            fi
+          fi
 
       - name: Check for weak-algorithm findings (informational)
         run: |
@@ -415,19 +483,27 @@ jobs:
             rm -f "${resp}"; return 1
           }
 
+          # Python -> quantum_safe_api_discovery_findings.json only
+          # Java   -> quantum_safe_api_discovery_cbom.json only
+          to_upload=()
+          if [[ ",${QSE_LANG_FLAG}," == *",.py,"* ]]; then
+            to_upload+=("${OUT_DIR}/quantum_safe_api_discovery_findings.json")
+          fi
+          if [[ ",${QSE_LANG_FLAG}," == *",.java,"* ]]; then
+            to_upload+=("${OUT_DIR}/quantum_safe_api_discovery_cbom.json")
+          fi
+
           uploaded=0
-          discovery="${OUT_DIR}/quantum_safe_api_discovery_findings.json"
-          if [[ -f "${discovery}" ]]; then
-            post_file "${base}/discovery?repositoryUrl=${enc}" "${discovery}"
+          for f in "${to_upload[@]}"; do
+            if [[ ! -f "${f}" ]]; then
+              echo "::warning::Expected file ${f} not found - skipping."
+              continue
+            fi
+            post_file "${base}/discovery?repositoryUrl=${enc}" "${f}"
             uploaded=$(( uploaded + 1 ))
-          fi
-          analytics="$(find "${OUT_DIR}" -maxdepth 1 -name 'quantum_safe_cryptography_analysis_findings_*.json' -print -quit)"
-          if [[ -n "${analytics}" ]]; then
-            post_file "${base}/analytics?repositoryUrl=${enc}" "${analytics}"
-            uploaded=$(( uploaded + 1 ))
-          fi
+          done
           if [[ "${uploaded}" -eq 0 ]]; then
-            echo "::error title=GCM upload::No recognised findings files in ${OUT_DIR}/."
+            echo "::error title=GCM upload::No uploadable files for languages '${QSE_LANG_FLAG}' in ${OUT_DIR}/ (Python: quantum_safe_api_discovery_findings.json, Java: quantum_safe_api_discovery_cbom.json)."
             exit 1
           fi
           echo "GCM upload complete - ${uploaded} file(s)."
