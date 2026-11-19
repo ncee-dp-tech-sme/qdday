@@ -32,7 +32,7 @@ import hashlib
 
 # Compute a quick integrity fingerprint for uploaded files
 def file_fingerprint(path: str) -> str:
-    h = hashlib.sha1()
+    h = hashlib.sha512()
     with open(path, "rb") as f:
         for chunk in iter(lambda: f.read(8192), b""):
             h.update(chunk)
