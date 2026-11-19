@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "699a78cb-f91e-4bbe-87c7-44d9c9b54943",
+  "serialNumber": "5b710f66-a027-4032-bf5f-f288fd03a06e",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-17T02:24:32Z",
+    "timestamp": "2026-11-19T16:28:16Z",
     "tools": {
       "services": [
         {
@@ -35,8 +35,8 @@
   "components": [
     {
       "type": "cryptographic-asset",
-      "bom-ref": "4d71873d-c024-4526-89b1-3a9f3b2c9f57",
-      "name": "hashlib.sha1",
+      "bom-ref": "a289106c-6fea-405f-a6fa-c340bb19c8c0",
+      "name": "hashlib.sha512",
       "evidence": {
         "occurrences": [
           {
@@ -56,7 +56,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "4d9b11d3-5b3f-43d3-bdb6-a24d8b904c17",
+      "bom-ref": "2244a30b-6ba0-4036-b753-7254139f95c2",
       "name": "hashlib.hash.update",
       "evidence": {
         "occurrences": [
@@ -77,7 +77,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "3aa2cc2d-a392-4e08-b6a8-25c28224b43c",
+      "bom-ref": "4080a536-7f49-481f-b7e9-2be9f94f1fad",
       "name": "hashlib.hash.hexdigest",
       "evidence": {
         "occurrences": [
@@ -101,7 +101,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "46f1500c-ee78-4dfb-baea-acc658a6ef57",
+      "bom-ref": "a4c304e5-a4cd-4936-ab80-7f1d373d2603",
       "name": "cryptography.hazmat.primitives.asymmetric.rsa.generate_private_key",
       "evidence": {
         "occurrences": [
@@ -125,7 +125,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "afbfd32f-92e2-4681-9389-1b79d0c73587",
+      "bom-ref": "703ac4e7-9285-4302-86e3-61114665e613",
       "name": "Crypto.Cipher.AES.new",
       "evidence": {
         "occurrences": [
@@ -144,7 +144,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "d31053fa-2436-407e-a5a8-4eb1f0a16837",
+      "bom-ref": "05017b78-fc54-4940-a9c5-a607452bb4c2",
       "name": "Crypto.Cipher._mode_cbc.CbcMode.encrypt",
       "evidence": {
         "occurrences": [
@@ -169,7 +169,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "bdb8806c-b509-44e8-9f9e-75ae2adb14fc",
+      "bom-ref": "816b3f97-35a7-4168-88e8-0c49ba836fdc",
       "name": "Crypto.Cipher.AES.new",
       "evidence": {
         "occurrences": [
@@ -188,7 +188,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "fdc807f3-a407-4ab8-93c3-dd8b7bf0b02e",
+      "bom-ref": "39cc3bee-55a4-4a86-a659-1900b1fd89ed",
       "name": "Crypto.Cipher._mode_ecb.EcbMode.encrypt",
       "evidence": {
         "occurrences": [
@@ -213,7 +213,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "d1436c29-558a-4d10-92bc-296cc108869a",
+      "bom-ref": "5349dc99-79c3-4f02-aea0-05691ec067e6",
       "name": "hashlib.pbkdf2_hmac",
       "evidence": {
         "occurrences": [
@@ -237,7 +237,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "fcc4295d-cf60-4db9-bf93-10f6dc83b4cf",
+      "bom-ref": "d41c94d6-ccc5-4ee9-9844-5e5138fb3033",
       "name": "cryptography.hazmat.primitives.asymmetric.ec.generate_private_key",
       "evidence": {
         "occurrences": [
@@ -261,7 +261,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "20318e85-e466-4b69-844e-7b92e8770888",
+      "bom-ref": "960bc683-7065-40ea-98e1-7bb1ade9aa58",
       "name": "cryptography.hazmat.primitives.asymmetric.ec.ECDH",
       "evidence": {
         "occurrences": [
@@ -282,7 +282,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "e5d28624-51cd-4ede-a1d2-12275a146cf7",
+      "bom-ref": "4cb30601-2f30-41fb-9c0c-2b847d3ca9d2",
       "name": "Crypto.Cipher.AES.new",
       "evidence": {
         "occurrences": [
@@ -301,7 +301,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "7c5cec29-d92b-4ece-a132-8ff292947dd7",
+      "bom-ref": "1cca8e1f-a406-4503-bc34-8fce8415fd42",
       "name": "Crypto.Cipher._mode_cbc.CbcMode.encrypt",
       "evidence": {
         "occurrences": [
@@ -342,45 +342,13 @@
       ],
       "affects": [
         {
-          "ref": "4d71873d-c024-4526-89b1-3a9f3b2c9f57"
+          "ref": "a4c304e5-a4cd-4936-ab80-7f1d373d2603"
         },
         {
-          "ref": "46f1500c-ee78-4dfb-baea-acc658a6ef57"
+          "ref": "d41c94d6-ccc5-4ee9-9844-5e5138fb3033"
         },
         {
-          "ref": "fcc4295d-cf60-4db9-bf93-10f6dc83b4cf"
-        },
-        {
-          "ref": "20318e85-e466-4b69-844e-7b92e8770888"
-        }
-      ]
-    },
-    {
-      "id": "CWE-328",
-      "source": {
-        "name": "CWE",
-        "url": "https://cwe.mitre.org/data/definitions/328.html"
-      },
-      "ratings": [
-        {
-          "severity": "high"
-        }
-      ],
-      "cwes": [
-        328
-      ],
-      "affects": [
-        {
-          "ref": "4d71873d-c024-4526-89b1-3a9f3b2c9f57"
-        },
-        {
-          "ref": "46f1500c-ee78-4dfb-baea-acc658a6ef57"
-        },
-        {
-          "ref": "fcc4295d-cf60-4db9-bf93-10f6dc83b4cf"
-        },
-        {
-          "ref": "20318e85-e466-4b69-844e-7b92e8770888"
+          "ref": "960bc683-7065-40ea-98e1-7bb1ade9aa58"
         }
       ]
     }
