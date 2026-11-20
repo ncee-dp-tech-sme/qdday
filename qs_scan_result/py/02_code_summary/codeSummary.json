@@ -1,0 +1,2838 @@
+[
+  {
+    "variables": [
+      {
+        "name": "SEV_ORDER",
+        "type": "Unresolved",
+        "lineNumber": 24,
+        "start": 1,
+        "end": 10,
+        "isConstructor": false
+      },
+      {
+        "name": "STATUSES",
+        "type": "Unresolved",
+        "lineNumber": 25,
+        "start": 1,
+        "end": 9,
+        "isConstructor": false
+      }
+    ],
+    "functions": [],
+    "classes": [],
+    "className": "/Users/erwin/development/qse/.bob/skills/qse-remediation/remediation_tool.py",
+    "methods": [
+      {
+        "methodName": "now",
+        "variables": [],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "datetime.datetime.now",
+            "payload": "datetime",
+            "lineNumber": 30,
+            "start": 21,
+            "end": 29
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "datetime.datetime.now.astimezone",
+            "lineNumber": 0,
+            "start": 0,
+            "end": 0
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "datetime.datetime.now.astimezone.isoformat",
+            "lineNumber": 0,
+            "start": 0,
+            "end": 0
+          }
+        ]
+      },
+      {
+        "methodName": "sha256",
+        "variables": [
+          {
+            "name": "h",
+            "type": "hashlib.hash",
+            "lineNumber": 37,
+            "start": 5,
+            "end": 6,
+            "isConstructor": false
+          }
+        ],
+        "functions": [
+          {
+            "returnType": "hashlib.hash",
+            "fullyQualifiedName": "hashlib.sha256",
+            "payload": "sha256",
+            "lineNumber": 37,
+            "start": 17,
+            "end": 23
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "hashlib.hash.update",
+            "payload": "update",
+            "lineNumber": 39,
+            "start": 11,
+            "end": 17
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "hashlib.hash.hexdigest",
+            "payload": "hexdigest",
+            "lineNumber": 40,
+            "start": 14,
+            "end": 23
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.isfile",
+            "payload": "path",
+            "lineNumber": 35,
+            "start": 15,
+            "end": 19
+          }
+        ]
+      },
+      {
+        "methodName": "paths",
+        "variables": [
+          {
+            "name": "rem",
+            "type": "Unresolved",
+            "lineNumber": 45,
+            "start": 5,
+            "end": 8,
+            "isConstructor": false
+          }
+        ],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.join",
+            "payload": "path",
+            "lineNumber": 45,
+            "start": 14,
+            "end": 18
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.join",
+            "payload": "path",
+            "lineNumber": 48,
+            "start": 21,
+            "end": 25
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.join",
+            "payload": "path",
+            "lineNumber": 49,
+            "start": 25,
+            "end": 29
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.join",
+            "payload": "path",
+            "lineNumber": 50,
+            "start": 25,
+            "end": 29
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.join",
+            "payload": "path",
+            "lineNumber": 51,
+            "start": 22,
+            "end": 26
+          }
+        ]
+      },
+      {
+        "methodName": "load_state",
+        "variables": [
+          {
+            "name": "p",
+            "type": "Unresolved",
+            "lineNumber": 57,
+            "start": 5,
+            "end": 6,
+            "isConstructor": false
+          }
+        ],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "sys.exit",
+            "payload": "exit",
+            "lineNumber": 59,
+            "start": 13,
+            "end": 17
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "json.load",
+            "payload": "load",
+            "lineNumber": 61,
+            "start": 21,
+            "end": 25
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.isfile",
+            "payload": "path",
+            "lineNumber": 58,
+            "start": 15,
+            "end": 19
+          }
+        ]
+      },
+      {
+        "methodName": "save_state",
+        "variables": [
+          {
+            "name": "p",
+            "type": "Unresolved",
+            "lineNumber": 66,
+            "start": 5,
+            "end": 6,
+            "isConstructor": false
+          },
+          {
+            "name": "tmp",
+            "type": "Unresolved",
+            "lineNumber": 68,
+            "start": 5,
+            "end": 8,
+            "isConstructor": false
+          }
+        ],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.makedirs",
+            "payload": "makedirs",
+            "lineNumber": 67,
+            "start": 8,
+            "end": 16
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "json.dump",
+            "payload": "dump",
+            "lineNumber": 70,
+            "start": 14,
+            "end": 18
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.replace",
+            "payload": "replace",
+            "lineNumber": 71,
+            "start": 8,
+            "end": 15
+          }
+        ]
+      },
+      {
+        "methodName": "log_change",
+        "variables": [
+          {
+            "name": "p",
+            "type": "Unresolved",
+            "lineNumber": 76,
+            "start": 5,
+            "end": 6,
+            "isConstructor": false
+          },
+          {
+            "name": "new",
+            "type": "Unresolved",
+            "lineNumber": 78,
+            "start": 5,
+            "end": 8,
+            "isConstructor": false
+          }
+        ],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.isfile",
+            "payload": "path",
+            "lineNumber": 78,
+            "start": 18,
+            "end": 22
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.makedirs",
+            "payload": "makedirs",
+            "lineNumber": 77,
+            "start": 8,
+            "end": 16
+          }
+        ]
+      },
+      {
+        "methodName": "find_findings_files",
+        "variables": [
+          {
+            "name": "found",
+            "type": "Unresolved",
+            "lineNumber": 87,
+            "start": 5,
+            "end": 10,
+            "isConstructor": false
+          },
+          {
+            "name": "api",
+            "type": "Unresolved",
+            "lineNumber": 88,
+            "start": 5,
+            "end": 8,
+            "isConstructor": false
+          }
+        ],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "glob.glob",
+            "payload": "glob",
+            "lineNumber": 87,
+            "start": 25,
+            "end": 29
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.join",
+            "payload": "path",
+            "lineNumber": 87,
+            "start": 33,
+            "end": 37
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.join",
+            "payload": "path",
+            "lineNumber": 88,
+            "start": 14,
+            "end": 18
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "found.append",
+            "payload": "append",
+            "lineNumber": 90,
+            "start": 15,
+            "end": 21
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.isfile",
+            "payload": "path",
+            "lineNumber": 89,
+            "start": 11,
+            "end": 15
+          }
+        ]
+      },
+      {
+        "methodName": "walk",
+        "variables": [
+          {
+            "name": "ctx",
+            "type": "Unresolved",
+            "lineNumber": 102,
+            "start": 5,
+            "end": 8,
+            "isConstructor": false
+          },
+          {
+            "name": "ctx[\"language\"]",
+            "type": "Unresolved",
+            "lineNumber": 104,
+            "start": 9,
+            "end": 12,
+            "isConstructor": false
+          },
+          {
+            "name": "ctx[\"file\"]",
+            "type": "Unresolved",
+            "lineNumber": 106,
+            "start": 9,
+            "end": 12,
+            "isConstructor": false
+          }
+        ],
+        "functions": []
+      },
+      {
+        "methodName": "normalize",
+        "variables": [
+          {
+            "name": "vulns",
+            "type": "Unresolved",
+            "lineNumber": 116,
+            "start": 5,
+            "end": 10,
+            "isConstructor": false
+          },
+          {
+            "name": "lines",
+            "type": "Unresolved",
+            "lineNumber": 116,
+            "start": 12,
+            "end": 17,
+            "isConstructor": false
+          },
+          {
+            "name": "fname",
+            "type": "Unresolved",
+            "lineNumber": 116,
+            "start": 19,
+            "end": 24,
+            "isConstructor": false
+          },
+          {
+            "name": "loc",
+            "type": "Unresolved",
+            "lineNumber": 119,
+            "start": 13,
+            "end": 16,
+            "isConstructor": false
+          },
+          {
+            "name": "fname",
+            "type": "Unresolved",
+            "lineNumber": 122,
+            "start": 13,
+            "end": 18,
+            "isConstructor": false
+          },
+          {
+            "name": "file",
+            "type": "Unresolved",
+            "lineNumber": 131,
+            "start": 5,
+            "end": 9,
+            "isConstructor": false
+          },
+          {
+            "name": "line",
+            "type": "Unresolved",
+            "lineNumber": 132,
+            "start": 5,
+            "end": 9,
+            "isConstructor": false
+          },
+          {
+            "name": "sev",
+            "type": "Unresolved",
+            "lineNumber": 133,
+            "start": 5,
+            "end": 8,
+            "isConstructor": false
+          }
+        ],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "loc.get",
+            "payload": "get",
+            "lineNumber": 122,
+            "start": 34,
+            "end": 37
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "lines.append",
+            "payload": "append",
+            "lineNumber": 121,
+            "start": 23,
+            "end": 29
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "vulns.append",
+            "payload": "append",
+            "lineNumber": 123,
+            "start": 15,
+            "end": 21
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "loc.get",
+            "payload": "get",
+            "lineNumber": 120,
+            "start": 20,
+            "end": 23
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "SEV_ORDER.items",
+            "payload": "items",
+            "lineNumber": 142,
+            "start": 57,
+            "end": 62
+          }
+        ]
+      },
+      {
+        "methodName": "cmd_init",
+        "variables": [
+          {
+            "name": "files",
+            "type": "Unresolved",
+            "lineNumber": 151,
+            "start": 5,
+            "end": 10,
+            "isConstructor": false
+          },
+          {
+            "name": "p",
+            "type": "Unresolved",
+            "lineNumber": 155,
+            "start": 5,
+            "end": 6,
+            "isConstructor": false
+          },
+          {
+            "name": "state",
+            "type": "Unresolved",
+            "lineNumber": 156,
+            "start": 5,
+            "end": 10,
+            "isConstructor": false
+          },
+          {
+            "name": "existing",
+            "type": "Unresolved",
+            "lineNumber": 158,
+            "start": 5,
+            "end": 13,
+            "isConstructor": false
+          },
+          {
+            "name": "meta",
+            "type": "Unresolved",
+            "lineNumber": 159,
+            "start": 5,
+            "end": 9,
+            "isConstructor": false
+          },
+          {
+            "name": "data",
+            "type": "Unresolved",
+            "lineNumber": 162,
+            "start": 13,
+            "end": 17,
+            "isConstructor": false
+          },
+          {
+            "name": "lang_hint",
+            "type": "Unresolved",
+            "lineNumber": 163,
+            "start": 9,
+            "end": 18,
+            "isConstructor": false
+          },
+          {
+            "name": "m",
+            "type": "Unresolved",
+            "lineNumber": 164,
+            "start": 9,
+            "end": 10,
+            "isConstructor": false
+          },
+          {
+            "name": "lang_hint",
+            "type": "Unresolved",
+            "lineNumber": 166,
+            "start": 13,
+            "end": 22,
+            "isConstructor": false
+          },
+          {
+            "name": "state[\"sources\"][os.path.basename(fp)]",
+            "type": "Unresolved",
+            "lineNumber": 169,
+            "start": 9,
+            "end": 14,
+            "isConstructor": false
+          },
+          {
+            "name": "arts",
+            "type": "Unresolved",
+            "lineNumber": 170,
+            "start": 9,
+            "end": 13,
+            "isConstructor": false
+          },
+          {
+            "name": "fnd",
+            "type": "Unresolved",
+            "lineNumber": 173,
+            "start": 13,
+            "end": 16,
+            "isConstructor": false
+          },
+          {
+            "name": "key",
+            "type": "Unresolved",
+            "lineNumber": 174,
+            "start": 13,
+            "end": 16,
+            "isConstructor": false
+          },
+          {
+            "name": "existing[key][\"raw\"]",
+            "type": "Unresolved",
+            "lineNumber": 176,
+            "start": 17,
+            "end": 25,
+            "isConstructor": false
+          },
+          {
+            "name": "existing[key][\"vulnerabilities\"]",
+            "type": "Unresolved",
+            "lineNumber": 176,
+            "start": 39,
+            "end": 47,
+            "isConstructor": false
+          },
+          {
+            "name": "fnd[\"id\"]",
+            "type": "Unresolved",
+            "lineNumber": 178,
+            "start": 13,
+            "end": 16,
+            "isConstructor": false
+          },
+          {
+            "name": "existing[key]",
+            "type": "Unresolved",
+            "lineNumber": 180,
+            "start": 13,
+            "end": 21,
+            "isConstructor": false
+          },
+          {
+            "name": "state[\"meta\"]",
+            "type": "Unresolved",
+            "lineNumber": 181,
+            "start": 5,
+            "end": 10,
+            "isConstructor": false
+          },
+          {
+            "name": "state[\"git_head\"]",
+            "type": "Unresolved",
+            "lineNumber": 182,
+            "start": 5,
+            "end": 10,
+            "isConstructor": false
+          }
+        ],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "json.load",
+            "payload": "load",
+            "lineNumber": 156,
+            "start": 18,
+            "end": 22
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.isfile",
+            "payload": "path",
+            "lineNumber": 156,
+            "start": 65,
+            "end": 69
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "json.load",
+            "payload": "load",
+            "lineNumber": 162,
+            "start": 25,
+            "end": 29
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "re.search",
+            "payload": "search",
+            "lineNumber": 164,
+            "start": 16,
+            "end": 22
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.basename",
+            "payload": "path",
+            "lineNumber": 164,
+            "start": 64,
+            "end": 68
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "m.group",
+            "payload": "group",
+            "lineNumber": 166,
+            "start": 27,
+            "end": 32
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "data.get",
+            "payload": "get",
+            "lineNumber": 169,
+            "start": 88,
+            "end": 91
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.basename",
+            "payload": "path",
+            "lineNumber": 173,
+            "start": 42,
+            "end": 46
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "subprocess.run",
+            "payload": "run",
+            "lineNumber": 182,
+            "start": 36,
+            "end": 39
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "subprocess.run.strip",
+            "payload": "stdout",
+            "lineNumber": 183,
+            "start": 72,
+            "end": 78
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "sys.exit",
+            "payload": "exit",
+            "lineNumber": 153,
+            "start": 13,
+            "end": 17
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "meta.setdefault",
+            "payload": "setdefault",
+            "lineNumber": 168,
+            "start": 18,
+            "end": 28
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "data.get",
+            "payload": "get",
+            "lineNumber": 168,
+            "start": 37,
+            "end": 40
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.basename",
+            "payload": "path",
+            "lineNumber": 169,
+            "start": 29,
+            "end": 33
+          }
+        ]
+      },
+      {
+        "methodName": "by_file",
+        "variables": [
+          {
+            "name": "groups",
+            "type": "Unresolved",
+            "lineNumber": 191,
+            "start": 5,
+            "end": 11,
+            "isConstructor": false
+          }
+        ],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "groups.setdefault",
+            "payload": "setdefault",
+            "lineNumber": 193,
+            "start": 16,
+            "end": 26
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "groups.setdefault.append",
+            "payload": "append",
+            "lineNumber": 193,
+            "start": 42,
+            "end": 48
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "groups.items",
+            "payload": "items",
+            "lineNumber": 196,
+            "start": 31,
+            "end": 36
+          }
+        ]
+      },
+      {
+        "methodName": "cmd_status",
+        "variables": [
+          {
+            "name": "state",
+            "type": "Unresolved",
+            "lineNumber": 201,
+            "start": 5,
+            "end": 10,
+            "isConstructor": false
+          },
+          {
+            "name": "cwes",
+            "type": "Unresolved",
+            "lineNumber": 207,
+            "start": 13,
+            "end": 17,
+            "isConstructor": false
+          },
+          {
+            "name": "pend",
+            "type": "Unresolved",
+            "lineNumber": 210,
+            "start": 5,
+            "end": 9,
+            "isConstructor": false
+          }
+        ],
+        "functions": []
+      },
+      {
+        "methodName": "resolve",
+        "variables": [
+          {
+            "name": "cand",
+            "type": "Unresolved",
+            "lineNumber": 216,
+            "start": 5,
+            "end": 9,
+            "isConstructor": false
+          },
+          {
+            "name": "tail",
+            "type": "Unresolved",
+            "lineNumber": 219,
+            "start": 5,
+            "end": 9,
+            "isConstructor": false
+          },
+          {
+            "name": "hits",
+            "type": "Unresolved",
+            "lineNumber": 220,
+            "start": 5,
+            "end": 9,
+            "isConstructor": false
+          }
+        ],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.join",
+            "payload": "path",
+            "lineNumber": 216,
+            "start": 15,
+            "end": 19
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "glob.glob",
+            "payload": "glob",
+            "lineNumber": 220,
+            "start": 17,
+            "end": 21
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.join",
+            "payload": "path",
+            "lineNumber": 220,
+            "start": 25,
+            "end": 29
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.isfile",
+            "payload": "path",
+            "lineNumber": 217,
+            "start": 11,
+            "end": 15
+          }
+        ]
+      },
+      {
+        "methodName": "cmd_show",
+        "variables": [
+          {
+            "name": "state",
+            "type": "Unresolved",
+            "lineNumber": 226,
+            "start": 5,
+            "end": 10,
+            "isConstructor": false
+          },
+          {
+            "name": "groups",
+            "type": "Unresolved",
+            "lineNumber": 227,
+            "start": 5,
+            "end": 11,
+            "isConstructor": false
+          },
+          {
+            "name": "disk",
+            "type": "Unresolved",
+            "lineNumber": 230,
+            "start": 5,
+            "end": 9,
+            "isConstructor": false
+          },
+          {
+            "name": "src",
+            "type": "Unresolved",
+            "lineNumber": 231,
+            "start": 5,
+            "end": 8,
+            "isConstructor": false
+          },
+          {
+            "name": "lo",
+            "type": "Unresolved",
+            "lineNumber": 239,
+            "start": 13,
+            "end": 15,
+            "isConstructor": false
+          },
+          {
+            "name": "hi",
+            "type": "Unresolved",
+            "lineNumber": 239,
+            "start": 17,
+            "end": 19,
+            "isConstructor": false
+          }
+        ],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.isfile",
+            "payload": "path",
+            "lineNumber": 231,
+            "start": 84,
+            "end": 88
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "sys.exit",
+            "payload": "exit",
+            "lineNumber": 229,
+            "start": 13,
+            "end": 17
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "json.dumps",
+            "payload": "dumps",
+            "lineNumber": 235,
+            "start": 46,
+            "end": 51
+          }
+        ]
+      },
+      {
+        "methodName": "cmd_backup",
+        "variables": [
+          {
+            "name": "state",
+            "type": "Unresolved",
+            "lineNumber": 246,
+            "start": 5,
+            "end": 10,
+            "isConstructor": false
+          },
+          {
+            "name": "disk",
+            "type": "Unresolved",
+            "lineNumber": 247,
+            "start": 5,
+            "end": 9,
+            "isConstructor": false
+          },
+          {
+            "name": "dest",
+            "type": "Unresolved",
+            "lineNumber": 250,
+            "start": 5,
+            "end": 9,
+            "isConstructor": false
+          },
+          {
+            "name": "state.setdefault(\"files\",{})[args.file]",
+            "type": "Unresolved",
+            "lineNumber": 257,
+            "start": 5,
+            "end": 10,
+            "isConstructor": false
+          }
+        ],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.join",
+            "payload": "path",
+            "lineNumber": 250,
+            "start": 15,
+            "end": 19
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "sys.exit",
+            "payload": "exit",
+            "lineNumber": 249,
+            "start": 13,
+            "end": 17
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.makedirs",
+            "payload": "makedirs",
+            "lineNumber": 254,
+            "start": 8,
+            "end": 16
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.dirname",
+            "payload": "path",
+            "lineNumber": 254,
+            "start": 20,
+            "end": 24
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "state.setdefault",
+            "payload": "setdefault",
+            "lineNumber": 257,
+            "start": 11,
+            "end": 21
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "state.setdefault.setdefault",
+            "lineNumber": 0,
+            "start": 0,
+            "end": 0
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.isfile",
+            "payload": "path",
+            "lineNumber": 248,
+            "start": 15,
+            "end": 19
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.exists",
+            "payload": "path",
+            "lineNumber": 251,
+            "start": 11,
+            "end": 15
+          }
+        ]
+      },
+      {
+        "methodName": "cmd_record",
+        "variables": [
+          {
+            "name": "state",
+            "type": "Unresolved",
+            "lineNumber": 265,
+            "start": 5,
+            "end": 10,
+            "isConstructor": false
+          },
+          {
+            "name": "ids",
+            "type": "Unresolved",
+            "lineNumber": 266,
+            "start": 5,
+            "end": 8,
+            "isConstructor": false
+          },
+          {
+            "name": "byid",
+            "type": "Unresolved",
+            "lineNumber": 267,
+            "start": 5,
+            "end": 9,
+            "isConstructor": false
+          },
+          {
+            "name": "f",
+            "type": "Unresolved",
+            "lineNumber": 272,
+            "start": 9,
+            "end": 10,
+            "isConstructor": false
+          },
+          {
+            "name": "f[\"after_sha256\"]",
+            "type": "Unresolved",
+            "lineNumber": 276,
+            "start": 13,
+            "end": 14,
+            "isConstructor": false
+          },
+          {
+            "name": "f[\"status\"]",
+            "type": "Unresolved",
+            "lineNumber": 277,
+            "start": 9,
+            "end": 10,
+            "isConstructor": false
+          }
+        ],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "sys.exit",
+            "payload": "exit",
+            "lineNumber": 270,
+            "start": 17,
+            "end": 21
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "sys.exit",
+            "payload": "exit",
+            "lineNumber": 275,
+            "start": 21,
+            "end": 25
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.exists",
+            "payload": "path",
+            "lineNumber": 274,
+            "start": 23,
+            "end": 27
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.join",
+            "payload": "path",
+            "lineNumber": 274,
+            "start": 38,
+            "end": 42
+          }
+        ]
+      },
+      {
+        "methodName": "cmd_validation",
+        "variables": [
+          {
+            "name": "state",
+            "type": "Unresolved",
+            "lineNumber": 287,
+            "start": 5,
+            "end": 10,
+            "isConstructor": false
+          }
+        ],
+        "functions": []
+      },
+      {
+        "methodName": "read_lines",
+        "variables": [],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.isfile",
+            "payload": "path",
+            "lineNumber": 297,
+            "start": 27,
+            "end": 31
+          }
+        ]
+      },
+      {
+        "methodName": "cmd_report",
+        "variables": [
+          {
+            "name": "state",
+            "type": "Unresolved",
+            "lineNumber": 304,
+            "start": 5,
+            "end": 10,
+            "isConstructor": false
+          },
+          {
+            "name": "p",
+            "type": "Unresolved",
+            "lineNumber": 305,
+            "start": 5,
+            "end": 6,
+            "isConstructor": false
+          },
+          {
+            "name": "fl",
+            "type": "Unresolved",
+            "lineNumber": 306,
+            "start": 5,
+            "end": 7,
+            "isConstructor": false
+          },
+          {
+            "name": "counts",
+            "type": "Unresolved",
+            "lineNumber": 307,
+            "start": 5,
+            "end": 11,
+            "isConstructor": false
+          },
+          {
+            "name": "partial",
+            "type": "Unresolved",
+            "lineNumber": 308,
+            "start": 5,
+            "end": 12,
+            "isConstructor": false
+          },
+          {
+            "name": "o",
+            "type": "Unresolved",
+            "lineNumber": 309,
+            "start": 5,
+            "end": 6,
+            "isConstructor": false
+          },
+          {
+            "name": "m",
+            "type": "Unresolved",
+            "lineNumber": 311,
+            "start": 5,
+            "end": 6,
+            "isConstructor": false
+          },
+          {
+            "name": "changed",
+            "type": "Unresolved",
+            "lineNumber": 338,
+            "start": 5,
+            "end": 12,
+            "isConstructor": false
+          },
+          {
+            "name": "before",
+            "type": "Unresolved",
+            "lineNumber": 340,
+            "start": 9,
+            "end": 15,
+            "isConstructor": false
+          },
+          {
+            "name": "after",
+            "type": "Unresolved",
+            "lineNumber": 341,
+            "start": 9,
+            "end": 14,
+            "isConstructor": false
+          },
+          {
+            "name": "diff",
+            "type": "Unresolved",
+            "lineNumber": 342,
+            "start": 9,
+            "end": 13,
+            "isConstructor": false
+          },
+          {
+            "name": "cur",
+            "type": "Unresolved",
+            "lineNumber": 344,
+            "start": 9,
+            "end": 12,
+            "isConstructor": false
+          },
+          {
+            "name": "last",
+            "type": "Unresolved",
+            "lineNumber": 345,
+            "start": 9,
+            "end": 13,
+            "isConstructor": false
+          },
+          {
+            "name": "rest",
+            "type": "Unresolved",
+            "lineNumber": 359,
+            "start": 5,
+            "end": 9,
+            "isConstructor": false
+          }
+        ],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.join",
+            "payload": "path",
+            "lineNumber": 340,
+            "start": 32,
+            "end": 36
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "difflib.unified_diff",
+            "payload": "unified_diff",
+            "lineNumber": 342,
+            "start": 32,
+            "end": 44
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "o.append",
+            "payload": "append",
+            "lineNumber": 312,
+            "start": 7,
+            "end": 13
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "m.get",
+            "payload": "get",
+            "lineNumber": 313,
+            "start": 11,
+            "end": 14
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "m.get",
+            "payload": "get",
+            "lineNumber": 313,
+            "start": 35,
+            "end": 38
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "m.get",
+            "payload": "get",
+            "lineNumber": 313,
+            "start": 64,
+            "end": 67
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "m.get",
+            "payload": "get",
+            "lineNumber": 313,
+            "start": 81,
+            "end": 84
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "m.get",
+            "payload": "get",
+            "lineNumber": 314,
+            "start": 11,
+            "end": 14
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "state.get",
+            "payload": "get",
+            "lineNumber": 314,
+            "start": 39,
+            "end": 42
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "o.append",
+            "payload": "append",
+            "lineNumber": 316,
+            "start": 11,
+            "end": 17
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "o.append",
+            "payload": "append",
+            "lineNumber": 317,
+            "start": 7,
+            "end": 13
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "o.append",
+            "payload": "append",
+            "lineNumber": 319,
+            "start": 11,
+            "end": 17
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "o.append",
+            "payload": "append",
+            "lineNumber": 320,
+            "start": 7,
+            "end": 13
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "o.append",
+            "payload": "append",
+            "lineNumber": 322,
+            "start": 11,
+            "end": 17
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "o.append",
+            "payload": "append",
+            "lineNumber": 324,
+            "start": 15,
+            "end": 21
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "o.append",
+            "payload": "append",
+            "lineNumber": 326,
+            "start": 19,
+            "end": 25
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "o.append",
+            "payload": "append",
+            "lineNumber": 329,
+            "start": 19,
+            "end": 25
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "o.append",
+            "payload": "append",
+            "lineNumber": 330,
+            "start": 15,
+            "end": 21
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "json.dumps",
+            "payload": "dumps",
+            "lineNumber": 331,
+            "start": 27,
+            "end": 32
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "o.append",
+            "payload": "append",
+            "lineNumber": 333,
+            "start": 19,
+            "end": 25
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "o.append",
+            "payload": "append",
+            "lineNumber": 334,
+            "start": 7,
+            "end": 13
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "o.append",
+            "payload": "append",
+            "lineNumber": 335,
+            "start": 7,
+            "end": 13
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.path.isfile",
+            "payload": "path",
+            "lineNumber": 336,
+            "start": 20,
+            "end": 24
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "o.append",
+            "payload": "append",
+            "lineNumber": 337,
+            "start": 7,
+            "end": 13
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "o.append",
+            "payload": "append",
+            "lineNumber": 343,
+            "start": 11,
+            "end": 17
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "o.append",
+            "payload": "append",
+            "lineNumber": 347,
+            "start": 15,
+            "end": 21
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "o.append",
+            "payload": "append",
+            "lineNumber": 349,
+            "start": 11,
+            "end": 17
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "o.append",
+            "payload": "append",
+            "lineNumber": 350,
+            "start": 7,
+            "end": 13
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "o.append",
+            "payload": "append",
+            "lineNumber": 352,
+            "start": 11,
+            "end": 17
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "o.append",
+            "payload": "append",
+            "lineNumber": 354,
+            "start": 15,
+            "end": 21
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "o.append",
+            "payload": "append",
+            "lineNumber": 357,
+            "start": 11,
+            "end": 17
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "o.append",
+            "payload": "append",
+            "lineNumber": 358,
+            "start": 7,
+            "end": 13
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "o.append",
+            "payload": "append",
+            "lineNumber": 361,
+            "start": 11,
+            "end": 17
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "o.append",
+            "payload": "append",
+            "lineNumber": 364,
+            "start": 11,
+            "end": 17
+          }
+        ]
+      },
+      {
+        "methodName": "main",
+        "variables": [
+          {
+            "name": "ap",
+            "type": "Unresolved",
+            "lineNumber": 372,
+            "start": 5,
+            "end": 7,
+            "isConstructor": false
+          },
+          {
+            "name": "sub",
+            "type": "Unresolved",
+            "lineNumber": 375,
+            "start": 5,
+            "end": 8,
+            "isConstructor": false
+          },
+          {
+            "name": "s",
+            "type": "Unresolved",
+            "lineNumber": 378,
+            "start": 5,
+            "end": 6,
+            "isConstructor": false
+          },
+          {
+            "name": "s",
+            "type": "Unresolved",
+            "lineNumber": 382,
+            "start": 5,
+            "end": 6,
+            "isConstructor": false
+          },
+          {
+            "name": "s",
+            "type": "Unresolved",
+            "lineNumber": 385,
+            "start": 5,
+            "end": 6,
+            "isConstructor": false
+          },
+          {
+            "name": "s",
+            "type": "Unresolved",
+            "lineNumber": 390,
+            "start": 5,
+            "end": 6,
+            "isConstructor": false
+          },
+          {
+            "name": "args",
+            "type": "Unresolved",
+            "lineNumber": 397,
+            "start": 5,
+            "end": 9,
+            "isConstructor": false
+          }
+        ],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "argparse.ArgumentParser",
+            "payload": "ArgumentParser",
+            "lineNumber": 372,
+            "start": 19,
+            "end": 33
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "ap.add_subparsers",
+            "payload": "add_subparsers",
+            "lineNumber": 375,
+            "start": 14,
+            "end": 28
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "sub.add_parser",
+            "payload": "add_parser",
+            "lineNumber": 378,
+            "start": 13,
+            "end": 23
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "sub.add_parser",
+            "payload": "add_parser",
+            "lineNumber": 382,
+            "start": 13,
+            "end": 23
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "sub.add_parser",
+            "payload": "add_parser",
+            "lineNumber": 385,
+            "start": 13,
+            "end": 23
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "sub.add_parser",
+            "payload": "add_parser",
+            "lineNumber": 390,
+            "start": 13,
+            "end": 23
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "ap.parse_args",
+            "payload": "parse_args",
+            "lineNumber": 397,
+            "start": 15,
+            "end": 25
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "ap.add_argument",
+            "payload": "add_argument",
+            "lineNumber": 373,
+            "start": 8,
+            "end": 20
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "ap.add_argument",
+            "payload": "add_argument",
+            "lineNumber": 374,
+            "start": 8,
+            "end": 20
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "sub.add_parser",
+            "payload": "add_parser",
+            "lineNumber": 376,
+            "start": 9,
+            "end": 19
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "sub.add_parser.set_defaults",
+            "payload": "set_defaults",
+            "lineNumber": 376,
+            "start": 28,
+            "end": 40
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "sub.add_parser",
+            "payload": "add_parser",
+            "lineNumber": 377,
+            "start": 9,
+            "end": 19
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "sub.add_parser.set_defaults",
+            "payload": "set_defaults",
+            "lineNumber": 377,
+            "start": 30,
+            "end": 42
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "s.add_argument",
+            "payload": "add_argument",
+            "lineNumber": 379,
+            "start": 7,
+            "end": 19
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "s.add_argument",
+            "payload": "add_argument",
+            "lineNumber": 380,
+            "start": 7,
+            "end": 19
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "s.set_defaults",
+            "payload": "set_defaults",
+            "lineNumber": 381,
+            "start": 7,
+            "end": 19
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "s.add_argument",
+            "payload": "add_argument",
+            "lineNumber": 383,
+            "start": 7,
+            "end": 19
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "s.set_defaults",
+            "payload": "set_defaults",
+            "lineNumber": 384,
+            "start": 7,
+            "end": 19
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "s.add_argument",
+            "payload": "add_argument",
+            "lineNumber": 386,
+            "start": 7,
+            "end": 19
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "s.add_argument",
+            "payload": "add_argument",
+            "lineNumber": 387,
+            "start": 7,
+            "end": 19
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "s.add_argument",
+            "payload": "add_argument",
+            "lineNumber": 388,
+            "start": 7,
+            "end": 19
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "s.set_defaults",
+            "payload": "set_defaults",
+            "lineNumber": 389,
+            "start": 7,
+            "end": 19
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "s.add_argument",
+            "payload": "add_argument",
+            "lineNumber": 391,
+            "start": 7,
+            "end": 19
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "s.add_argument",
+            "payload": "add_argument",
+            "lineNumber": 392,
+            "start": 7,
+            "end": 19
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "s.add_argument",
+            "payload": "add_argument",
+            "lineNumber": 393,
+            "start": 7,
+            "end": 19
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "s.add_argument",
+            "payload": "add_argument",
+            "lineNumber": 394,
+            "start": 7,
+            "end": 19
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "s.set_defaults",
+            "payload": "set_defaults",
+            "lineNumber": 395,
+            "start": 7,
+            "end": 19
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "sub.add_parser",
+            "payload": "add_parser",
+            "lineNumber": 396,
+            "start": 9,
+            "end": 19
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "sub.add_parser.set_defaults",
+            "payload": "set_defaults",
+            "lineNumber": 396,
+            "start": 30,
+            "end": 42
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "args.fn",
+            "payload": "fn",
+            "lineNumber": 398,
+            "start": 10,
+            "end": 12
+          }
+        ]
+      }
+    ],
+    "isInnerClass": false,
+    "methodNamesAndTypesMap": {}
+  },
+  {
+    "variables": [
+      {
+        "name": "public_key",
+        "type": "Unresolved",
+        "lineNumber": 58,
+        "start": 13,
+        "end": 23,
+        "isConstructor": false
+      },
+      {
+        "name": "signature",
+        "type": "Unresolved",
+        "lineNumber": 59,
+        "start": 13,
+        "end": 22,
+        "isConstructor": false
+      },
+      {
+        "name": "is_valid",
+        "type": "Unresolved",
+        "lineNumber": 60,
+        "start": 13,
+        "end": 21,
+        "isConstructor": false
+      },
+      {
+        "name": "_JWT_SECRET",
+        "type": "Unresolved",
+        "lineNumber": 74,
+        "start": 1,
+        "end": 12,
+        "isConstructor": false
+      }
+    ],
+    "functions": [],
+    "classes": [],
+    "className": "/Users/erwin/development/qse/qseremediation/api/routes.py",
+    "methods": [
+      {
+        "methodName": "generate_device_keypair",
+        "variables": [],
+        "functions": [
+          {
+            "returnType": "cryptography.hazmat.primitives.asymmetric.rsa.RSAPrivateKey",
+            "fullyQualifiedName": "cryptography.hazmat.primitives.asymmetric.rsa.generate_private_key",
+            "payload": "generate_private_key",
+            "lineNumber": 20,
+            "start": 16,
+            "end": 36
+          }
+        ]
+      },
+      {
+        "methodName": "wrap_key",
+        "variables": [],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "cryptography.hazmat.primitives.asymmetric.padding.OAEP",
+            "payload": "OAEP",
+            "lineNumber": 41,
+            "start": 22,
+            "end": 26
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "cryptography.hazmat.primitives.asymmetric.padding.MGF1",
+            "payload": "MGF1",
+            "lineNumber": 42,
+            "start": 30,
+            "end": 34
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "cryptography.hazmat.primitives.hashes.SHA256",
+            "payload": "SHA256",
+            "lineNumber": 42,
+            "start": 52,
+            "end": 58
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "cryptography.hazmat.primitives.hashes.SHA256",
+            "payload": "SHA256",
+            "lineNumber": 43,
+            "start": 30,
+            "end": 36
+          }
+        ]
+      },
+      {
+        "methodName": "sign_jwt",
+        "variables": [
+          {
+            "name": "header",
+            "type": "Unresolved",
+            "lineNumber": 77,
+            "start": 5,
+            "end": 11,
+            "isConstructor": false
+          },
+          {
+            "name": "body",
+            "type": "Unresolved",
+            "lineNumber": 78,
+            "start": 5,
+            "end": 9,
+            "isConstructor": false
+          },
+          {
+            "name": "sig_input",
+            "type": "Unresolved",
+            "lineNumber": 79,
+            "start": 5,
+            "end": 14,
+            "isConstructor": false
+          },
+          {
+            "name": "sig",
+            "type": "Unresolved",
+            "lineNumber": 80,
+            "start": 5,
+            "end": 8,
+            "isConstructor": false
+          }
+        ],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "base64.urlsafe_b64encode",
+            "payload": "urlsafe_b64encode",
+            "lineNumber": 77,
+            "start": 21,
+            "end": 38
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "base64.urlsafe_b64encode.rstrip",
+            "payload": "rstrip",
+            "lineNumber": 77,
+            "start": 71,
+            "end": 77
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "base64.urlsafe_b64encode.rstrip.decode",
+            "payload": "decode",
+            "lineNumber": 77,
+            "start": 84,
+            "end": 90
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "base64.urlsafe_b64encode",
+            "payload": "urlsafe_b64encode",
+            "lineNumber": 78,
+            "start": 19,
+            "end": 36
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "base64.urlsafe_b64encode.rstrip",
+            "payload": "rstrip",
+            "lineNumber": 78,
+            "start": 67,
+            "end": 73
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "base64.urlsafe_b64encode.rstrip.decode",
+            "payload": "decode",
+            "lineNumber": 78,
+            "start": 80,
+            "end": 86
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "json.dumps",
+            "payload": "dumps",
+            "lineNumber": 78,
+            "start": 42,
+            "end": 47
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "json.dumps.encode",
+            "payload": "encode",
+            "lineNumber": 78,
+            "start": 57,
+            "end": 63
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "hmac.new",
+            "payload": "new",
+            "lineNumber": 80,
+            "start": 16,
+            "end": 19
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "hmac.new.digest",
+            "payload": "digest",
+            "lineNumber": 80,
+            "start": 67,
+            "end": 73
+          }
+        ]
+      }
+    ],
+    "isInnerClass": false,
+    "methodNamesAndTypesMap": {}
+  },
+  {
+    "variables": [
+      {
+        "name": "APP_NAME",
+        "type": "Unresolved",
+        "lineNumber": 7,
+        "start": 1,
+        "end": 9,
+        "isConstructor": false
+      },
+      {
+        "name": "APP_VERSION",
+        "type": "Unresolved",
+        "lineNumber": 8,
+        "start": 1,
+        "end": 12,
+        "isConstructor": false
+      },
+      {
+        "name": "DEBUG",
+        "type": "Unresolved",
+        "lineNumber": 9,
+        "start": 1,
+        "end": 6,
+        "isConstructor": false
+      },
+      {
+        "name": "DATABASE_URL",
+        "type": "Unresolved",
+        "lineNumber": 12,
+        "start": 1,
+        "end": 13,
+        "isConstructor": false
+      },
+      {
+        "name": "SECRET_KEY",
+        "type": "Unresolved",
+        "lineNumber": 15,
+        "start": 1,
+        "end": 11,
+        "isConstructor": false
+      },
+      {
+        "name": "HASH_ALGORITHM",
+        "type": "Unresolved",
+        "lineNumber": 16,
+        "start": 1,
+        "end": 15,
+        "isConstructor": false
+      },
+      {
+        "name": "TOKEN_ALGORITHM",
+        "type": "Unresolved",
+        "lineNumber": 17,
+        "start": 1,
+        "end": 16,
+        "isConstructor": false
+      },
+      {
+        "name": "PBKDF2_ITERATIONS",
+        "type": "Unresolved",
+        "lineNumber": 19,
+        "start": 1,
+        "end": 18,
+        "isConstructor": false
+      },
+      {
+        "name": "MIN_TLS_VERSION",
+        "type": "Unresolved",
+        "lineNumber": 20,
+        "start": 1,
+        "end": 16,
+        "isConstructor": false
+      }
+    ],
+    "functions": [],
+    "classes": [],
+    "className": "/Users/erwin/development/qse/qseremediation/config/settings.py",
+    "methods": [
+      {
+        "methodName": "derive_file_key",
+        "variables": [],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "hashlib.pbkdf2_hmac",
+            "payload": "pbkdf2_hmac",
+            "lineNumber": 35,
+            "start": 20,
+            "end": 31
+          }
+        ]
+      },
+      {
+        "methodName": "fetch_config",
+        "variables": [
+          {
+            "name": "ctx",
+            "type": "Unresolved",
+            "lineNumber": 43,
+            "start": 5,
+            "end": 8,
+            "isConstructor": false
+          },
+          {
+            "name": "ctx.check_hostname",
+            "type": "Unresolved",
+            "lineNumber": 44,
+            "start": 5,
+            "end": 8,
+            "isConstructor": false
+          },
+          {
+            "name": "ctx.verify_mode",
+            "type": "Unresolved",
+            "lineNumber": 45,
+            "start": 5,
+            "end": 8,
+            "isConstructor": false
+          }
+        ],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "ssl.create_default_context",
+            "payload": "create_default_context",
+            "lineNumber": 43,
+            "start": 15,
+            "end": 37
+          }
+        ]
+      }
+    ],
+    "isInnerClass": false,
+    "methodNamesAndTypesMap": {}
+  },
+  {
+    "variables": [
+      {
+        "name": "public_key",
+        "type": "Unresolved",
+        "lineNumber": 17,
+        "start": 13,
+        "end": 23,
+        "isConstructor": false
+      },
+      {
+        "name": "DB_CONFIG",
+        "type": "Unresolved",
+        "lineNumber": 52,
+        "start": 1,
+        "end": 10,
+        "isConstructor": false
+      },
+      {
+        "name": "private_key",
+        "type": "Unresolved",
+        "lineNumber": 72,
+        "start": 9,
+        "end": 20,
+        "isConstructor": false
+      },
+      {
+        "name": "public_key",
+        "type": "Unresolved",
+        "lineNumber": 73,
+        "start": 9,
+        "end": 19,
+        "isConstructor": false
+      },
+      {
+        "name": "ciphertext",
+        "type": "Unresolved",
+        "lineNumber": 74,
+        "start": 9,
+        "end": 19,
+        "isConstructor": false
+      },
+      {
+        "name": "shared_key",
+        "type": "Unresolved",
+        "lineNumber": 74,
+        "start": 21,
+        "end": 31,
+        "isConstructor": false
+      }
+    ],
+    "functions": [
+      {
+        "returnType": "Unresolved",
+        "fullyQualifiedName": "private_key.public_key",
+        "payload": "public_key",
+        "lineNumber": 73,
+        "start": 34,
+        "end": 44
+      },
+      {
+        "returnType": "Unresolved",
+        "fullyQualifiedName": "public_key.encapsulate",
+        "payload": "encapsulate",
+        "lineNumber": 74,
+        "start": 45,
+        "end": 56
+      }
+    ],
+    "classes": [],
+    "className": "/Users/erwin/development/qse/qseremediation/utils/tokens.py",
+    "methods": [
+      {
+        "methodName": "sign_audit_record",
+        "variables": [],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "cryptography.hazmat.primitives.asymmetric.padding.PSS",
+            "payload": "PSS",
+            "lineNumber": 42,
+            "start": 17,
+            "end": 20
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "cryptography.hazmat.primitives.asymmetric.padding.MGF1",
+            "payload": "MGF1",
+            "lineNumber": 43,
+            "start": 25,
+            "end": 29
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "cryptography.hazmat.primitives.hashes.SHA256",
+            "payload": "SHA256",
+            "lineNumber": 43,
+            "start": 37,
+            "end": 43
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "cryptography.hazmat.primitives.hashes.SHA256",
+            "payload": "SHA256",
+            "lineNumber": 46,
+            "start": 16,
+            "end": 22
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "private_key.sign",
+            "payload": "sign",
+            "lineNumber": 40,
+            "start": 24,
+            "end": 28
+          }
+        ]
+      }
+    ],
+    "isInnerClass": false,
+    "methodNamesAndTypesMap": {}
+  },
+  {
+    "variables": [
+      {
+        "name": "public_key",
+        "type": "Unresolved",
+        "lineNumber": 16,
+        "start": 13,
+        "end": 23,
+        "isConstructor": false
+      }
+    ],
+    "functions": [],
+    "classes": [],
+    "className": "/Users/erwin/development/qse/qseremediation/utils/hashing.py",
+    "methods": [],
+    "isInnerClass": false,
+    "methodNamesAndTypesMap": {}
+  },
+  {
+    "variables": [
+      {
+        "name": "public_key",
+        "type": "Unresolved",
+        "lineNumber": 48,
+        "start": 13,
+        "end": 23,
+        "isConstructor": false
+      },
+      {
+        "name": "ciphertext",
+        "type": "Unresolved",
+        "lineNumber": 49,
+        "start": 13,
+        "end": 23,
+        "isConstructor": false
+      },
+      {
+        "name": "shared_key_enc",
+        "type": "Unresolved",
+        "lineNumber": 49,
+        "start": 25,
+        "end": 39,
+        "isConstructor": false
+      },
+      {
+        "name": "shared_key_dec",
+        "type": "Unresolved",
+        "lineNumber": 50,
+        "start": 13,
+        "end": 27,
+        "isConstructor": false
+      },
+      {
+        "name": "_PBKDF2_ITERATIONS",
+        "type": "Unresolved",
+        "lineNumber": 64,
+        "start": 1,
+        "end": 19,
+        "isConstructor": false
+      }
+    ],
+    "functions": [],
+    "classes": [],
+    "className": "/Users/erwin/development/qse/qseremediation/services/user.py",
+    "methods": [
+      {
+        "methodName": "sign_request",
+        "variables": [],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "hmac.new",
+            "payload": "new",
+            "lineNumber": 14,
+            "start": 17,
+            "end": 20
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "hmac.new.hexdigest",
+            "payload": "hexdigest",
+            "lineNumber": 14,
+            "start": 51,
+            "end": 60
+          }
+        ]
+      },
+      {
+        "methodName": "encrypt_with_static_iv",
+        "variables": [
+          {
+            "name": "nonce",
+            "type": "Unresolved",
+            "lineNumber": 33,
+            "start": 5,
+            "end": 10,
+            "isConstructor": false
+          },
+          {
+            "name": "cipher",
+            "type": "Crypto.Cipher._mode_gcm.GcmMode",
+            "lineNumber": 34,
+            "start": 5,
+            "end": 11,
+            "isConstructor": false
+          },
+          {
+            "name": "ciphertext",
+            "type": "Unresolved",
+            "lineNumber": 35,
+            "start": 5,
+            "end": 15,
+            "isConstructor": false
+          },
+          {
+            "name": "tag",
+            "type": "Unresolved",
+            "lineNumber": 35,
+            "start": 17,
+            "end": 20,
+            "isConstructor": false
+          }
+        ],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.urandom",
+            "payload": "urandom",
+            "lineNumber": 33,
+            "start": 16,
+            "end": 23
+          },
+          {
+            "returnType": "Crypto.Cipher._mode_gcm.GcmMode",
+            "fullyQualifiedName": "Crypto.Cipher.AES.new",
+            "payload": "new",
+            "lineNumber": 34,
+            "start": 18,
+            "end": 21
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
+            "payload": "encrypt_and_digest",
+            "lineNumber": 35,
+            "start": 30,
+            "end": 48
+          }
+        ]
+      },
+      {
+        "methodName": "hash_password",
+        "variables": [
+          {
+            "name": "salt",
+            "type": "Unresolved",
+            "lineNumber": 76,
+            "start": 5,
+            "end": 9,
+            "isConstructor": false
+          },
+          {
+            "name": "digest",
+            "type": "Unresolved",
+            "lineNumber": 77,
+            "start": 5,
+            "end": 11,
+            "isConstructor": false
+          }
+        ],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.urandom",
+            "payload": "urandom",
+            "lineNumber": 76,
+            "start": 15,
+            "end": 22
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "hashlib.pbkdf2_hmac",
+            "payload": "pbkdf2_hmac",
+            "lineNumber": 77,
+            "start": 22,
+            "end": 33
+          }
+        ]
+      },
+      {
+        "methodName": "verify_password",
+        "variables": [
+          {
+            "name": "scheme",
+            "type": "Unresolved",
+            "lineNumber": 86,
+            "start": 9,
+            "end": 15,
+            "isConstructor": false
+          },
+          {
+            "name": "iterations",
+            "type": "Unresolved",
+            "lineNumber": 86,
+            "start": 17,
+            "end": 27,
+            "isConstructor": false
+          },
+          {
+            "name": "salt_hex",
+            "type": "Unresolved",
+            "lineNumber": 86,
+            "start": 29,
+            "end": 37,
+            "isConstructor": false
+          },
+          {
+            "name": "digest_hex",
+            "type": "Unresolved",
+            "lineNumber": 86,
+            "start": 39,
+            "end": 49,
+            "isConstructor": false
+          },
+          {
+            "name": "digest",
+            "type": "Unresolved",
+            "lineNumber": 89,
+            "start": 9,
+            "end": 15,
+            "isConstructor": false
+          }
+        ],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "hashlib.pbkdf2_hmac",
+            "payload": "pbkdf2_hmac",
+            "lineNumber": 89,
+            "start": 26,
+            "end": 37
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "hmac.compare_digest",
+            "payload": "compare_digest",
+            "lineNumber": 92,
+            "start": 21,
+            "end": 35
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "digest.hex",
+            "payload": "hex",
+            "lineNumber": 92,
+            "start": 43,
+            "end": 46
+          }
+        ]
+      }
+    ],
+    "isInnerClass": false,
+    "methodNamesAndTypesMap": {}
+  },
+  {
+    "variables": [
+      {
+        "name": "private_key",
+        "type": "Unresolved",
+        "lineNumber": 19,
+        "start": 9,
+        "end": 20,
+        "isConstructor": false
+      },
+      {
+        "name": "METRICS_ENCRYPTION_KEY",
+        "type": "Unresolved",
+        "lineNumber": 31,
+        "start": 1,
+        "end": 23,
+        "isConstructor": false
+      }
+    ],
+    "functions": [
+      {
+        "returnType": "Unresolved",
+        "fullyQualifiedName": "private_key.sign",
+        "payload": "sign",
+        "lineNumber": 20,
+        "start": 28,
+        "end": 32
+      }
+    ],
+    "classes": [],
+    "className": "/Users/erwin/development/qse/qseremediation/services/auth.py",
+    "methods": [
+      {
+        "methodName": "_aes256_gcm_encrypt",
+        "variables": [
+          {
+            "name": "nonce",
+            "type": "Unresolved",
+            "lineNumber": 49,
+            "start": 5,
+            "end": 10,
+            "isConstructor": false
+          },
+          {
+            "name": "cipher",
+            "type": "Crypto.Cipher._mode_gcm.GcmMode",
+            "lineNumber": 50,
+            "start": 5,
+            "end": 11,
+            "isConstructor": false
+          },
+          {
+            "name": "ciphertext",
+            "type": "Unresolved",
+            "lineNumber": 51,
+            "start": 5,
+            "end": 15,
+            "isConstructor": false
+          },
+          {
+            "name": "tag",
+            "type": "Unresolved",
+            "lineNumber": 51,
+            "start": 17,
+            "end": 20,
+            "isConstructor": false
+          }
+        ],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.urandom",
+            "payload": "urandom",
+            "lineNumber": 49,
+            "start": 16,
+            "end": 23
+          },
+          {
+            "returnType": "Crypto.Cipher._mode_gcm.GcmMode",
+            "fullyQualifiedName": "Crypto.Cipher.AES.new",
+            "payload": "new",
+            "lineNumber": 50,
+            "start": 18,
+            "end": 21
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
+            "payload": "encrypt_and_digest",
+            "lineNumber": 51,
+            "start": 30,
+            "end": 48
+          }
+        ]
+      },
+      {
+        "methodName": "encrypt_config",
+        "variables": [],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "base64.b64encode",
+            "payload": "b64encode",
+            "lineNumber": 59,
+            "start": 19,
+            "end": 28
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "base64.b64encode.decode",
+            "payload": "decode",
+            "lineNumber": 59,
+            "start": 61,
+            "end": 67
+          }
+        ]
+      },
+      {
+        "methodName": "encrypt_legacy",
+        "variables": [],
+        "functions": []
+      }
+    ],
+    "isInnerClass": false,
+    "methodNamesAndTypesMap": {}
+  },
+  {
+    "variables": [],
+    "functions": [],
+    "classes": [],
+    "className": "/Users/erwin/development/qse/qseremediation/crypto/keys.py",
+    "methods": [
+      {
+        "methodName": "ecdh_shared_secret",
+        "variables": [
+          {
+            "name": "shared_secret",
+            "type": "Unresolved",
+            "lineNumber": 21,
+            "start": 5,
+            "end": 18,
+            "isConstructor": false
+          },
+          {
+            "name": "ciphertext",
+            "type": "Unresolved",
+            "lineNumber": 21,
+            "start": 20,
+            "end": 30,
+            "isConstructor": false
+          }
+        ],
+        "functions": []
+      },
+      {
+        "methodName": "encrypt_session",
+        "variables": [
+          {
+            "name": "nonce",
+            "type": "Unresolved",
+            "lineNumber": 40,
+            "start": 5,
+            "end": 10,
+            "isConstructor": false
+          },
+          {
+            "name": "cipher",
+            "type": "Crypto.Cipher._mode_gcm.GcmMode",
+            "lineNumber": 41,
+            "start": 5,
+            "end": 11,
+            "isConstructor": false
+          },
+          {
+            "name": "ciphertext",
+            "type": "Unresolved",
+            "lineNumber": 42,
+            "start": 5,
+            "end": 15,
+            "isConstructor": false
+          },
+          {
+            "name": "tag",
+            "type": "Unresolved",
+            "lineNumber": 42,
+            "start": 17,
+            "end": 20,
+            "isConstructor": false
+          }
+        ],
+        "functions": [
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "os.urandom",
+            "payload": "urandom",
+            "lineNumber": 40,
+            "start": 16,
+            "end": 23
+          },
+          {
+            "returnType": "Crypto.Cipher._mode_gcm.GcmMode",
+            "fullyQualifiedName": "Crypto.Cipher.AES.new",
+            "payload": "new",
+            "lineNumber": 41,
+            "start": 18,
+            "end": 21
+          },
+          {
+            "returnType": "Unresolved",
+            "fullyQualifiedName": "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
+            "payload": "encrypt_and_digest",
+            "lineNumber": 42,
+            "start": 30,
+            "end": 48
+          }
+        ]
+      }
+    ],
+    "isInnerClass": false,
+    "methodNamesAndTypesMap": {}
+  }
+]

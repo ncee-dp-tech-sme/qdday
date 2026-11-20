@@ -1,0 +1,3202 @@
+{
+  "file_input": [
+    {
+      "stmt": [
+        {
+          "simple_stmts": [
+            {
+              "simple_stmt": [
+                {
+                  "expr_stmt": [
+                    {
+                      "testlist_star_expr": [
+                        {
+                          "test": [
+                            {
+                              "or_test": [
+                                {
+                                  "and_test": [
+                                    {
+                                      "not_test": [
+                                        {
+                                          "comparison": [
+                                            {
+                                              "expr": [
+                                                {
+                                                  "atom_expr": [
+                                                    {
+                                                      "atom": [
+                                                        {
+                                                          "type": "STRING",
+                                                          "text": "\"\"\"\nApplication settings for QSERemediation v1.0.a.\nConfiguration values are loaded at import time.\n\"\"\"",
+                                                          "line": 1,
+                                                          "start": 1,
+                                                          "stop": 103
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "NEWLINE",
+              "text": "\n",
+              "line": 7,
+              "start": 1,
+              "stop": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stmt": [
+        {
+          "simple_stmts": [
+            {
+              "simple_stmt": [
+                {
+                  "expr_stmt": [
+                    {
+                      "testlist_star_expr": [
+                        {
+                          "test": [
+                            {
+                              "or_test": [
+                                {
+                                  "and_test": [
+                                    {
+                                      "not_test": [
+                                        {
+                                          "comparison": [
+                                            {
+                                              "expr": [
+                                                {
+                                                  "atom_expr": [
+                                                    {
+                                                      "atom": [
+                                                        {
+                                                          "name": [
+                                                            {
+                                                              "type": "NAME",
+                                                              "text": "APP_NAME",
+                                                              "line": 7,
+                                                              "start": 1,
+                                                              "stop": 8
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ASSIGN",
+                      "text": "\u003d",
+                      "line": 7,
+                      "start": 10,
+                      "stop": 10
+                    },
+                    {
+                      "testlist_star_expr": [
+                        {
+                          "test": [
+                            {
+                              "or_test": [
+                                {
+                                  "and_test": [
+                                    {
+                                      "not_test": [
+                                        {
+                                          "comparison": [
+                                            {
+                                              "expr": [
+                                                {
+                                                  "atom_expr": [
+                                                    {
+                                                      "atom": [
+                                                        {
+                                                          "type": "STRING",
+                                                          "text": "\"QSERemediation\"",
+                                                          "line": 7,
+                                                          "start": 12,
+                                                          "stop": 27
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "NEWLINE",
+              "text": "\n",
+              "line": 8,
+              "start": 1,
+              "stop": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stmt": [
+        {
+          "simple_stmts": [
+            {
+              "simple_stmt": [
+                {
+                  "expr_stmt": [
+                    {
+                      "testlist_star_expr": [
+                        {
+                          "test": [
+                            {
+                              "or_test": [
+                                {
+                                  "and_test": [
+                                    {
+                                      "not_test": [
+                                        {
+                                          "comparison": [
+                                            {
+                                              "expr": [
+                                                {
+                                                  "atom_expr": [
+                                                    {
+                                                      "atom": [
+                                                        {
+                                                          "name": [
+                                                            {
+                                                              "type": "NAME",
+                                                              "text": "APP_VERSION",
+                                                              "line": 8,
+                                                              "start": 1,
+                                                              "stop": 11
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ASSIGN",
+                      "text": "\u003d",
+                      "line": 8,
+                      "start": 13,
+                      "stop": 13
+                    },
+                    {
+                      "testlist_star_expr": [
+                        {
+                          "test": [
+                            {
+                              "or_test": [
+                                {
+                                  "and_test": [
+                                    {
+                                      "not_test": [
+                                        {
+                                          "comparison": [
+                                            {
+                                              "expr": [
+                                                {
+                                                  "atom_expr": [
+                                                    {
+                                                      "atom": [
+                                                        {
+                                                          "type": "STRING",
+                                                          "text": "\"1.0.a\"",
+                                                          "line": 8,
+                                                          "start": 15,
+                                                          "stop": 21
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "NEWLINE",
+              "text": "\n",
+              "line": 9,
+              "start": 1,
+              "stop": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stmt": [
+        {
+          "simple_stmts": [
+            {
+              "simple_stmt": [
+                {
+                  "expr_stmt": [
+                    {
+                      "testlist_star_expr": [
+                        {
+                          "test": [
+                            {
+                              "or_test": [
+                                {
+                                  "and_test": [
+                                    {
+                                      "not_test": [
+                                        {
+                                          "comparison": [
+                                            {
+                                              "expr": [
+                                                {
+                                                  "atom_expr": [
+                                                    {
+                                                      "atom": [
+                                                        {
+                                                          "name": [
+                                                            {
+                                                              "type": "NAME",
+                                                              "text": "DEBUG",
+                                                              "line": 9,
+                                                              "start": 1,
+                                                              "stop": 5
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ASSIGN",
+                      "text": "\u003d",
+                      "line": 9,
+                      "start": 7,
+                      "stop": 7
+                    },
+                    {
+                      "testlist_star_expr": [
+                        {
+                          "test": [
+                            {
+                              "or_test": [
+                                {
+                                  "and_test": [
+                                    {
+                                      "not_test": [
+                                        {
+                                          "comparison": [
+                                            {
+                                              "expr": [
+                                                {
+                                                  "atom_expr": [
+                                                    {
+                                                      "atom": [
+                                                        {
+                                                          "type": "FALSE",
+                                                          "text": "False",
+                                                          "line": 9,
+                                                          "start": 9,
+                                                          "stop": 13
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "NEWLINE",
+              "text": "\n",
+              "line": 12,
+              "start": 1,
+              "stop": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stmt": [
+        {
+          "simple_stmts": [
+            {
+              "simple_stmt": [
+                {
+                  "expr_stmt": [
+                    {
+                      "testlist_star_expr": [
+                        {
+                          "test": [
+                            {
+                              "or_test": [
+                                {
+                                  "and_test": [
+                                    {
+                                      "not_test": [
+                                        {
+                                          "comparison": [
+                                            {
+                                              "expr": [
+                                                {
+                                                  "atom_expr": [
+                                                    {
+                                                      "atom": [
+                                                        {
+                                                          "name": [
+                                                            {
+                                                              "type": "NAME",
+                                                              "text": "DATABASE_URL",
+                                                              "line": 12,
+                                                              "start": 1,
+                                                              "stop": 12
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ASSIGN",
+                      "text": "\u003d",
+                      "line": 12,
+                      "start": 14,
+                      "stop": 14
+                    },
+                    {
+                      "testlist_star_expr": [
+                        {
+                          "test": [
+                            {
+                              "or_test": [
+                                {
+                                  "and_test": [
+                                    {
+                                      "not_test": [
+                                        {
+                                          "comparison": [
+                                            {
+                                              "expr": [
+                                                {
+                                                  "atom_expr": [
+                                                    {
+                                                      "atom": [
+                                                        {
+                                                          "type": "STRING",
+                                                          "text": "\"postgresql://appuser:H8YdnoENqE40U1PW@db.internal.example.com:5432/appdb\"",
+                                                          "line": 12,
+                                                          "start": 16,
+                                                          "stop": 89
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "NEWLINE",
+              "text": "\n",
+              "line": 15,
+              "start": 1,
+              "stop": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stmt": [
+        {
+          "simple_stmts": [
+            {
+              "simple_stmt": [
+                {
+                  "expr_stmt": [
+                    {
+                      "testlist_star_expr": [
+                        {
+                          "test": [
+                            {
+                              "or_test": [
+                                {
+                                  "and_test": [
+                                    {
+                                      "not_test": [
+                                        {
+                                          "comparison": [
+                                            {
+                                              "expr": [
+                                                {
+                                                  "atom_expr": [
+                                                    {
+                                                      "atom": [
+                                                        {
+                                                          "name": [
+                                                            {
+                                                              "type": "NAME",
+                                                              "text": "SECRET_KEY",
+                                                              "line": 15,
+                                                              "start": 1,
+                                                              "stop": 10
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ASSIGN",
+                      "text": "\u003d",
+                      "line": 15,
+                      "start": 12,
+                      "stop": 12
+                    },
+                    {
+                      "testlist_star_expr": [
+                        {
+                          "test": [
+                            {
+                              "or_test": [
+                                {
+                                  "and_test": [
+                                    {
+                                      "not_test": [
+                                        {
+                                          "comparison": [
+                                            {
+                                              "expr": [
+                                                {
+                                                  "atom_expr": [
+                                                    {
+                                                      "atom": [
+                                                        {
+                                                          "type": "STRING",
+                                                          "text": "\"916e9d880ac9bd773a90ec75ca6bd196\"",
+                                                          "line": 15,
+                                                          "start": 14,
+                                                          "stop": 47
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "NEWLINE",
+              "text": "\n",
+              "line": 16,
+              "start": 1,
+              "stop": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stmt": [
+        {
+          "simple_stmts": [
+            {
+              "simple_stmt": [
+                {
+                  "expr_stmt": [
+                    {
+                      "testlist_star_expr": [
+                        {
+                          "test": [
+                            {
+                              "or_test": [
+                                {
+                                  "and_test": [
+                                    {
+                                      "not_test": [
+                                        {
+                                          "comparison": [
+                                            {
+                                              "expr": [
+                                                {
+                                                  "atom_expr": [
+                                                    {
+                                                      "atom": [
+                                                        {
+                                                          "name": [
+                                                            {
+                                                              "type": "NAME",
+                                                              "text": "HASH_ALGORITHM",
+                                                              "line": 16,
+                                                              "start": 1,
+                                                              "stop": 14
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ASSIGN",
+                      "text": "\u003d",
+                      "line": 16,
+                      "start": 16,
+                      "stop": 16
+                    },
+                    {
+                      "testlist_star_expr": [
+                        {
+                          "test": [
+                            {
+                              "or_test": [
+                                {
+                                  "and_test": [
+                                    {
+                                      "not_test": [
+                                        {
+                                          "comparison": [
+                                            {
+                                              "expr": [
+                                                {
+                                                  "atom_expr": [
+                                                    {
+                                                      "atom": [
+                                                        {
+                                                          "type": "STRING",
+                                                          "text": "\"md5\"",
+                                                          "line": 16,
+                                                          "start": 18,
+                                                          "stop": 22
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "NEWLINE",
+              "text": "\n",
+              "line": 17,
+              "start": 1,
+              "stop": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stmt": [
+        {
+          "simple_stmts": [
+            {
+              "simple_stmt": [
+                {
+                  "expr_stmt": [
+                    {
+                      "testlist_star_expr": [
+                        {
+                          "test": [
+                            {
+                              "or_test": [
+                                {
+                                  "and_test": [
+                                    {
+                                      "not_test": [
+                                        {
+                                          "comparison": [
+                                            {
+                                              "expr": [
+                                                {
+                                                  "atom_expr": [
+                                                    {
+                                                      "atom": [
+                                                        {
+                                                          "name": [
+                                                            {
+                                                              "type": "NAME",
+                                                              "text": "TOKEN_ALGORITHM",
+                                                              "line": 17,
+                                                              "start": 1,
+                                                              "stop": 15
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ASSIGN",
+                      "text": "\u003d",
+                      "line": 17,
+                      "start": 17,
+                      "stop": 17
+                    },
+                    {
+                      "testlist_star_expr": [
+                        {
+                          "test": [
+                            {
+                              "or_test": [
+                                {
+                                  "and_test": [
+                                    {
+                                      "not_test": [
+                                        {
+                                          "comparison": [
+                                            {
+                                              "expr": [
+                                                {
+                                                  "atom_expr": [
+                                                    {
+                                                      "atom": [
+                                                        {
+                                                          "type": "STRING",
+                                                          "text": "\"HS256\"",
+                                                          "line": 17,
+                                                          "start": 19,
+                                                          "stop": 25
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "NEWLINE",
+              "text": "\n",
+              "line": 19,
+              "start": 1,
+              "stop": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stmt": [
+        {
+          "simple_stmts": [
+            {
+              "simple_stmt": [
+                {
+                  "expr_stmt": [
+                    {
+                      "testlist_star_expr": [
+                        {
+                          "test": [
+                            {
+                              "or_test": [
+                                {
+                                  "and_test": [
+                                    {
+                                      "not_test": [
+                                        {
+                                          "comparison": [
+                                            {
+                                              "expr": [
+                                                {
+                                                  "atom_expr": [
+                                                    {
+                                                      "atom": [
+                                                        {
+                                                          "name": [
+                                                            {
+                                                              "type": "NAME",
+                                                              "text": "PBKDF2_ITERATIONS",
+                                                              "line": 19,
+                                                              "start": 1,
+                                                              "stop": 17
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ASSIGN",
+                      "text": "\u003d",
+                      "line": 19,
+                      "start": 19,
+                      "stop": 19
+                    },
+                    {
+                      "testlist_star_expr": [
+                        {
+                          "test": [
+                            {
+                              "or_test": [
+                                {
+                                  "and_test": [
+                                    {
+                                      "not_test": [
+                                        {
+                                          "comparison": [
+                                            {
+                                              "expr": [
+                                                {
+                                                  "atom_expr": [
+                                                    {
+                                                      "atom": [
+                                                        {
+                                                          "type": "NUMBER",
+                                                          "text": "600000",
+                                                          "line": 19,
+                                                          "start": 21,
+                                                          "stop": 26
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "NEWLINE",
+              "text": "\n",
+              "line": 20,
+              "start": 1,
+              "stop": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stmt": [
+        {
+          "simple_stmts": [
+            {
+              "simple_stmt": [
+                {
+                  "expr_stmt": [
+                    {
+                      "testlist_star_expr": [
+                        {
+                          "test": [
+                            {
+                              "or_test": [
+                                {
+                                  "and_test": [
+                                    {
+                                      "not_test": [
+                                        {
+                                          "comparison": [
+                                            {
+                                              "expr": [
+                                                {
+                                                  "atom_expr": [
+                                                    {
+                                                      "atom": [
+                                                        {
+                                                          "name": [
+                                                            {
+                                                              "type": "NAME",
+                                                              "text": "MIN_TLS_VERSION",
+                                                              "line": 20,
+                                                              "start": 1,
+                                                              "stop": 15
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ASSIGN",
+                      "text": "\u003d",
+                      "line": 20,
+                      "start": 17,
+                      "stop": 17
+                    },
+                    {
+                      "testlist_star_expr": [
+                        {
+                          "test": [
+                            {
+                              "or_test": [
+                                {
+                                  "and_test": [
+                                    {
+                                      "not_test": [
+                                        {
+                                          "comparison": [
+                                            {
+                                              "expr": [
+                                                {
+                                                  "atom_expr": [
+                                                    {
+                                                      "atom": [
+                                                        {
+                                                          "type": "STRING",
+                                                          "text": "\"TLSv1\"",
+                                                          "line": 20,
+                                                          "start": 19,
+                                                          "stop": 25
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "NEWLINE",
+              "text": "\n",
+              "line": 24,
+              "start": 1,
+              "stop": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stmt": [
+        {
+          "simple_stmts": [
+            {
+              "simple_stmt": [
+                {
+                  "import_stmt": [
+                    {
+                      "import_name": [
+                        {
+                          "type": "IMPORT",
+                          "text": "import",
+                          "line": 24,
+                          "start": 1,
+                          "stop": 6
+                        },
+                        {
+                          "dotted_as_names": [
+                            {
+                              "dotted_as_name": [
+                                {
+                                  "dotted_name": [
+                                    {
+                                      "name": [
+                                        {
+                                          "type": "NAME",
+                                          "text": "hashlib",
+                                          "line": 24,
+                                          "start": 8,
+                                          "stop": 14
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "NEWLINE",
+              "text": "\n",
+              "line": 34,
+              "start": 1,
+              "stop": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stmt": [
+        {
+          "compound_stmt": [
+            {
+              "funcdef": [
+                {
+                  "type": "DEF",
+                  "text": "def",
+                  "line": 34,
+                  "start": 1,
+                  "stop": 3
+                },
+                {
+                  "name": [
+                    {
+                      "type": "NAME",
+                      "text": "derive_file_key",
+                      "line": 34,
+                      "start": 5,
+                      "stop": 19
+                    }
+                  ]
+                },
+                {
+                  "parameters": [
+                    {
+                      "type": "OPEN_PAREN",
+                      "text": "(",
+                      "line": 34,
+                      "start": 20,
+                      "stop": 20
+                    },
+                    {
+                      "typedargslist": [
+                        {
+                          "tfpdef": [
+                            {
+                              "name": [
+                                {
+                                  "type": "NAME",
+                                  "text": "passphrase",
+                                  "line": 34,
+                                  "start": 21,
+                                  "stop": 30
+                                }
+                              ]
+                            },
+                            {
+                              "type": "COLON",
+                              "text": ":",
+                              "line": 34,
+                              "start": 31,
+                              "stop": 31
+                            },
+                            {
+                              "test": [
+                                {
+                                  "or_test": [
+                                    {
+                                      "and_test": [
+                                        {
+                                          "not_test": [
+                                            {
+                                              "comparison": [
+                                                {
+                                                  "expr": [
+                                                    {
+                                                      "atom_expr": [
+                                                        {
+                                                          "atom": [
+                                                            {
+                                                              "name": [
+                                                                {
+                                                                  "type": "NAME",
+                                                                  "text": "str",
+                                                                  "line": 34,
+                                                                  "start": 33,
+                                                                  "stop": 35
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "COMMA",
+                          "text": ",",
+                          "line": 34,
+                          "start": 36,
+                          "stop": 36
+                        },
+                        {
+                          "tfpdef": [
+                            {
+                              "name": [
+                                {
+                                  "type": "NAME",
+                                  "text": "salt",
+                                  "line": 34,
+                                  "start": 38,
+                                  "stop": 41
+                                }
+                              ]
+                            },
+                            {
+                              "type": "COLON",
+                              "text": ":",
+                              "line": 34,
+                              "start": 42,
+                              "stop": 42
+                            },
+                            {
+                              "test": [
+                                {
+                                  "or_test": [
+                                    {
+                                      "and_test": [
+                                        {
+                                          "not_test": [
+                                            {
+                                              "comparison": [
+                                                {
+                                                  "expr": [
+                                                    {
+                                                      "atom_expr": [
+                                                        {
+                                                          "atom": [
+                                                            {
+                                                              "name": [
+                                                                {
+                                                                  "type": "NAME",
+                                                                  "text": "bytes",
+                                                                  "line": 34,
+                                                                  "start": 44,
+                                                                  "stop": 48
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "CLOSE_PAREN",
+                      "text": ")",
+                      "line": 34,
+                      "start": 49,
+                      "stop": 49
+                    }
+                  ]
+                },
+                {
+                  "type": "ARROW",
+                  "text": "-\u003e",
+                  "line": 34,
+                  "start": 51,
+                  "stop": 52
+                },
+                {
+                  "test": [
+                    {
+                      "or_test": [
+                        {
+                          "and_test": [
+                            {
+                              "not_test": [
+                                {
+                                  "comparison": [
+                                    {
+                                      "expr": [
+                                        {
+                                          "atom_expr": [
+                                            {
+                                              "atom": [
+                                                {
+                                                  "name": [
+                                                    {
+                                                      "type": "NAME",
+                                                      "text": "bytes",
+                                                      "line": 34,
+                                                      "start": 54,
+                                                      "stop": 58
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "COLON",
+                  "text": ":",
+                  "line": 34,
+                  "start": 59,
+                  "stop": 59
+                },
+                {
+                  "block": [
+                    {
+                      "type": "NEWLINE",
+                      "text": " ",
+                      "line": 35,
+                      "start": 5,
+                      "stop": 5
+                    },
+                    {
+                      "type": "INDENT",
+                      "text": "    ",
+                      "line": 35,
+                      "start": 5,
+                      "stop": 8
+                    },
+                    {
+                      "stmt": [
+                        {
+                          "simple_stmts": [
+                            {
+                              "simple_stmt": [
+                                {
+                                  "flow_stmt": [
+                                    {
+                                      "return_stmt": [
+                                        {
+                                          "type": "RETURN",
+                                          "text": "return",
+                                          "line": 35,
+                                          "start": 5,
+                                          "stop": 10
+                                        },
+                                        {
+                                          "testlist": [
+                                            {
+                                              "test": [
+                                                {
+                                                  "or_test": [
+                                                    {
+                                                      "and_test": [
+                                                        {
+                                                          "not_test": [
+                                                            {
+                                                              "comparison": [
+                                                                {
+                                                                  "expr": [
+                                                                    {
+                                                                      "atom_expr": [
+                                                                        {
+                                                                          "atom": [
+                                                                            {
+                                                                              "name": [
+                                                                                {
+                                                                                  "type": "NAME",
+                                                                                  "text": "hashlib",
+                                                                                  "line": 35,
+                                                                                  "start": 12,
+                                                                                  "stop": 18
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          ]
+                                                                        },
+                                                                        {
+                                                                          "trailer": [
+                                                                            {
+                                                                              "type": "DOT",
+                                                                              "text": ".",
+                                                                              "line": 35,
+                                                                              "start": 19,
+                                                                              "stop": 19
+                                                                            },
+                                                                            {
+                                                                              "name": [
+                                                                                {
+                                                                                  "type": "NAME",
+                                                                                  "text": "pbkdf2_hmac",
+                                                                                  "line": 35,
+                                                                                  "start": 20,
+                                                                                  "stop": 30
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          ]
+                                                                        },
+                                                                        {
+                                                                          "trailer": [
+                                                                            {
+                                                                              "type": "OPEN_PAREN",
+                                                                              "text": "(",
+                                                                              "line": 35,
+                                                                              "start": 31,
+                                                                              "stop": 31
+                                                                            },
+                                                                            {
+                                                                              "arglist": [
+                                                                                {
+                                                                                  "argument": [
+                                                                                    {
+                                                                                      "test": [
+                                                                                        {
+                                                                                          "or_test": [
+                                                                                            {
+                                                                                              "and_test": [
+                                                                                                {
+                                                                                                  "not_test": [
+                                                                                                    {
+                                                                                                      "comparison": [
+                                                                                                        {
+                                                                                                          "expr": [
+                                                                                                            {
+                                                                                                              "atom_expr": [
+                                                                                                                {
+                                                                                                                  "atom": [
+                                                                                                                    {
+                                                                                                                      "type": "STRING",
+                                                                                                                      "text": "\"sha256\"",
+                                                                                                                      "line": 35,
+                                                                                                                      "start": 32,
+                                                                                                                      "stop": 39
+                                                                                                                    }
+                                                                                                                  ]
+                                                                                                                }
+                                                                                                              ]
+                                                                                                            }
+                                                                                                          ]
+                                                                                                        }
+                                                                                                      ]
+                                                                                                    }
+                                                                                                  ]
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          ]
+                                                                                        }
+                                                                                      ]
+                                                                                    }
+                                                                                  ]
+                                                                                },
+                                                                                {
+                                                                                  "type": "COMMA",
+                                                                                  "text": ",",
+                                                                                  "line": 35,
+                                                                                  "start": 40,
+                                                                                  "stop": 40
+                                                                                },
+                                                                                {
+                                                                                  "argument": [
+                                                                                    {
+                                                                                      "test": [
+                                                                                        {
+                                                                                          "or_test": [
+                                                                                            {
+                                                                                              "and_test": [
+                                                                                                {
+                                                                                                  "not_test": [
+                                                                                                    {
+                                                                                                      "comparison": [
+                                                                                                        {
+                                                                                                          "expr": [
+                                                                                                            {
+                                                                                                              "atom_expr": [
+                                                                                                                {
+                                                                                                                  "atom": [
+                                                                                                                    {
+                                                                                                                      "name": [
+                                                                                                                        {
+                                                                                                                          "type": "NAME",
+                                                                                                                          "text": "passphrase",
+                                                                                                                          "line": 35,
+                                                                                                                          "start": 42,
+                                                                                                                          "stop": 51
+                                                                                                                        }
+                                                                                                                      ]
+                                                                                                                    }
+                                                                                                                  ]
+                                                                                                                },
+                                                                                                                {
+                                                                                                                  "trailer": [
+                                                                                                                    {
+                                                                                                                      "type": "DOT",
+                                                                                                                      "text": ".",
+                                                                                                                      "line": 35,
+                                                                                                                      "start": 52,
+                                                                                                                      "stop": 52
+                                                                                                                    },
+                                                                                                                    {
+                                                                                                                      "name": [
+                                                                                                                        {
+                                                                                                                          "type": "NAME",
+                                                                                                                          "text": "encode",
+                                                                                                                          "line": 35,
+                                                                                                                          "start": 53,
+                                                                                                                          "stop": 58
+                                                                                                                        }
+                                                                                                                      ]
+                                                                                                                    }
+                                                                                                                  ]
+                                                                                                                },
+                                                                                                                {
+                                                                                                                  "trailer": [
+                                                                                                                    {
+                                                                                                                      "type": "OPEN_PAREN",
+                                                                                                                      "text": "(",
+                                                                                                                      "line": 35,
+                                                                                                                      "start": 59,
+                                                                                                                      "stop": 59
+                                                                                                                    },
+                                                                                                                    {
+                                                                                                                      "type": "CLOSE_PAREN",
+                                                                                                                      "text": ")",
+                                                                                                                      "line": 35,
+                                                                                                                      "start": 60,
+                                                                                                                      "stop": 60
+                                                                                                                    }
+                                                                                                                  ]
+                                                                                                                }
+                                                                                                              ]
+                                                                                                            }
+                                                                                                          ]
+                                                                                                        }
+                                                                                                      ]
+                                                                                                    }
+                                                                                                  ]
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          ]
+                                                                                        }
+                                                                                      ]
+                                                                                    }
+                                                                                  ]
+                                                                                },
+                                                                                {
+                                                                                  "type": "COMMA",
+                                                                                  "text": ",",
+                                                                                  "line": 35,
+                                                                                  "start": 61,
+                                                                                  "stop": 61
+                                                                                },
+                                                                                {
+                                                                                  "argument": [
+                                                                                    {
+                                                                                      "test": [
+                                                                                        {
+                                                                                          "or_test": [
+                                                                                            {
+                                                                                              "and_test": [
+                                                                                                {
+                                                                                                  "not_test": [
+                                                                                                    {
+                                                                                                      "comparison": [
+                                                                                                        {
+                                                                                                          "expr": [
+                                                                                                            {
+                                                                                                              "atom_expr": [
+                                                                                                                {
+                                                                                                                  "atom": [
+                                                                                                                    {
+                                                                                                                      "name": [
+                                                                                                                        {
+                                                                                                                          "type": "NAME",
+                                                                                                                          "text": "salt",
+                                                                                                                          "line": 35,
+                                                                                                                          "start": 63,
+                                                                                                                          "stop": 66
+                                                                                                                        }
+                                                                                                                      ]
+                                                                                                                    }
+                                                                                                                  ]
+                                                                                                                }
+                                                                                                              ]
+                                                                                                            }
+                                                                                                          ]
+                                                                                                        }
+                                                                                                      ]
+                                                                                                    }
+                                                                                                  ]
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          ]
+                                                                                        }
+                                                                                      ]
+                                                                                    }
+                                                                                  ]
+                                                                                },
+                                                                                {
+                                                                                  "type": "COMMA",
+                                                                                  "text": ",",
+                                                                                  "line": 35,
+                                                                                  "start": 67,
+                                                                                  "stop": 67
+                                                                                },
+                                                                                {
+                                                                                  "argument": [
+                                                                                    {
+                                                                                      "test": [
+                                                                                        {
+                                                                                          "or_test": [
+                                                                                            {
+                                                                                              "and_test": [
+                                                                                                {
+                                                                                                  "not_test": [
+                                                                                                    {
+                                                                                                      "comparison": [
+                                                                                                        {
+                                                                                                          "expr": [
+                                                                                                            {
+                                                                                                              "atom_expr": [
+                                                                                                                {
+                                                                                                                  "atom": [
+                                                                                                                    {
+                                                                                                                      "name": [
+                                                                                                                        {
+                                                                                                                          "type": "NAME",
+                                                                                                                          "text": "PBKDF2_ITERATIONS",
+                                                                                                                          "line": 35,
+                                                                                                                          "start": 69,
+                                                                                                                          "stop": 85
+                                                                                                                        }
+                                                                                                                      ]
+                                                                                                                    }
+                                                                                                                  ]
+                                                                                                                }
+                                                                                                              ]
+                                                                                                            }
+                                                                                                          ]
+                                                                                                        }
+                                                                                                      ]
+                                                                                                    }
+                                                                                                  ]
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          ]
+                                                                                        }
+                                                                                      ]
+                                                                                    }
+                                                                                  ]
+                                                                                },
+                                                                                {
+                                                                                  "type": "COMMA",
+                                                                                  "text": ",",
+                                                                                  "line": 35,
+                                                                                  "start": 86,
+                                                                                  "stop": 86
+                                                                                },
+                                                                                {
+                                                                                  "argument": [
+                                                                                    {
+                                                                                      "test": [
+                                                                                        {
+                                                                                          "or_test": [
+                                                                                            {
+                                                                                              "and_test": [
+                                                                                                {
+                                                                                                  "not_test": [
+                                                                                                    {
+                                                                                                      "comparison": [
+                                                                                                        {
+                                                                                                          "expr": [
+                                                                                                            {
+                                                                                                              "atom_expr": [
+                                                                                                                {
+                                                                                                                  "atom": [
+                                                                                                                    {
+                                                                                                                      "name": [
+                                                                                                                        {
+                                                                                                                          "type": "NAME",
+                                                                                                                          "text": "dklen",
+                                                                                                                          "line": 35,
+                                                                                                                          "start": 88,
+                                                                                                                          "stop": 92
+                                                                                                                        }
+                                                                                                                      ]
+                                                                                                                    }
+                                                                                                                  ]
+                                                                                                                }
+                                                                                                              ]
+                                                                                                            }
+                                                                                                          ]
+                                                                                                        }
+                                                                                                      ]
+                                                                                                    }
+                                                                                                  ]
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          ]
+                                                                                        }
+                                                                                      ]
+                                                                                    },
+                                                                                    {
+                                                                                      "type": "ASSIGN",
+                                                                                      "text": "\u003d",
+                                                                                      "line": 35,
+                                                                                      "start": 93,
+                                                                                      "stop": 93
+                                                                                    },
+                                                                                    {
+                                                                                      "test": [
+                                                                                        {
+                                                                                          "or_test": [
+                                                                                            {
+                                                                                              "and_test": [
+                                                                                                {
+                                                                                                  "not_test": [
+                                                                                                    {
+                                                                                                      "comparison": [
+                                                                                                        {
+                                                                                                          "expr": [
+                                                                                                            {
+                                                                                                              "atom_expr": [
+                                                                                                                {
+                                                                                                                  "atom": [
+                                                                                                                    {
+                                                                                                                      "type": "NUMBER",
+                                                                                                                      "text": "32",
+                                                                                                                      "line": 35,
+                                                                                                                      "start": 94,
+                                                                                                                      "stop": 95
+                                                                                                                    }
+                                                                                                                  ]
+                                                                                                                }
+                                                                                                              ]
+                                                                                                            }
+                                                                                                          ]
+                                                                                                        }
+                                                                                                      ]
+                                                                                                    }
+                                                                                                  ]
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          ]
+                                                                                        }
+                                                                                      ]
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              ]
+                                                                            },
+                                                                            {
+                                                                              "type": "CLOSE_PAREN",
+                                                                              "text": ")",
+                                                                              "line": 35,
+                                                                              "start": 96,
+                                                                              "stop": 96
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "NEWLINE",
+                              "text": "\n",
+                              "line": 39,
+                              "start": 1,
+                              "stop": 1
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "DEDENT",
+                      "text": "\n",
+                      "line": 35,
+                      "start": 1,
+                      "stop": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stmt": [
+        {
+          "simple_stmts": [
+            {
+              "simple_stmt": [
+                {
+                  "import_stmt": [
+                    {
+                      "import_name": [
+                        {
+                          "type": "IMPORT",
+                          "text": "import",
+                          "line": 39,
+                          "start": 1,
+                          "stop": 6
+                        },
+                        {
+                          "dotted_as_names": [
+                            {
+                              "dotted_as_name": [
+                                {
+                                  "dotted_name": [
+                                    {
+                                      "name": [
+                                        {
+                                          "type": "NAME",
+                                          "text": "ssl",
+                                          "line": 39,
+                                          "start": 8,
+                                          "stop": 10
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "COMMA",
+                              "text": ",",
+                              "line": 39,
+                              "start": 11,
+                              "stop": 11
+                            },
+                            {
+                              "dotted_as_name": [
+                                {
+                                  "dotted_name": [
+                                    {
+                                      "name": [
+                                        {
+                                          "type": "NAME",
+                                          "text": "urllib",
+                                          "line": 39,
+                                          "start": 13,
+                                          "stop": 18
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "DOT",
+                                      "text": ".",
+                                      "line": 39,
+                                      "start": 19,
+                                      "stop": 19
+                                    },
+                                    {
+                                      "name": [
+                                        {
+                                          "type": "NAME",
+                                          "text": "request",
+                                          "line": 39,
+                                          "start": 20,
+                                          "stop": 26
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "NEWLINE",
+              "text": "\n",
+              "line": 42,
+              "start": 1,
+              "stop": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stmt": [
+        {
+          "compound_stmt": [
+            {
+              "funcdef": [
+                {
+                  "type": "DEF",
+                  "text": "def",
+                  "line": 42,
+                  "start": 1,
+                  "stop": 3
+                },
+                {
+                  "name": [
+                    {
+                      "type": "NAME",
+                      "text": "fetch_config",
+                      "line": 42,
+                      "start": 5,
+                      "stop": 16
+                    }
+                  ]
+                },
+                {
+                  "parameters": [
+                    {
+                      "type": "OPEN_PAREN",
+                      "text": "(",
+                      "line": 42,
+                      "start": 17,
+                      "stop": 17
+                    },
+                    {
+                      "typedargslist": [
+                        {
+                          "tfpdef": [
+                            {
+                              "name": [
+                                {
+                                  "type": "NAME",
+                                  "text": "url",
+                                  "line": 42,
+                                  "start": 18,
+                                  "stop": 20
+                                }
+                              ]
+                            },
+                            {
+                              "type": "COLON",
+                              "text": ":",
+                              "line": 42,
+                              "start": 21,
+                              "stop": 21
+                            },
+                            {
+                              "test": [
+                                {
+                                  "or_test": [
+                                    {
+                                      "and_test": [
+                                        {
+                                          "not_test": [
+                                            {
+                                              "comparison": [
+                                                {
+                                                  "expr": [
+                                                    {
+                                                      "atom_expr": [
+                                                        {
+                                                          "atom": [
+                                                            {
+                                                              "name": [
+                                                                {
+                                                                  "type": "NAME",
+                                                                  "text": "str",
+                                                                  "line": 42,
+                                                                  "start": 23,
+                                                                  "stop": 25
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "CLOSE_PAREN",
+                      "text": ")",
+                      "line": 42,
+                      "start": 26,
+                      "stop": 26
+                    }
+                  ]
+                },
+                {
+                  "type": "ARROW",
+                  "text": "-\u003e",
+                  "line": 42,
+                  "start": 28,
+                  "stop": 29
+                },
+                {
+                  "test": [
+                    {
+                      "or_test": [
+                        {
+                          "and_test": [
+                            {
+                              "not_test": [
+                                {
+                                  "comparison": [
+                                    {
+                                      "expr": [
+                                        {
+                                          "atom_expr": [
+                                            {
+                                              "atom": [
+                                                {
+                                                  "name": [
+                                                    {
+                                                      "type": "NAME",
+                                                      "text": "bytes",
+                                                      "line": 42,
+                                                      "start": 31,
+                                                      "stop": 35
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "COLON",
+                  "text": ":",
+                  "line": 42,
+                  "start": 36,
+                  "stop": 36
+                },
+                {
+                  "block": [
+                    {
+                      "type": "NEWLINE",
+                      "text": " ",
+                      "line": 43,
+                      "start": 5,
+                      "stop": 5
+                    },
+                    {
+                      "type": "INDENT",
+                      "text": "    ",
+                      "line": 43,
+                      "start": 5,
+                      "stop": 8
+                    },
+                    {
+                      "stmt": [
+                        {
+                          "simple_stmts": [
+                            {
+                              "simple_stmt": [
+                                {
+                                  "expr_stmt": [
+                                    {
+                                      "testlist_star_expr": [
+                                        {
+                                          "test": [
+                                            {
+                                              "or_test": [
+                                                {
+                                                  "and_test": [
+                                                    {
+                                                      "not_test": [
+                                                        {
+                                                          "comparison": [
+                                                            {
+                                                              "expr": [
+                                                                {
+                                                                  "atom_expr": [
+                                                                    {
+                                                                      "atom": [
+                                                                        {
+                                                                          "name": [
+                                                                            {
+                                                                              "type": "NAME",
+                                                                              "text": "ctx",
+                                                                              "line": 43,
+                                                                              "start": 5,
+                                                                              "stop": 7
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "ASSIGN",
+                                      "text": "\u003d",
+                                      "line": 43,
+                                      "start": 9,
+                                      "stop": 9
+                                    },
+                                    {
+                                      "testlist_star_expr": [
+                                        {
+                                          "test": [
+                                            {
+                                              "or_test": [
+                                                {
+                                                  "and_test": [
+                                                    {
+                                                      "not_test": [
+                                                        {
+                                                          "comparison": [
+                                                            {
+                                                              "expr": [
+                                                                {
+                                                                  "atom_expr": [
+                                                                    {
+                                                                      "atom": [
+                                                                        {
+                                                                          "name": [
+                                                                            {
+                                                                              "type": "NAME",
+                                                                              "text": "ssl",
+                                                                              "line": 43,
+                                                                              "start": 11,
+                                                                              "stop": 13
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    },
+                                                                    {
+                                                                      "trailer": [
+                                                                        {
+                                                                          "type": "DOT",
+                                                                          "text": ".",
+                                                                          "line": 43,
+                                                                          "start": 14,
+                                                                          "stop": 14
+                                                                        },
+                                                                        {
+                                                                          "name": [
+                                                                            {
+                                                                              "type": "NAME",
+                                                                              "text": "create_default_context",
+                                                                              "line": 43,
+                                                                              "start": 15,
+                                                                              "stop": 36
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    },
+                                                                    {
+                                                                      "trailer": [
+                                                                        {
+                                                                          "type": "OPEN_PAREN",
+                                                                          "text": "(",
+                                                                          "line": 43,
+                                                                          "start": 37,
+                                                                          "stop": 37
+                                                                        },
+                                                                        {
+                                                                          "type": "CLOSE_PAREN",
+                                                                          "text": ")",
+                                                                          "line": 43,
+                                                                          "start": 38,
+                                                                          "stop": 38
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "NEWLINE",
+                              "text": " ",
+                              "line": 44,
+                              "start": 5,
+                              "stop": 5
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "stmt": [
+                        {
+                          "simple_stmts": [
+                            {
+                              "simple_stmt": [
+                                {
+                                  "expr_stmt": [
+                                    {
+                                      "testlist_star_expr": [
+                                        {
+                                          "test": [
+                                            {
+                                              "or_test": [
+                                                {
+                                                  "and_test": [
+                                                    {
+                                                      "not_test": [
+                                                        {
+                                                          "comparison": [
+                                                            {
+                                                              "expr": [
+                                                                {
+                                                                  "atom_expr": [
+                                                                    {
+                                                                      "atom": [
+                                                                        {
+                                                                          "name": [
+                                                                            {
+                                                                              "type": "NAME",
+                                                                              "text": "ctx",
+                                                                              "line": 44,
+                                                                              "start": 5,
+                                                                              "stop": 7
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    },
+                                                                    {
+                                                                      "trailer": [
+                                                                        {
+                                                                          "type": "DOT",
+                                                                          "text": ".",
+                                                                          "line": 44,
+                                                                          "start": 8,
+                                                                          "stop": 8
+                                                                        },
+                                                                        {
+                                                                          "name": [
+                                                                            {
+                                                                              "type": "NAME",
+                                                                              "text": "check_hostname",
+                                                                              "line": 44,
+                                                                              "start": 9,
+                                                                              "stop": 22
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "ASSIGN",
+                                      "text": "\u003d",
+                                      "line": 44,
+                                      "start": 24,
+                                      "stop": 24
+                                    },
+                                    {
+                                      "testlist_star_expr": [
+                                        {
+                                          "test": [
+                                            {
+                                              "or_test": [
+                                                {
+                                                  "and_test": [
+                                                    {
+                                                      "not_test": [
+                                                        {
+                                                          "comparison": [
+                                                            {
+                                                              "expr": [
+                                                                {
+                                                                  "atom_expr": [
+                                                                    {
+                                                                      "atom": [
+                                                                        {
+                                                                          "type": "FALSE",
+                                                                          "text": "False",
+                                                                          "line": 44,
+                                                                          "start": 26,
+                                                                          "stop": 30
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "NEWLINE",
+                              "text": " ",
+                              "line": 45,
+                              "start": 5,
+                              "stop": 5
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "stmt": [
+                        {
+                          "simple_stmts": [
+                            {
+                              "simple_stmt": [
+                                {
+                                  "expr_stmt": [
+                                    {
+                                      "testlist_star_expr": [
+                                        {
+                                          "test": [
+                                            {
+                                              "or_test": [
+                                                {
+                                                  "and_test": [
+                                                    {
+                                                      "not_test": [
+                                                        {
+                                                          "comparison": [
+                                                            {
+                                                              "expr": [
+                                                                {
+                                                                  "atom_expr": [
+                                                                    {
+                                                                      "atom": [
+                                                                        {
+                                                                          "name": [
+                                                                            {
+                                                                              "type": "NAME",
+                                                                              "text": "ctx",
+                                                                              "line": 45,
+                                                                              "start": 5,
+                                                                              "stop": 7
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    },
+                                                                    {
+                                                                      "trailer": [
+                                                                        {
+                                                                          "type": "DOT",
+                                                                          "text": ".",
+                                                                          "line": 45,
+                                                                          "start": 8,
+                                                                          "stop": 8
+                                                                        },
+                                                                        {
+                                                                          "name": [
+                                                                            {
+                                                                              "type": "NAME",
+                                                                              "text": "verify_mode",
+                                                                              "line": 45,
+                                                                              "start": 9,
+                                                                              "stop": 19
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "ASSIGN",
+                                      "text": "\u003d",
+                                      "line": 45,
+                                      "start": 21,
+                                      "stop": 21
+                                    },
+                                    {
+                                      "testlist_star_expr": [
+                                        {
+                                          "test": [
+                                            {
+                                              "or_test": [
+                                                {
+                                                  "and_test": [
+                                                    {
+                                                      "not_test": [
+                                                        {
+                                                          "comparison": [
+                                                            {
+                                                              "expr": [
+                                                                {
+                                                                  "atom_expr": [
+                                                                    {
+                                                                      "atom": [
+                                                                        {
+                                                                          "name": [
+                                                                            {
+                                                                              "type": "NAME",
+                                                                              "text": "ssl",
+                                                                              "line": 45,
+                                                                              "start": 23,
+                                                                              "stop": 25
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    },
+                                                                    {
+                                                                      "trailer": [
+                                                                        {
+                                                                          "type": "DOT",
+                                                                          "text": ".",
+                                                                          "line": 45,
+                                                                          "start": 26,
+                                                                          "stop": 26
+                                                                        },
+                                                                        {
+                                                                          "name": [
+                                                                            {
+                                                                              "type": "NAME",
+                                                                              "text": "CERT_NONE",
+                                                                              "line": 45,
+                                                                              "start": 27,
+                                                                              "stop": 35
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "NEWLINE",
+                              "text": " ",
+                              "line": 46,
+                              "start": 5,
+                              "stop": 5
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "stmt": [
+                        {
+                          "compound_stmt": [
+                            {
+                              "with_stmt": [
+                                {
+                                  "type": "WITH",
+                                  "text": "with",
+                                  "line": 46,
+                                  "start": 5,
+                                  "stop": 8
+                                },
+                                {
+                                  "with_item": [
+                                    {
+                                      "test": [
+                                        {
+                                          "or_test": [
+                                            {
+                                              "and_test": [
+                                                {
+                                                  "not_test": [
+                                                    {
+                                                      "comparison": [
+                                                        {
+                                                          "expr": [
+                                                            {
+                                                              "atom_expr": [
+                                                                {
+                                                                  "atom": [
+                                                                    {
+                                                                      "name": [
+                                                                        {
+                                                                          "type": "NAME",
+                                                                          "text": "urllib",
+                                                                          "line": 46,
+                                                                          "start": 10,
+                                                                          "stop": 15
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "trailer": [
+                                                                    {
+                                                                      "type": "DOT",
+                                                                      "text": ".",
+                                                                      "line": 46,
+                                                                      "start": 16,
+                                                                      "stop": 16
+                                                                    },
+                                                                    {
+                                                                      "name": [
+                                                                        {
+                                                                          "type": "NAME",
+                                                                          "text": "request",
+                                                                          "line": 46,
+                                                                          "start": 17,
+                                                                          "stop": 23
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "trailer": [
+                                                                    {
+                                                                      "type": "DOT",
+                                                                      "text": ".",
+                                                                      "line": 46,
+                                                                      "start": 24,
+                                                                      "stop": 24
+                                                                    },
+                                                                    {
+                                                                      "name": [
+                                                                        {
+                                                                          "type": "NAME",
+                                                                          "text": "urlopen",
+                                                                          "line": 46,
+                                                                          "start": 25,
+                                                                          "stop": 31
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "trailer": [
+                                                                    {
+                                                                      "type": "OPEN_PAREN",
+                                                                      "text": "(",
+                                                                      "line": 46,
+                                                                      "start": 32,
+                                                                      "stop": 32
+                                                                    },
+                                                                    {
+                                                                      "arglist": [
+                                                                        {
+                                                                          "argument": [
+                                                                            {
+                                                                              "test": [
+                                                                                {
+                                                                                  "or_test": [
+                                                                                    {
+                                                                                      "and_test": [
+                                                                                        {
+                                                                                          "not_test": [
+                                                                                            {
+                                                                                              "comparison": [
+                                                                                                {
+                                                                                                  "expr": [
+                                                                                                    {
+                                                                                                      "atom_expr": [
+                                                                                                        {
+                                                                                                          "atom": [
+                                                                                                            {
+                                                                                                              "name": [
+                                                                                                                {
+                                                                                                                  "type": "NAME",
+                                                                                                                  "text": "url",
+                                                                                                                  "line": 46,
+                                                                                                                  "start": 33,
+                                                                                                                  "stop": 35
+                                                                                                                }
+                                                                                                              ]
+                                                                                                            }
+                                                                                                          ]
+                                                                                                        }
+                                                                                                      ]
+                                                                                                    }
+                                                                                                  ]
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          ]
+                                                                                        }
+                                                                                      ]
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          ]
+                                                                        },
+                                                                        {
+                                                                          "type": "COMMA",
+                                                                          "text": ",",
+                                                                          "line": 46,
+                                                                          "start": 36,
+                                                                          "stop": 36
+                                                                        },
+                                                                        {
+                                                                          "argument": [
+                                                                            {
+                                                                              "test": [
+                                                                                {
+                                                                                  "or_test": [
+                                                                                    {
+                                                                                      "and_test": [
+                                                                                        {
+                                                                                          "not_test": [
+                                                                                            {
+                                                                                              "comparison": [
+                                                                                                {
+                                                                                                  "expr": [
+                                                                                                    {
+                                                                                                      "atom_expr": [
+                                                                                                        {
+                                                                                                          "atom": [
+                                                                                                            {
+                                                                                                              "name": [
+                                                                                                                {
+                                                                                                                  "type": "NAME",
+                                                                                                                  "text": "context",
+                                                                                                                  "line": 46,
+                                                                                                                  "start": 38,
+                                                                                                                  "stop": 44
+                                                                                                                }
+                                                                                                              ]
+                                                                                                            }
+                                                                                                          ]
+                                                                                                        }
+                                                                                                      ]
+                                                                                                    }
+                                                                                                  ]
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          ]
+                                                                                        }
+                                                                                      ]
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              ]
+                                                                            },
+                                                                            {
+                                                                              "type": "ASSIGN",
+                                                                              "text": "\u003d",
+                                                                              "line": 46,
+                                                                              "start": 45,
+                                                                              "stop": 45
+                                                                            },
+                                                                            {
+                                                                              "test": [
+                                                                                {
+                                                                                  "or_test": [
+                                                                                    {
+                                                                                      "and_test": [
+                                                                                        {
+                                                                                          "not_test": [
+                                                                                            {
+                                                                                              "comparison": [
+                                                                                                {
+                                                                                                  "expr": [
+                                                                                                    {
+                                                                                                      "atom_expr": [
+                                                                                                        {
+                                                                                                          "atom": [
+                                                                                                            {
+                                                                                                              "name": [
+                                                                                                                {
+                                                                                                                  "type": "NAME",
+                                                                                                                  "text": "ctx",
+                                                                                                                  "line": 46,
+                                                                                                                  "start": 46,
+                                                                                                                  "stop": 48
+                                                                                                                }
+                                                                                                              ]
+                                                                                                            }
+                                                                                                          ]
+                                                                                                        }
+                                                                                                      ]
+                                                                                                    }
+                                                                                                  ]
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          ]
+                                                                                        }
+                                                                                      ]
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    },
+                                                                    {
+                                                                      "type": "CLOSE_PAREN",
+                                                                      "text": ")",
+                                                                      "line": 46,
+                                                                      "start": 49,
+                                                                      "stop": 49
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "AS",
+                                      "text": "as",
+                                      "line": 46,
+                                      "start": 51,
+                                      "stop": 52
+                                    },
+                                    {
+                                      "expr": [
+                                        {
+                                          "atom_expr": [
+                                            {
+                                              "atom": [
+                                                {
+                                                  "name": [
+                                                    {
+                                                      "type": "NAME",
+                                                      "text": "resp",
+                                                      "line": 46,
+                                                      "start": 54,
+                                                      "stop": 57
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "COLON",
+                                  "text": ":",
+                                  "line": 46,
+                                  "start": 58,
+                                  "stop": 58
+                                },
+                                {
+                                  "block": [
+                                    {
+                                      "type": "NEWLINE",
+                                      "text": " ",
+                                      "line": 47,
+                                      "start": 9,
+                                      "stop": 9
+                                    },
+                                    {
+                                      "type": "INDENT",
+                                      "text": "        ",
+                                      "line": 47,
+                                      "start": 9,
+                                      "stop": 16
+                                    },
+                                    {
+                                      "stmt": [
+                                        {
+                                          "simple_stmts": [
+                                            {
+                                              "simple_stmt": [
+                                                {
+                                                  "flow_stmt": [
+                                                    {
+                                                      "return_stmt": [
+                                                        {
+                                                          "type": "RETURN",
+                                                          "text": "return",
+                                                          "line": 47,
+                                                          "start": 9,
+                                                          "stop": 14
+                                                        },
+                                                        {
+                                                          "testlist": [
+                                                            {
+                                                              "test": [
+                                                                {
+                                                                  "or_test": [
+                                                                    {
+                                                                      "and_test": [
+                                                                        {
+                                                                          "not_test": [
+                                                                            {
+                                                                              "comparison": [
+                                                                                {
+                                                                                  "expr": [
+                                                                                    {
+                                                                                      "atom_expr": [
+                                                                                        {
+                                                                                          "atom": [
+                                                                                            {
+                                                                                              "name": [
+                                                                                                {
+                                                                                                  "type": "NAME",
+                                                                                                  "text": "resp",
+                                                                                                  "line": 47,
+                                                                                                  "start": 16,
+                                                                                                  "stop": 19
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          ]
+                                                                                        },
+                                                                                        {
+                                                                                          "trailer": [
+                                                                                            {
+                                                                                              "type": "DOT",
+                                                                                              "text": ".",
+                                                                                              "line": 47,
+                                                                                              "start": 20,
+                                                                                              "stop": 20
+                                                                                            },
+                                                                                            {
+                                                                                              "name": [
+                                                                                                {
+                                                                                                  "type": "NAME",
+                                                                                                  "text": "read",
+                                                                                                  "line": 47,
+                                                                                                  "start": 21,
+                                                                                                  "stop": 24
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          ]
+                                                                                        },
+                                                                                        {
+                                                                                          "trailer": [
+                                                                                            {
+                                                                                              "type": "OPEN_PAREN",
+                                                                                              "text": "(",
+                                                                                              "line": 47,
+                                                                                              "start": 25,
+                                                                                              "stop": 25
+                                                                                            },
+                                                                                            {
+                                                                                              "type": "CLOSE_PAREN",
+                                                                                              "text": ")",
+                                                                                              "line": 47,
+                                                                                              "start": 26,
+                                                                                              "stop": 26
+                                                                                            }
+                                                                                          ]
+                                                                                        }
+                                                                                      ]
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "NEWLINE",
+                                              "text": "\n",
+                                              "line": 48,
+                                              "start": 1,
+                                              "stop": 1
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "DEDENT",
+                                      "text": "\n",
+                                      "line": 47,
+                                      "start": 1,
+                                      "stop": 1
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "DEDENT",
+                      "text": "\n",
+                      "line": 47,
+                      "start": 1,
+                      "stop": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "NEWLINE",
+      "text": "\n",
+      "line": 49,
+      "start": 1,
+      "stop": 1
+    },
+    {
+      "type": "EOF",
+      "text": "\u003cEOF\u003e",
+      "line": 49,
+      "start": 1,
+      "stop": 0
+    }
+  ]
+}

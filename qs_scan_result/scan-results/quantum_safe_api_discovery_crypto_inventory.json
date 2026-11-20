@@ -1,0 +1,272 @@
+{
+  "scanId": "dc905677-8adf-417c-a9af-c09317c4cfbd",
+  "applicationId": "Pentest Agent",
+  "applicationVersion": "1.0.0",
+  "scanTime": "2026-11-20T18:22:39.457930Z",
+  "totalCryptoArtifacts": "21",
+  "findings": [
+    {
+      "fileType": "java"
+    },
+    {
+      "fileType": "py",
+      "children": [
+        {
+          "fileName": "/Users/erwin/development/qse/.bob/skills/qse-remediation/remediation_tool.py",
+          "cryptoArtifacts": 3,
+          "cryptoInfo": [
+            {
+              "functionName": "hashlib.sha256",
+              "library": "hashlib",
+              "locations": [
+                {
+                  "line": 37,
+                  "startColumn": 17,
+                  "endColumn": 23
+                }
+              ]
+            },
+            {
+              "functionName": "hashlib.hash.update",
+              "library": "hashlib",
+              "locations": [
+                {
+                  "line": 39,
+                  "startColumn": 11,
+                  "endColumn": 17
+                }
+              ]
+            },
+            {
+              "functionName": "hashlib.hash.hexdigest",
+              "library": "hashlib",
+              "locations": [
+                {
+                  "line": 40,
+                  "startColumn": 14,
+                  "endColumn": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fileName": "/Users/erwin/development/qse/qseremediation/api/routes.py",
+          "cryptoArtifacts": 5,
+          "cryptoInfo": [
+            {
+              "functionName": "cryptography.hazmat.primitives.asymmetric.rsa.generate_private_key",
+              "library": "cryptography",
+              "locations": [
+                {
+                  "line": 20,
+                  "startColumn": 16,
+                  "endColumn": 36
+                }
+              ]
+            },
+            {
+              "functionName": "cryptography.hazmat.primitives.asymmetric.padding.OAEP",
+              "library": "cryptography",
+              "locations": [
+                {
+                  "line": 41,
+                  "startColumn": 22,
+                  "endColumn": 26
+                }
+              ]
+            },
+            {
+              "functionName": "cryptography.hazmat.primitives.asymmetric.padding.MGF1",
+              "library": "cryptography",
+              "locations": [
+                {
+                  "line": 42,
+                  "startColumn": 30,
+                  "endColumn": 34
+                }
+              ]
+            },
+            {
+              "functionName": "cryptography.hazmat.primitives.hashes.SHA256",
+              "library": "cryptography",
+              "locations": [
+                {
+                  "line": 43,
+                  "startColumn": 30,
+                  "endColumn": 36
+                },
+                {
+                  "line": 42,
+                  "startColumn": 52,
+                  "endColumn": 58
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fileName": "/Users/erwin/development/qse/qseremediation/config/settings.py",
+          "cryptoArtifacts": 1,
+          "cryptoInfo": [
+            {
+              "functionName": "hashlib.pbkdf2_hmac",
+              "library": "hashlib",
+              "locations": [
+                {
+                  "line": 35,
+                  "startColumn": 20,
+                  "endColumn": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fileName": "/Users/erwin/development/qse/qseremediation/utils/tokens.py",
+          "cryptoArtifacts": 4,
+          "cryptoInfo": [
+            {
+              "functionName": "cryptography.hazmat.primitives.asymmetric.padding.PSS",
+              "library": "cryptography",
+              "locations": [
+                {
+                  "line": 42,
+                  "startColumn": 17,
+                  "endColumn": 20
+                }
+              ]
+            },
+            {
+              "functionName": "cryptography.hazmat.primitives.asymmetric.padding.MGF1",
+              "library": "cryptography",
+              "locations": [
+                {
+                  "line": 43,
+                  "startColumn": 25,
+                  "endColumn": 29
+                }
+              ]
+            },
+            {
+              "functionName": "cryptography.hazmat.primitives.hashes.SHA256",
+              "library": "cryptography",
+              "locations": [
+                {
+                  "line": 43,
+                  "startColumn": 37,
+                  "endColumn": 43
+                },
+                {
+                  "line": 46,
+                  "startColumn": 16,
+                  "endColumn": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fileName": "/Users/erwin/development/qse/qseremediation/services/user.py",
+          "cryptoArtifacts": 4,
+          "cryptoInfo": [
+            {
+              "functionName": "Crypto.Cipher.AES.new",
+              "library": "Crypto",
+              "locations": [
+                {
+                  "line": 34,
+                  "startColumn": 18,
+                  "endColumn": 21
+                }
+              ]
+            },
+            {
+              "functionName": "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
+              "library": "Crypto",
+              "locations": [
+                {
+                  "line": 35,
+                  "startColumn": 30,
+                  "endColumn": 48
+                }
+              ]
+            },
+            {
+              "functionName": "hashlib.pbkdf2_hmac",
+              "library": "hashlib",
+              "locations": [
+                {
+                  "line": 89,
+                  "startColumn": 26,
+                  "endColumn": 37
+                },
+                {
+                  "line": 77,
+                  "startColumn": 22,
+                  "endColumn": 33
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fileName": "/Users/erwin/development/qse/qseremediation/services/auth.py",
+          "cryptoArtifacts": 2,
+          "cryptoInfo": [
+            {
+              "functionName": "Crypto.Cipher.AES.new",
+              "library": "Crypto",
+              "locations": [
+                {
+                  "line": 50,
+                  "startColumn": 18,
+                  "endColumn": 21
+                }
+              ]
+            },
+            {
+              "functionName": "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
+              "library": "Crypto",
+              "locations": [
+                {
+                  "line": 51,
+                  "startColumn": 30,
+                  "endColumn": 48
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fileName": "/Users/erwin/development/qse/qseremediation/crypto/keys.py",
+          "cryptoArtifacts": 2,
+          "cryptoInfo": [
+            {
+              "functionName": "Crypto.Cipher.AES.new",
+              "library": "Crypto",
+              "locations": [
+                {
+                  "line": 41,
+                  "startColumn": 18,
+                  "endColumn": 21
+                }
+              ]
+            },
+            {
+              "functionName": "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
+              "library": "Crypto",
+              "locations": [
+                {
+                  "line": 42,
+                  "startColumn": 30,
+                  "endColumn": 48
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

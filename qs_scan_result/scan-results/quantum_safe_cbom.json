@@ -1,0 +1,605 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.6",
+  "serialNumber" : "9c29e52d-2447-4a7b-af8c-0b5f90b86d28",
+  "version" : 1,
+  "metadata" : {
+    "timestamp" : "2026-11-20T18:22:39Z",
+    "tools" : {
+      "services" : [
+        {
+          "provider" : {
+            "name" : "IBM Corporation."
+          },
+          "name" : "IBM Quantum Safe Explorer",
+          "version" : "2.2.3"
+        }
+      ]
+    },
+    "component" : {
+      "type" : "application",
+      "name" : "Pentest Agent",
+      "version" : "1.0.0"
+    },
+    "properties" : [
+      {
+        "name" : "language",
+        "value" : "python"
+      }
+    ]
+  },
+  "components" : [
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "d112e854-ce39-4dc0-8224-c0eaf4cdd329",
+      "name" : "hashlib.sha256",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "line" : 37,
+            "offset" : 17,
+            "location" : ".bob/skills/qse-remediation/remediation_tool.py"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.2.840.10045.4.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "60985648-fc36-4543-aa5e-3b7957118895",
+      "name" : "hashlib.hash.update",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "line" : 39,
+            "offset" : 11,
+            "location" : ".bob/skills/qse-remediation/remediation_tool.py"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.2.840.10045.4.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "bfa15533-a0d6-470e-ad5f-e44c23af835a",
+      "name" : "hashlib.hash.hexdigest",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "line" : 40,
+            "offset" : 14,
+            "location" : ".bob/skills/qse-remediation/remediation_tool.py"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "1.2.840.10045.4.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "29f670f6-b944-4b5b-823f-d9bff625e665",
+      "name" : "cryptography.hazmat.primitives.asymmetric.rsa.generate_private_key",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "line" : 20,
+            "offset" : 16,
+            "location" : "qseremediation/api/routes.py"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "signature",
+          "cryptoFunctions" : [
+            "keygen"
+          ]
+        },
+        "oid" : "1.2.840.10045.4.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "f7dec625-0926-4f41-9821-a13cbb2db3dc",
+      "name" : "cryptography.hazmat.primitives.asymmetric.padding.OAEP",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "line" : 41,
+            "offset" : 22,
+            "location" : "qseremediation/api/routes.py"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke",
+          "padding" : "oaep"
+        },
+        "oid" : "1.2.840.10045.4.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "bf618559-6b79-42fe-a11d-6947f32ec839",
+      "name" : "cryptography.hazmat.primitives.asymmetric.padding.MGF1",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "line" : 42,
+            "offset" : 30,
+            "location" : "qseremediation/api/routes.py"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke"
+        },
+        "oid" : "1.2.840.10045.4.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "07931b73-3541-4b5a-af75-8fb965c5da7d",
+      "name" : "cryptography.hazmat.primitives.hashes.SHA256",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "line" : 42,
+            "offset" : 52,
+            "location" : "qseremediation/api/routes.py"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.2.840.10045.4.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "86ecd8d5-fb58-41c6-bb90-55d8177ef163",
+      "name" : "cryptography.hazmat.primitives.hashes.SHA256",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "line" : 43,
+            "offset" : 30,
+            "location" : "qseremediation/api/routes.py"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.2.840.10045.4.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "aacdc96c-516e-4ab2-b1c7-4c4678874fc6",
+      "name" : "hashlib.pbkdf2_hmac",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "line" : 35,
+            "offset" : 20,
+            "location" : "qseremediation/config/settings.py"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "kdf",
+          "cryptoFunctions" : [
+            "keyderive"
+          ]
+        },
+        "oid" : "1.2.840.10045.4.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "a81bbd12-3575-46e1-b1dd-6ed1f774a238",
+      "name" : "cryptography.hazmat.primitives.asymmetric.padding.PSS",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "line" : 42,
+            "offset" : 17,
+            "location" : "qseremediation/utils/tokens.py"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke"
+        },
+        "oid" : "1.2.840.10045.4.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "b67ac387-cf2d-4320-a0d9-e0529aed739e",
+      "name" : "cryptography.hazmat.primitives.asymmetric.padding.MGF1",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "line" : 43,
+            "offset" : 25,
+            "location" : "qseremediation/utils/tokens.py"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "pke"
+        },
+        "oid" : "1.2.840.10045.4.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "6d3621d2-c8b6-499f-a667-654cefe93af5",
+      "name" : "cryptography.hazmat.primitives.hashes.SHA256",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "line" : 43,
+            "offset" : 37,
+            "location" : "qseremediation/utils/tokens.py"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.2.840.10045.4.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "29872a21-0c2f-44c8-b599-244dd21d1356",
+      "name" : "cryptography.hazmat.primitives.hashes.SHA256",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "line" : 46,
+            "offset" : 16,
+            "location" : "qseremediation/utils/tokens.py"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "hash"
+        },
+        "oid" : "1.2.840.10045.4.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "68e2221c-0f46-44b2-af53-d9d1358b2f93",
+      "name" : "Crypto.Cipher.AES.new",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "line" : 34,
+            "offset" : 18,
+            "location" : "qseremediation/services/user.py"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : { },
+        "oid" : "1.2.840.10045.4.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "e05d16eb-7c8a-4702-8d72-1f231c4724e1",
+      "name" : "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "line" : 35,
+            "offset" : 30,
+            "location" : "qseremediation/services/user.py"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "ae",
+          "mode" : "gcm",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "1.2.840.10045.4.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "348f1adf-8048-4290-b079-0fae73446fa3",
+      "name" : "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "line" : 35,
+            "offset" : 30,
+            "location" : "qseremediation/services/user.py"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "ae",
+          "mode" : "gcm",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        },
+        "oid" : "1.2.840.10045.4.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "7056ceba-0b70-4dba-bd92-eb2c7ae030dc",
+      "name" : "hashlib.pbkdf2_hmac",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "line" : 77,
+            "offset" : 22,
+            "location" : "qseremediation/services/user.py"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "kdf",
+          "cryptoFunctions" : [
+            "keyderive"
+          ]
+        },
+        "oid" : "1.2.840.10045.4.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "672f6237-4922-43df-a934-7a4b12d4461b",
+      "name" : "hashlib.pbkdf2_hmac",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "line" : 89,
+            "offset" : 26,
+            "location" : "qseremediation/services/user.py"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "kdf",
+          "cryptoFunctions" : [
+            "keyderive"
+          ]
+        },
+        "oid" : "1.2.840.10045.4.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "abdaae83-1ea8-49dd-a402-302a79e4c0b1",
+      "name" : "Crypto.Cipher.AES.new",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "line" : 50,
+            "offset" : 18,
+            "location" : "qseremediation/services/auth.py"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : { },
+        "oid" : "1.2.840.10045.4.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "78647156-5cda-4bbc-93eb-715947ece708",
+      "name" : "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "line" : 51,
+            "offset" : 30,
+            "location" : "qseremediation/services/auth.py"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "ae",
+          "mode" : "gcm",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "1.2.840.10045.4.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "2a3d6ba2-f171-4164-aa71-ab91cf445050",
+      "name" : "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "line" : 51,
+            "offset" : 30,
+            "location" : "qseremediation/services/auth.py"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "ae",
+          "mode" : "gcm",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        },
+        "oid" : "1.2.840.10045.4.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "25295d7f-52d7-42f4-8362-17ea3eed68f2",
+      "name" : "Crypto.Cipher.AES.new",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "line" : 41,
+            "offset" : 18,
+            "location" : "qseremediation/crypto/keys.py"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : { },
+        "oid" : "1.2.840.10045.4.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "a832a97f-5655-4ac6-8284-2e7cf4b8e019",
+      "name" : "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "line" : 42,
+            "offset" : 30,
+            "location" : "qseremediation/crypto/keys.py"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "ae",
+          "mode" : "gcm",
+          "cryptoFunctions" : [
+            "digest"
+          ]
+        },
+        "oid" : "1.2.840.10045.4.3.2"
+      }
+    },
+    {
+      "type" : "cryptographic-asset",
+      "bom-ref" : "891bb5a9-dc90-4691-88ac-e9d6d9ec8f7b",
+      "name" : "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
+      "evidence" : {
+        "occurrences" : [
+          {
+            "line" : 42,
+            "offset" : 30,
+            "location" : "qseremediation/crypto/keys.py"
+          }
+        ]
+      },
+      "cryptoProperties" : {
+        "assetType" : "algorithm",
+        "algorithmProperties" : {
+          "primitive" : "ae",
+          "mode" : "gcm",
+          "cryptoFunctions" : [
+            "encrypt"
+          ]
+        },
+        "oid" : "1.2.840.10045.4.3.2"
+      }
+    }
+  ],
+  "vulnerabilities" : [
+    {
+      "id" : "CWE-327",
+      "source" : {
+        "name" : "CWE",
+        "url" : "https://cwe.mitre.org/data/definitions/327.html"
+      },
+      "ratings" : [
+        {
+          "severity" : "high"
+        }
+      ],
+      "cwes" : [
+        327
+      ],
+      "affects" : [
+        {
+          "ref" : "29f670f6-b944-4b5b-823f-d9bff625e665"
+        },
+        {
+          "ref" : "f7dec625-0926-4f41-9821-a13cbb2db3dc"
+        },
+        {
+          "ref" : "bf618559-6b79-42fe-a11d-6947f32ec839"
+        },
+        {
+          "ref" : "b67ac387-cf2d-4320-a0d9-e0529aed739e"
+        },
+        {
+          "ref" : "a81bbd12-3575-46e1-b1dd-6ed1f774a238"
+        }
+      ]
+    }
+  ]
+}

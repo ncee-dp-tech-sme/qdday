@@ -1,0 +1,179 @@
+{
+  "mapCollections": {
+    "java": {
+      "map": {}
+    },
+    "py": {
+      "map": {
+        "/Users/erwin/development/qse/.bob/skills/qse-remediation/remediation_tool.py": {
+          "path": "/Users/erwin/development/qse/.bob/skills/qse-remediation/remediation_tool.py",
+          "totalLinesOfCode": 402,
+          "activeLinesOfCode": 327,
+          "methodDefined": 20,
+          "methodCalls": 179,
+          "variables": 82
+        },
+        "/Users/erwin/development/qse/generate_vulnerable_app.py": {
+          "path": "/Users/erwin/development/qse/generate_vulnerable_app.py",
+          "totalLinesOfCode": 3729,
+          "activeLinesOfCode": 1173,
+          "methodDefined": 186,
+          "methodCalls": 419,
+          "variables": 137
+        },
+        "/Users/erwin/development/qse/main.py": {
+          "path": "/Users/erwin/development/qse/main.py",
+          "totalLinesOfCode": 10,
+          "activeLinesOfCode": 4,
+          "methodDefined": 1,
+          "methodCalls": 0,
+          "variables": 0
+        },
+        "/Users/erwin/development/qse/platform_guard.py": {
+          "path": "/Users/erwin/development/qse/platform_guard.py",
+          "totalLinesOfCode": 105,
+          "activeLinesOfCode": 34,
+          "methodDefined": 3,
+          "methodCalls": 7,
+          "variables": 6
+        },
+        "/Users/erwin/development/qse/qseremediation/__init__.py": {
+          "path": "/Users/erwin/development/qse/qseremediation/__init__.py",
+          "totalLinesOfCode": 0,
+          "activeLinesOfCode": 0,
+          "methodDefined": 0,
+          "methodCalls": 0,
+          "variables": 0
+        },
+        "/Users/erwin/development/qse/qseremediation/api/__init__.py": {
+          "path": "/Users/erwin/development/qse/qseremediation/api/__init__.py",
+          "totalLinesOfCode": 0,
+          "activeLinesOfCode": 0,
+          "methodDefined": 0,
+          "methodCalls": 0,
+          "variables": 0
+        },
+        "/Users/erwin/development/qse/qseremediation/api/routes.py": {
+          "path": "/Users/erwin/development/qse/qseremediation/api/routes.py",
+          "totalLinesOfCode": 82,
+          "activeLinesOfCode": 39,
+          "methodDefined": 5,
+          "methodCalls": 17,
+          "variables": 8
+        },
+        "/Users/erwin/development/qse/qseremediation/config/__init__.py": {
+          "path": "/Users/erwin/development/qse/qseremediation/config/__init__.py",
+          "totalLinesOfCode": 0,
+          "activeLinesOfCode": 0,
+          "methodDefined": 0,
+          "methodCalls": 0,
+          "variables": 0
+        },
+        "/Users/erwin/development/qse/qseremediation/config/settings.py": {
+          "path": "/Users/erwin/development/qse/qseremediation/config/settings.py",
+          "totalLinesOfCode": 48,
+          "activeLinesOfCode": 19,
+          "methodDefined": 2,
+          "methodCalls": 5,
+          "variables": 12
+        },
+        "/Users/erwin/development/qse/qseremediation/crypto/__init__.py": {
+          "path": "/Users/erwin/development/qse/qseremediation/crypto/__init__.py",
+          "totalLinesOfCode": 0,
+          "activeLinesOfCode": 0,
+          "methodDefined": 0,
+          "methodCalls": 0,
+          "variables": 0
+        },
+        "/Users/erwin/development/qse/qseremediation/crypto/cipher.py": {
+          "path": "/Users/erwin/development/qse/qseremediation/crypto/cipher.py",
+          "totalLinesOfCode": 34,
+          "activeLinesOfCode": 2,
+          "methodDefined": 2,
+          "methodCalls": 4,
+          "variables": 4
+        },
+        "/Users/erwin/development/qse/qseremediation/crypto/keys.py": {
+          "path": "/Users/erwin/development/qse/qseremediation/crypto/keys.py",
+          "totalLinesOfCode": 44,
+          "activeLinesOfCode": 15,
+          "methodDefined": 2,
+          "methodCalls": 4,
+          "variables": 4
+        },
+        "/Users/erwin/development/qse/qseremediation/services/__init__.py": {
+          "path": "/Users/erwin/development/qse/qseremediation/services/__init__.py",
+          "totalLinesOfCode": 0,
+          "activeLinesOfCode": 0,
+          "methodDefined": 0,
+          "methodCalls": 0,
+          "variables": 0
+        },
+        "/Users/erwin/development/qse/qseremediation/services/auth.py": {
+          "path": "/Users/erwin/development/qse/qseremediation/services/auth.py",
+          "totalLinesOfCode": 72,
+          "activeLinesOfCode": 30,
+          "methodDefined": 5,
+          "methodCalls": 5,
+          "variables": 5
+        },
+        "/Users/erwin/development/qse/qseremediation/services/user.py": {
+          "path": "/Users/erwin/development/qse/qseremediation/services/user.py",
+          "totalLinesOfCode": 95,
+          "activeLinesOfCode": 45,
+          "methodDefined": 6,
+          "methodCalls": 18,
+          "variables": 11
+        },
+        "/Users/erwin/development/qse/qseremediation/utils/__init__.py": {
+          "path": "/Users/erwin/development/qse/qseremediation/utils/__init__.py",
+          "totalLinesOfCode": 0,
+          "activeLinesOfCode": 0,
+          "methodDefined": 0,
+          "methodCalls": 0,
+          "variables": 0
+        },
+        "/Users/erwin/development/qse/qseremediation/utils/hashing.py": {
+          "path": "/Users/erwin/development/qse/qseremediation/utils/hashing.py",
+          "totalLinesOfCode": 24,
+          "activeLinesOfCode": 12,
+          "methodDefined": 2,
+          "methodCalls": 3,
+          "variables": 1
+        },
+        "/Users/erwin/development/qse/qseremediation/utils/tokens.py": {
+          "path": "/Users/erwin/development/qse/qseremediation/utils/tokens.py",
+          "totalLinesOfCode": 82,
+          "activeLinesOfCode": 46,
+          "methodDefined": 5,
+          "methodCalls": 10,
+          "variables": 5
+        },
+        "/Users/erwin/development/qse/setup.py": {
+          "path": "/Users/erwin/development/qse/setup.py",
+          "totalLinesOfCode": 16,
+          "activeLinesOfCode": 15,
+          "methodDefined": 0,
+          "methodCalls": 0,
+          "variables": 0
+        },
+        "/Users/erwin/development/qse/tests/__init__.py": {
+          "path": "/Users/erwin/development/qse/tests/__init__.py",
+          "totalLinesOfCode": 0,
+          "activeLinesOfCode": 0,
+          "methodDefined": 0,
+          "methodCalls": 0,
+          "variables": 0
+        },
+        "/Users/erwin/development/qse/tests/test_auth.py": {
+          "path": "/Users/erwin/development/qse/tests/test_auth.py",
+          "totalLinesOfCode": 14,
+          "activeLinesOfCode": 7,
+          "methodDefined": 2,
+          "methodCalls": 0,
+          "variables": 1
+        }
+      }
+    }
+  }
+}

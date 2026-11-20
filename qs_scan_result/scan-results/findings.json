@@ -1,0 +1,1052 @@
+{
+  "scanId": "6187ae84-bd03-4eee-861c-4a22477a79f8",
+  "name": "crypto artifacts",
+  "applicationId": "Pentest Agent",
+  "applicationVersion": "1.0.0",
+  "scanTime": "2026-11-20T18:22:39.903494Z",
+  "num_artifacts": 24,
+  "repositoryId": " ",
+  "repositoryUrl": " ",
+  "children": [
+    {
+      "file_type": "py",
+      "children": [
+        {
+          "file_id": "e3fe2393-8922-492e-9d92-928e285491df",
+          "name": "remediation_tool.py",
+          "full_name": ".bob/skills/qse-remediation/remediation_tool.py",
+          "num_artifacts": 3,
+          "crypto_info": [
+            {
+              "id": 0,
+              "title": "hashlib.sha256",
+              "tooltip": [
+                "hashlib.sha256"
+              ],
+              "crypto_properties": {
+                "library": "hashlib",
+                "name": "hashlib.sha256",
+                "primitive": "hash",
+                "variant": "SHA2",
+                "oid": "2.16.840.1.101.3.4.2.1",
+                "digestSize": "256",
+                "assetType": "algorithm",
+                "blockSize": "512"
+              },
+              "crypto_vulnerabilities": [
+                {
+                  "vulnerabilityId": "10",
+                  "classification": "cwe759",
+                  "vulnerabilityScore": "low",
+                  "vulnerabilityDocumentationReference": "https://cwe.mitre.org/data/definitions/759.html",
+                  "debugMessage": "Hashes should include an unpredictable salt.",
+                  "type": "Suggestive",
+                  "references": [
+                    {
+                      "type": "variant",
+                      "value": "SHA2",
+                      "context": {
+                        "location": {
+                          "fileName": ".bob/skills/qse-remediation/remediation_tool.py",
+                          "line": 37,
+                          "startColumn": 17,
+                          "endColumn": 23
+                        }
+                      }
+                    }
+                  ]
+                }
+              ],
+              "file_path": ".bob/skills/qse-remediation/remediation_tool.py",
+              "call_line": 37,
+              "start": 17,
+              "end": 23,
+              "startScoped": 17,
+              "endScoped": 23
+            },
+            {
+              "id": 1,
+              "title": "hashlib.hash.update",
+              "tooltip": [
+                "hashlib.hash.update"
+              ],
+              "crypto_properties": {
+                "library": "hashlib",
+                "name": "hashlib.hash.update",
+                "primitive": "hash",
+                "assetType": "algorithm"
+              },
+              "crypto_vulnerabilities": [
+                {
+                  "vulnerabilityId": "10",
+                  "classification": "cwe759",
+                  "vulnerabilityScore": "low",
+                  "vulnerabilityDocumentationReference": "https://cwe.mitre.org/data/definitions/759.html",
+                  "debugMessage": "Hashes should include an unpredictable salt.",
+                  "type": "Suggestive",
+                  "references": [
+                    {
+                      "type": "variant",
+                      "context": {
+                        "location": {
+                          "fileName": ".bob/skills/qse-remediation/remediation_tool.py",
+                          "line": 39,
+                          "startColumn": 11,
+                          "endColumn": 17
+                        }
+                      }
+                    }
+                  ]
+                }
+              ],
+              "file_path": ".bob/skills/qse-remediation/remediation_tool.py",
+              "call_line": 39,
+              "start": 11,
+              "end": 17,
+              "startScoped": 11,
+              "endScoped": 17
+            },
+            {
+              "id": 2,
+              "title": "hashlib.hash.hexdigest",
+              "tooltip": [
+                "hashlib.hash.hexdigest"
+              ],
+              "crypto_properties": {
+                "library": "hashlib",
+                "name": "hashlib.hash.hexdigest",
+                "primitive": "hash",
+                "assetType": "algorithm",
+                "cryptoFunction": "digest"
+              },
+              "crypto_vulnerabilities": [
+                {
+                  "vulnerabilityId": "10",
+                  "classification": "cwe759",
+                  "vulnerabilityScore": "low",
+                  "vulnerabilityDocumentationReference": "https://cwe.mitre.org/data/definitions/759.html",
+                  "debugMessage": "Hashes should include an unpredictable salt.",
+                  "type": "Suggestive",
+                  "references": [
+                    {
+                      "type": "variant",
+                      "context": {
+                        "location": {
+                          "fileName": ".bob/skills/qse-remediation/remediation_tool.py",
+                          "line": 40,
+                          "startColumn": 14,
+                          "endColumn": 23
+                        }
+                      }
+                    }
+                  ]
+                }
+              ],
+              "file_path": ".bob/skills/qse-remediation/remediation_tool.py",
+              "call_line": 40,
+              "start": 14,
+              "end": 23,
+              "startScoped": 14,
+              "endScoped": 23
+            }
+          ]
+        },
+        {
+          "file_id": "7929a485-5995-4270-a627-a56f5301c8da",
+          "name": "routes.py",
+          "full_name": "qseremediation/api/routes.py",
+          "num_artifacts": 5,
+          "crypto_info": [
+            {
+              "id": 0,
+              "title": "cryptography.hazmat.primitives.asymmetric.rsa.generate_private_key",
+              "tooltip": [
+                "cryptography.hazmat.primitives.asymmetric.rsa.generate_private_key"
+              ],
+              "crypto_properties": {
+                "library": "cryptography",
+                "name": "cryptography.hazmat.primitives.asymmetric.rsa.generate_private_key",
+                "primitive": "signature",
+                "variant": "RSA",
+                "assetType": "algorithm",
+                "cryptoFunction": "keygen"
+              },
+              "crypto_vulnerabilities": [
+                {
+                  "vulnerabilityId": "4",
+                  "classification": "cwe327",
+                  "vulnerabilityScore": "high",
+                  "vulnerabilityDocumentationReference": "https://cwe.mitre.org/data/definitions/327.html",
+                  "debugMessage": "Use of non-quantum-resistant public-key algorithms (must be ML-KEM, ML-DSA, SLH-DSA): RSA",
+                  "type": "Definitive",
+                  "references": [
+                    {
+                      "type": "variant",
+                      "value": "RSA",
+                      "context": {
+                        "location": {
+                          "fileName": "qseremediation/api/routes.py",
+                          "line": 20,
+                          "startColumn": 16,
+                          "endColumn": 36
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "vulnerabilityId": "18",
+                  "classification": "cwe326",
+                  "vulnerabilityScore": "high",
+                  "vulnerabilityDocumentationReference": "https://cwe.mitre.org/data/definitions/326.html",
+                  "debugMessage": "Cryptographic keys should be robust. Use a key length of more than 1024 bits.",
+                  "type": "Suggestive",
+                  "references": [
+                    {
+                      "type": "variant",
+                      "value": "RSA",
+                      "context": {
+                        "location": {
+                          "fileName": "qseremediation/api/routes.py",
+                          "line": 20,
+                          "startColumn": 16,
+                          "endColumn": 36
+                        }
+                      }
+                    }
+                  ]
+                }
+              ],
+              "file_path": "qseremediation/api/routes.py",
+              "call_line": 20,
+              "start": 16,
+              "end": 36,
+              "startScoped": 16,
+              "endScoped": 36
+            },
+            {
+              "id": 1,
+              "title": "cryptography.hazmat.primitives.asymmetric.padding.OAEP",
+              "tooltip": [
+                "cryptography.hazmat.primitives.asymmetric.padding.OAEP"
+              ],
+              "crypto_properties": {
+                "library": "cryptography",
+                "name": "cryptography.hazmat.primitives.asymmetric.padding.OAEP",
+                "primitive": "pke",
+                "variant": "RSA",
+                "assetType": "algorithm",
+                "padding": "oaep"
+              },
+              "crypto_vulnerabilities": [
+                {
+                  "vulnerabilityId": "4",
+                  "classification": "cwe327",
+                  "vulnerabilityScore": "high",
+                  "vulnerabilityDocumentationReference": "https://cwe.mitre.org/data/definitions/327.html",
+                  "debugMessage": "Use of non-quantum-resistant public-key algorithms (must be ML-KEM, ML-DSA, SLH-DSA): RSA",
+                  "type": "Definitive",
+                  "references": [
+                    {
+                      "type": "variant",
+                      "value": "RSA",
+                      "context": {
+                        "location": {
+                          "fileName": "qseremediation/api/routes.py",
+                          "line": 41,
+                          "startColumn": 22,
+                          "endColumn": 26
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "vulnerabilityId": "18",
+                  "classification": "cwe326",
+                  "vulnerabilityScore": "high",
+                  "vulnerabilityDocumentationReference": "https://cwe.mitre.org/data/definitions/326.html",
+                  "debugMessage": "Cryptographic keys should be robust. Use a key length of more than 1024 bits.",
+                  "type": "Suggestive",
+                  "references": [
+                    {
+                      "type": "variant",
+                      "value": "RSA",
+                      "context": {
+                        "location": {
+                          "fileName": "qseremediation/api/routes.py",
+                          "line": 41,
+                          "startColumn": 22,
+                          "endColumn": 26
+                        }
+                      }
+                    }
+                  ]
+                }
+              ],
+              "file_path": "qseremediation/api/routes.py",
+              "call_line": 41,
+              "start": 22,
+              "end": 26,
+              "startScoped": 22,
+              "endScoped": 26
+            },
+            {
+              "id": 2,
+              "title": "cryptography.hazmat.primitives.asymmetric.padding.MGF1",
+              "tooltip": [
+                "cryptography.hazmat.primitives.asymmetric.padding.MGF1"
+              ],
+              "crypto_properties": {
+                "library": "cryptography",
+                "name": "cryptography.hazmat.primitives.asymmetric.padding.MGF1",
+                "primitive": "pke",
+                "variant": "RSA",
+                "assetType": "algorithm"
+              },
+              "crypto_vulnerabilities": [
+                {
+                  "vulnerabilityId": "4",
+                  "classification": "cwe327",
+                  "vulnerabilityScore": "high",
+                  "vulnerabilityDocumentationReference": "https://cwe.mitre.org/data/definitions/327.html",
+                  "debugMessage": "Use of non-quantum-resistant public-key algorithms (must be ML-KEM, ML-DSA, SLH-DSA): RSA",
+                  "type": "Definitive",
+                  "references": [
+                    {
+                      "type": "variant",
+                      "value": "RSA",
+                      "context": {
+                        "location": {
+                          "fileName": "qseremediation/api/routes.py",
+                          "line": 42,
+                          "startColumn": 30,
+                          "endColumn": 34
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "vulnerabilityId": "18",
+                  "classification": "cwe326",
+                  "vulnerabilityScore": "high",
+                  "vulnerabilityDocumentationReference": "https://cwe.mitre.org/data/definitions/326.html",
+                  "debugMessage": "Cryptographic keys should be robust. Use a key length of more than 1024 bits.",
+                  "type": "Suggestive",
+                  "references": [
+                    {
+                      "type": "variant",
+                      "value": "RSA",
+                      "context": {
+                        "location": {
+                          "fileName": "qseremediation/api/routes.py",
+                          "line": 42,
+                          "startColumn": 30,
+                          "endColumn": 34
+                        }
+                      }
+                    }
+                  ]
+                }
+              ],
+              "file_path": "qseremediation/api/routes.py",
+              "call_line": 42,
+              "start": 30,
+              "end": 34,
+              "startScoped": 30,
+              "endScoped": 34
+            },
+            {
+              "id": 3,
+              "title": "cryptography.hazmat.primitives.hashes.SHA256",
+              "tooltip": [
+                "cryptography.hazmat.primitives.hashes.SHA256"
+              ],
+              "crypto_properties": {
+                "library": "cryptography",
+                "name": "cryptography.hazmat.primitives.hashes.SHA256",
+                "primitive": "hash",
+                "variant": "SHA2",
+                "oid": "2.16.840.1.101.3.4.2.1",
+                "digestSize": "256",
+                "assetType": "algorithm",
+                "blockSize": "512"
+              },
+              "crypto_vulnerabilities": [
+                {
+                  "vulnerabilityId": "10",
+                  "classification": "cwe759",
+                  "vulnerabilityScore": "low",
+                  "vulnerabilityDocumentationReference": "https://cwe.mitre.org/data/definitions/759.html",
+                  "debugMessage": "Hashes should include an unpredictable salt.",
+                  "type": "Suggestive",
+                  "references": [
+                    {
+                      "type": "variant",
+                      "value": "SHA2",
+                      "context": {
+                        "location": {
+                          "fileName": "qseremediation/api/routes.py",
+                          "line": 42,
+                          "startColumn": 52,
+                          "endColumn": 58
+                        }
+                      }
+                    }
+                  ]
+                }
+              ],
+              "file_path": "qseremediation/api/routes.py",
+              "call_line": 42,
+              "start": 52,
+              "end": 58,
+              "startScoped": 52,
+              "endScoped": 58
+            },
+            {
+              "id": 4,
+              "title": "cryptography.hazmat.primitives.hashes.SHA256",
+              "tooltip": [
+                "cryptography.hazmat.primitives.hashes.SHA256"
+              ],
+              "crypto_properties": {
+                "library": "cryptography",
+                "name": "cryptography.hazmat.primitives.hashes.SHA256",
+                "primitive": "hash",
+                "variant": "SHA2",
+                "oid": "2.16.840.1.101.3.4.2.1",
+                "digestSize": "256",
+                "assetType": "algorithm",
+                "blockSize": "512"
+              },
+              "crypto_vulnerabilities": [
+                {
+                  "vulnerabilityId": "10",
+                  "classification": "cwe759",
+                  "vulnerabilityScore": "low",
+                  "vulnerabilityDocumentationReference": "https://cwe.mitre.org/data/definitions/759.html",
+                  "debugMessage": "Hashes should include an unpredictable salt.",
+                  "type": "Suggestive",
+                  "references": [
+                    {
+                      "type": "variant",
+                      "value": "SHA2",
+                      "context": {
+                        "location": {
+                          "fileName": "qseremediation/api/routes.py",
+                          "line": 43,
+                          "startColumn": 30,
+                          "endColumn": 36
+                        }
+                      }
+                    }
+                  ]
+                }
+              ],
+              "file_path": "qseremediation/api/routes.py",
+              "call_line": 43,
+              "start": 30,
+              "end": 36,
+              "startScoped": 30,
+              "endScoped": 36
+            }
+          ]
+        },
+        {
+          "file_id": "faa1a3e8-a6bb-4a2f-b3e0-163228b0f3d4",
+          "name": "settings.py",
+          "full_name": "qseremediation/config/settings.py",
+          "num_artifacts": 1,
+          "crypto_info": [
+            {
+              "id": 0,
+              "title": "hashlib.pbkdf2_hmac",
+              "tooltip": [
+                "hashlib.pbkdf2_hmac"
+              ],
+              "crypto_properties": {
+                "library": "hashlib",
+                "name": "hashlib.pbkdf2_hmac",
+                "primitive": "kdf",
+                "variant": "PBKDF2",
+                "assetType": "algorithm",
+                "cryptoFunction": "keyderive"
+              },
+              "crypto_vulnerabilities": [],
+              "file_path": "qseremediation/config/settings.py",
+              "call_line": 35,
+              "start": 20,
+              "end": 31,
+              "startScoped": 20,
+              "endScoped": 31
+            }
+          ]
+        },
+        {
+          "file_id": "413b2c17-676f-4a80-b99e-ca4f57fa6b11",
+          "name": "tokens.py",
+          "full_name": "qseremediation/utils/tokens.py",
+          "num_artifacts": 4,
+          "crypto_info": [
+            {
+              "id": 0,
+              "title": "cryptography.hazmat.primitives.asymmetric.padding.PSS",
+              "tooltip": [
+                "cryptography.hazmat.primitives.asymmetric.padding.PSS"
+              ],
+              "crypto_properties": {
+                "library": "cryptography",
+                "name": "cryptography.hazmat.primitives.asymmetric.padding.PSS",
+                "primitive": "pke",
+                "variant": "RSA-PSS",
+                "assetType": "algorithm"
+              },
+              "crypto_vulnerabilities": [
+                {
+                  "vulnerabilityId": "4",
+                  "classification": "cwe327",
+                  "vulnerabilityScore": "high",
+                  "vulnerabilityDocumentationReference": "https://cwe.mitre.org/data/definitions/327.html",
+                  "debugMessage": "Use of non-quantum-resistant public-key algorithms (must be ML-KEM, ML-DSA, SLH-DSA): RSA-PSS",
+                  "type": "Definitive",
+                  "references": [
+                    {
+                      "type": "variant",
+                      "value": "RSA-PSS",
+                      "context": {
+                        "location": {
+                          "fileName": "qseremediation/utils/tokens.py",
+                          "line": 42,
+                          "startColumn": 17,
+                          "endColumn": 20
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "vulnerabilityId": "18",
+                  "classification": "cwe326",
+                  "vulnerabilityScore": "high",
+                  "vulnerabilityDocumentationReference": "https://cwe.mitre.org/data/definitions/326.html",
+                  "debugMessage": "Cryptographic keys should be robust. Use a key length of more than 1024 bits.",
+                  "type": "Suggestive",
+                  "references": [
+                    {
+                      "type": "variant",
+                      "value": "RSA-PSS",
+                      "context": {
+                        "location": {
+                          "fileName": "qseremediation/utils/tokens.py",
+                          "line": 42,
+                          "startColumn": 17,
+                          "endColumn": 20
+                        }
+                      }
+                    }
+                  ]
+                }
+              ],
+              "file_path": "qseremediation/utils/tokens.py",
+              "call_line": 42,
+              "start": 17,
+              "end": 20,
+              "startScoped": 17,
+              "endScoped": 20
+            },
+            {
+              "id": 1,
+              "title": "cryptography.hazmat.primitives.asymmetric.padding.MGF1",
+              "tooltip": [
+                "cryptography.hazmat.primitives.asymmetric.padding.MGF1"
+              ],
+              "crypto_properties": {
+                "library": "cryptography",
+                "name": "cryptography.hazmat.primitives.asymmetric.padding.MGF1",
+                "primitive": "pke",
+                "variant": "RSA",
+                "assetType": "algorithm"
+              },
+              "crypto_vulnerabilities": [
+                {
+                  "vulnerabilityId": "4",
+                  "classification": "cwe327",
+                  "vulnerabilityScore": "high",
+                  "vulnerabilityDocumentationReference": "https://cwe.mitre.org/data/definitions/327.html",
+                  "debugMessage": "Use of non-quantum-resistant public-key algorithms (must be ML-KEM, ML-DSA, SLH-DSA): RSA",
+                  "type": "Definitive",
+                  "references": [
+                    {
+                      "type": "variant",
+                      "value": "RSA",
+                      "context": {
+                        "location": {
+                          "fileName": "qseremediation/utils/tokens.py",
+                          "line": 43,
+                          "startColumn": 25,
+                          "endColumn": 29
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "vulnerabilityId": "18",
+                  "classification": "cwe326",
+                  "vulnerabilityScore": "high",
+                  "vulnerabilityDocumentationReference": "https://cwe.mitre.org/data/definitions/326.html",
+                  "debugMessage": "Cryptographic keys should be robust. Use a key length of more than 1024 bits.",
+                  "type": "Suggestive",
+                  "references": [
+                    {
+                      "type": "variant",
+                      "value": "RSA",
+                      "context": {
+                        "location": {
+                          "fileName": "qseremediation/utils/tokens.py",
+                          "line": 43,
+                          "startColumn": 25,
+                          "endColumn": 29
+                        }
+                      }
+                    }
+                  ]
+                }
+              ],
+              "file_path": "qseremediation/utils/tokens.py",
+              "call_line": 43,
+              "start": 25,
+              "end": 29,
+              "startScoped": 25,
+              "endScoped": 29
+            },
+            {
+              "id": 2,
+              "title": "cryptography.hazmat.primitives.hashes.SHA256",
+              "tooltip": [
+                "cryptography.hazmat.primitives.hashes.SHA256"
+              ],
+              "crypto_properties": {
+                "library": "cryptography",
+                "name": "cryptography.hazmat.primitives.hashes.SHA256",
+                "primitive": "hash",
+                "variant": "SHA2",
+                "oid": "2.16.840.1.101.3.4.2.1",
+                "digestSize": "256",
+                "assetType": "algorithm",
+                "blockSize": "512"
+              },
+              "crypto_vulnerabilities": [
+                {
+                  "vulnerabilityId": "10",
+                  "classification": "cwe759",
+                  "vulnerabilityScore": "low",
+                  "vulnerabilityDocumentationReference": "https://cwe.mitre.org/data/definitions/759.html",
+                  "debugMessage": "Hashes should include an unpredictable salt.",
+                  "type": "Suggestive",
+                  "references": [
+                    {
+                      "type": "variant",
+                      "value": "SHA2",
+                      "context": {
+                        "location": {
+                          "fileName": "qseremediation/utils/tokens.py",
+                          "line": 43,
+                          "startColumn": 37,
+                          "endColumn": 43
+                        }
+                      }
+                    }
+                  ]
+                }
+              ],
+              "file_path": "qseremediation/utils/tokens.py",
+              "call_line": 43,
+              "start": 37,
+              "end": 43,
+              "startScoped": 37,
+              "endScoped": 43
+            },
+            {
+              "id": 3,
+              "title": "cryptography.hazmat.primitives.hashes.SHA256",
+              "tooltip": [
+                "cryptography.hazmat.primitives.hashes.SHA256"
+              ],
+              "crypto_properties": {
+                "library": "cryptography",
+                "name": "cryptography.hazmat.primitives.hashes.SHA256",
+                "primitive": "hash",
+                "variant": "SHA2",
+                "oid": "2.16.840.1.101.3.4.2.1",
+                "digestSize": "256",
+                "assetType": "algorithm",
+                "blockSize": "512"
+              },
+              "crypto_vulnerabilities": [
+                {
+                  "vulnerabilityId": "10",
+                  "classification": "cwe759",
+                  "vulnerabilityScore": "low",
+                  "vulnerabilityDocumentationReference": "https://cwe.mitre.org/data/definitions/759.html",
+                  "debugMessage": "Hashes should include an unpredictable salt.",
+                  "type": "Suggestive",
+                  "references": [
+                    {
+                      "type": "variant",
+                      "value": "SHA2",
+                      "context": {
+                        "location": {
+                          "fileName": "qseremediation/utils/tokens.py",
+                          "line": 46,
+                          "startColumn": 16,
+                          "endColumn": 22
+                        }
+                      }
+                    }
+                  ]
+                }
+              ],
+              "file_path": "qseremediation/utils/tokens.py",
+              "call_line": 46,
+              "start": 16,
+              "end": 22,
+              "startScoped": 16,
+              "endScoped": 22
+            }
+          ]
+        },
+        {
+          "file_id": "640c121c-00d8-43b6-a4ad-4cde1e414fa0",
+          "name": "user.py",
+          "full_name": "qseremediation/services/user.py",
+          "num_artifacts": 5,
+          "crypto_info": [
+            {
+              "id": 0,
+              "title": "Crypto.Cipher.AES.new",
+              "tooltip": [
+                "Crypto.Cipher.AES.new"
+              ],
+              "crypto_properties": {
+                "library": "Crypto",
+                "name": "Crypto.Cipher.AES.new",
+                "variant": "AES",
+                "assetType": "algorithm"
+              },
+              "crypto_vulnerabilities": [
+                {
+                  "vulnerabilityId": "3",
+                  "classification": "cwe327",
+                  "vulnerabilityScore": "high",
+                  "vulnerabilityDocumentationReference": "https://cwe.mitre.org/data/definitions/327.html",
+                  "debugMessage": "Use a secure cipher mode. For AES, the weakest modes are CBC (Cipher Block Chaining) and ECB (Electronic Codebook), as they are either vulnerable to padding oracles or do not provide authentication mechanisms.",
+                  "type": "Suggestive",
+                  "references": [
+                    {
+                      "type": "variant",
+                      "value": "AES",
+                      "context": {
+                        "location": {
+                          "fileName": "qseremediation/services/user.py",
+                          "line": 34,
+                          "startColumn": 18,
+                          "endColumn": 21
+                        }
+                      }
+                    }
+                  ]
+                }
+              ],
+              "file_path": "qseremediation/services/user.py",
+              "call_line": 34,
+              "start": 18,
+              "end": 21,
+              "startScoped": 18,
+              "endScoped": 21
+            },
+            {
+              "id": 1,
+              "title": "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
+              "tooltip": [
+                "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest"
+              ],
+              "crypto_properties": {
+                "library": "Crypto",
+                "name": "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
+                "primitive": "ae",
+                "assetType": "algorithm",
+                "cryptoFunction": "digest",
+                "mode": "gcm"
+              },
+              "crypto_vulnerabilities": [],
+              "file_path": "qseremediation/services/user.py",
+              "call_line": 35,
+              "start": 30,
+              "end": 48,
+              "startScoped": 30,
+              "endScoped": 48
+            },
+            {
+              "id": 2,
+              "title": "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
+              "tooltip": [
+                "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest"
+              ],
+              "crypto_properties": {
+                "library": "Crypto",
+                "name": "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
+                "primitive": "ae",
+                "assetType": "algorithm",
+                "cryptoFunction": "encrypt",
+                "mode": "gcm"
+              },
+              "crypto_vulnerabilities": [],
+              "file_path": "qseremediation/services/user.py",
+              "call_line": 35,
+              "start": 30,
+              "end": 48,
+              "startScoped": 30,
+              "endScoped": 48
+            },
+            {
+              "id": 3,
+              "title": "hashlib.pbkdf2_hmac",
+              "tooltip": [
+                "hashlib.pbkdf2_hmac"
+              ],
+              "crypto_properties": {
+                "library": "hashlib",
+                "name": "hashlib.pbkdf2_hmac",
+                "primitive": "kdf",
+                "variant": "PBKDF2",
+                "assetType": "algorithm",
+                "cryptoFunction": "keyderive"
+              },
+              "crypto_vulnerabilities": [],
+              "file_path": "qseremediation/services/user.py",
+              "call_line": 77,
+              "start": 22,
+              "end": 33,
+              "startScoped": 22,
+              "endScoped": 33
+            },
+            {
+              "id": 4,
+              "title": "hashlib.pbkdf2_hmac",
+              "tooltip": [
+                "hashlib.pbkdf2_hmac"
+              ],
+              "crypto_properties": {
+                "library": "hashlib",
+                "name": "hashlib.pbkdf2_hmac",
+                "primitive": "kdf",
+                "variant": "PBKDF2",
+                "assetType": "algorithm",
+                "cryptoFunction": "keyderive"
+              },
+              "crypto_vulnerabilities": [],
+              "file_path": "qseremediation/services/user.py",
+              "call_line": 89,
+              "start": 26,
+              "end": 37,
+              "startScoped": 26,
+              "endScoped": 37
+            }
+          ]
+        },
+        {
+          "file_id": "a449e4c1-4f8d-45d7-b92a-80df9d87aaa5",
+          "name": "auth.py",
+          "full_name": "qseremediation/services/auth.py",
+          "num_artifacts": 3,
+          "crypto_info": [
+            {
+              "id": 0,
+              "title": "Crypto.Cipher.AES.new",
+              "tooltip": [
+                "Crypto.Cipher.AES.new"
+              ],
+              "crypto_properties": {
+                "library": "Crypto",
+                "name": "Crypto.Cipher.AES.new",
+                "variant": "AES",
+                "assetType": "algorithm"
+              },
+              "crypto_vulnerabilities": [
+                {
+                  "vulnerabilityId": "3",
+                  "classification": "cwe327",
+                  "vulnerabilityScore": "high",
+                  "vulnerabilityDocumentationReference": "https://cwe.mitre.org/data/definitions/327.html",
+                  "debugMessage": "Use a secure cipher mode. For AES, the weakest modes are CBC (Cipher Block Chaining) and ECB (Electronic Codebook), as they are either vulnerable to padding oracles or do not provide authentication mechanisms.",
+                  "type": "Suggestive",
+                  "references": [
+                    {
+                      "type": "variant",
+                      "value": "AES",
+                      "context": {
+                        "location": {
+                          "fileName": "qseremediation/services/auth.py",
+                          "line": 50,
+                          "startColumn": 18,
+                          "endColumn": 21
+                        }
+                      }
+                    }
+                  ]
+                }
+              ],
+              "file_path": "qseremediation/services/auth.py",
+              "call_line": 50,
+              "start": 18,
+              "end": 21,
+              "startScoped": 18,
+              "endScoped": 21
+            },
+            {
+              "id": 1,
+              "title": "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
+              "tooltip": [
+                "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest"
+              ],
+              "crypto_properties": {
+                "library": "Crypto",
+                "name": "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
+                "primitive": "ae",
+                "assetType": "algorithm",
+                "cryptoFunction": "digest",
+                "mode": "gcm"
+              },
+              "crypto_vulnerabilities": [],
+              "file_path": "qseremediation/services/auth.py",
+              "call_line": 51,
+              "start": 30,
+              "end": 48,
+              "startScoped": 30,
+              "endScoped": 48
+            },
+            {
+              "id": 2,
+              "title": "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
+              "tooltip": [
+                "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest"
+              ],
+              "crypto_properties": {
+                "library": "Crypto",
+                "name": "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
+                "primitive": "ae",
+                "assetType": "algorithm",
+                "cryptoFunction": "encrypt",
+                "mode": "gcm"
+              },
+              "crypto_vulnerabilities": [],
+              "file_path": "qseremediation/services/auth.py",
+              "call_line": 51,
+              "start": 30,
+              "end": 48,
+              "startScoped": 30,
+              "endScoped": 48
+            }
+          ]
+        },
+        {
+          "file_id": "ebcce78b-8245-4207-95d5-0b38207f28cf",
+          "name": "keys.py",
+          "full_name": "qseremediation/crypto/keys.py",
+          "num_artifacts": 3,
+          "crypto_info": [
+            {
+              "id": 0,
+              "title": "Crypto.Cipher.AES.new",
+              "tooltip": [
+                "Crypto.Cipher.AES.new"
+              ],
+              "crypto_properties": {
+                "library": "Crypto",
+                "name": "Crypto.Cipher.AES.new",
+                "variant": "AES",
+                "assetType": "algorithm"
+              },
+              "crypto_vulnerabilities": [
+                {
+                  "vulnerabilityId": "3",
+                  "classification": "cwe327",
+                  "vulnerabilityScore": "high",
+                  "vulnerabilityDocumentationReference": "https://cwe.mitre.org/data/definitions/327.html",
+                  "debugMessage": "Use a secure cipher mode. For AES, the weakest modes are CBC (Cipher Block Chaining) and ECB (Electronic Codebook), as they are either vulnerable to padding oracles or do not provide authentication mechanisms.",
+                  "type": "Suggestive",
+                  "references": [
+                    {
+                      "type": "variant",
+                      "value": "AES",
+                      "context": {
+                        "location": {
+                          "fileName": "qseremediation/crypto/keys.py",
+                          "line": 41,
+                          "startColumn": 18,
+                          "endColumn": 21
+                        }
+                      }
+                    }
+                  ]
+                }
+              ],
+              "file_path": "qseremediation/crypto/keys.py",
+              "call_line": 41,
+              "start": 18,
+              "end": 21,
+              "startScoped": 18,
+              "endScoped": 21
+            },
+            {
+              "id": 1,
+              "title": "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
+              "tooltip": [
+                "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest"
+              ],
+              "crypto_properties": {
+                "library": "Crypto",
+                "name": "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
+                "primitive": "ae",
+                "assetType": "algorithm",
+                "cryptoFunction": "digest",
+                "mode": "gcm"
+              },
+              "crypto_vulnerabilities": [],
+              "file_path": "qseremediation/crypto/keys.py",
+              "call_line": 42,
+              "start": 30,
+              "end": 48,
+              "startScoped": 30,
+              "endScoped": 48
+            },
+            {
+              "id": 2,
+              "title": "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
+              "tooltip": [
+                "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest"
+              ],
+              "crypto_properties": {
+                "library": "Crypto",
+                "name": "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
+                "primitive": "ae",
+                "assetType": "algorithm",
+                "cryptoFunction": "encrypt",
+                "mode": "gcm"
+              },
+              "crypto_vulnerabilities": [],
+              "file_path": "qseremediation/crypto/keys.py",
+              "call_line": 42,
+              "start": 30,
+              "end": 48,
+              "startScoped": 30,
+              "endScoped": 48
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

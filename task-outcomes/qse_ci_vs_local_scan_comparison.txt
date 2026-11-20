@@ -1,0 +1,17 @@
+PROMPT: I meant the CI scan compared to the local scan before the remediation
+Fri Nov 20 19:12:44 CET 2026
+
+Compared: local pre-remediation scan (git 5e3d321, qs_explorer_result/qs_explorer_result/quantum_safe_api_discovery_findings.json, scan 2026-11-20T17:17Z)
+      vs  CI scan (git aa6860e, qs_explorer_result/quantum_safe_api_discovery_findings.json, scan 2026-11-20T18:00Z)
+
+Metric                 Local-before  CI-after
+Crypto artifacts       17            21
+Artifacts flagged      14            12
+Vulnerabilities        19            17
+ high / low            18 / 1        13 / 4
+ Definitive/Suggestive 10 / 9        5 / 12
+
+Per file (vulns):  routes.py 4->8, tokens.py 4->6, user.py 5->1, auth.py 2->1, keys.py 4->1
+Removed: MD5, SHA-1, Blowfish, AES-CBC/ECB, missing IV, EC/ECDH
+Remaining: RSA (OAEP/PSS, keygen 3072) non-quantum-resistant = 5 Definitive; rest Suggestive (AES-GCM "secure mode", RSA key length on OAEP/PSS/MGF1, SHA-256 salt) = likely false positives.
+Notes: CI crypto_inventory says 18 artifacts vs 21 in findings/report; CI applicationId still "Quantum-DDay".

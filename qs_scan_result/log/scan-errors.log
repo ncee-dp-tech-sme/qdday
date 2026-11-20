@@ -1,0 +1,3 @@
+[2026-11-20 19:15:19,529] [4-thread-2] [ERROR] [com.ibm.quantumsafe.lang.driver.DriverBaseScaBased] - Unprocessed or Unsupported Language : js 
+[2026-11-20 19:15:19,569] [4-thread-2] [ERROR] [com.ibm.quantumsafe.integrator.impl.IntegratorAPIImpl] - Scan failed due to /Users/erwin/development/qse/qs_scan_result/scan-results/quantum_safe_cbom_merged.json
+[2026-11-20 19:15:24,090] [000-exec-4] [ERROR] [com.ibm.quantumsafe.exception.GlobalExceptionHandler] - ScanStatusException :: Scan failed for id: {}50c6dc0bc2124d048e9997cad5a9ecd0
