@@ -1,0 +1,33 @@
+PROMPT:
+Use the qse-remediation skill (.bob/skills/qse-remediation/SKILL.md): read QSE findings from qs_explorer_result, propose per-file fixes, apply only after user approval, keep a change log, validate, and produce a remediation report.
+
+DATE: Fri Nov 20 17:43:55 CET 2026
+
+OUTCOME
+Scan 1c6d7da1-d2fc-448b-9d4d-a0082785ca4e, app Quantum-DDay, 13 findings in 5 files. Pending with vulnerabilities: 0.
+Status: 9 applied, 4 skipped, 0 rejected, 0 deferred.
+
+Per file (all decisions approved by the user):
+- services/auth.py: F-001 skipped (stale scan, code already uses sha512); F-002/F-003 skipped (CWE-759 false positive, file-integrity hash). No code change.
+- crypto/keys.py: F-010/F-011 applied. ECDH replaced by ML-KEM-768 (kem_shared_secret returns (secret, ciphertext)). BEHAVIOR-CHANGING.
+- api/routes.py: F-004 applied (RSA-1024 -> ML-DSA-65 keygen); F-005 applied (AES-CBC -> AES-GCM, layout nonce|tag|ciphertext); F-006 skipped (IV was already random; CBC removed by F-005). BEHAVIOR-CHANGING.
+- config/settings.py: F-012/F-013 applied (static-IV AES-CBC -> AES-GCM random nonce; function name kept). BEHAVIOR-CHANGING.
+- services/user.py: F-007/F-008 applied (AES-ECB -> AES-GCM, base64 str kept); F-009 applied (PBKDF2-SHA1/1000/16B -> SHA256/600000/32B; outside scan evidence, user-approved). BEHAVIOR-CHANGING.
+- requirements.txt, setup.py: cryptography>=44.0.0 -> >=50.0.0 (47.0.0 needed for ML-KEM/ML-DSA; raised to 50 because 47-49 have high-severity advisories, e.g. GHSA-g6cj-pr64-35w5).
+
+Validation:
+- py_compile on all changed files: exit 0.
+- Functional checks (.venv, cryptography 50.0.2, pycryptodome 4.5.0; qs_explorer_result/remediation/functional_check.py): ML-KEM encaps/decaps, ML-DSA sign/verify, AES-GCM round trips with tamper detection and non-deterministic output, PBKDF2 params: ALL OK. Both installed packages show no known vulnerabilities (OSV).
+
+Out-of-scope observations (NOT changed):
+- user.py: existing ML-KEM block uses mlkem.generate_private_key("MLKEM1024"), which does not exist in cryptography (import fails at runtime; real API is MLKEM1024PrivateKey.generate(), encapsulate() returns (secret, ciphertext)).
+- routes.py: TLS 1.1 with CERT_NONE in get_partner_ssl_context; empty _JWT_SECRET and HMAC-SHA1 in sign_jwt.
+- settings.py: hard-coded DB password in DATABASE_URL (rotate it), empty SECRET_KEY, md5 HASH_ALGORITHM, PBKDF2_ITERATIONS=500, MIN_TLS_VERSION=TLSv1.
+- user.py fetch_config: certificate validation disabled.
+- auth.py: DB_CONFIG password empty; generate_reset_token uses random (non-CSPRNG).
+- generate_vulnerable_app.py still generates the old vulnerable code (not modified).
+
+Migration notes: old ciphertexts (CBC/ECB/static IV) cannot be read by the new GCM code; no decrypt functions exist in the repo; peers must support ML-KEM/ML-DSA.
+
+Artifacts: qs_explorer_result/remediation/{state.json, changelog.md, originals/, remediation_report.md, functional_check.py}; new .venv (gitignored).
+Recommended next step: rescan with QSE to confirm the findings are gone. Nothing was committed or pushed.

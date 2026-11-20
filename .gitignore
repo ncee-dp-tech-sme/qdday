@@ -14,3 +14,9 @@ platform_guard.py
 __pycache__/platform_guard.cpython-314.pyc
 Quantum-DDay/.DS_Store
 .venv/
+.bob/.devsecignore.findings
+.gitignore
+.bob/skills/qse-remediation/SKILL.md
+.bob/skills/qse-remediation/references/remediation_patterns.md
+.bob/skills/qse-remediation/remediation_tool.py
+qs_scan_result.zip

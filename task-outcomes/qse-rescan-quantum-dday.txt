@@ -1,0 +1,16 @@
+PROMPT:
+Use the qse skill (.bob/skills/qse/SKILL.md): scan the codebase for quantum-safe cryptography issues with the QSE CLI (rescan after remediation).
+
+DATE: Fri Nov 20 17:47:15 CET 2026
+
+OUTCOME
+- Language: Python (18 .py files) -> API Discovery only (no -da/-cf).
+- Pre-step: copied qs_explorer_result/ (original findings + remediation evidence) to qs_explorer_result_pre_remediation_20261120/ because a rescan overwrites findings.
+- Command: cd /Users/erwin/development/gcmmcp/CLI && ./cli.sh -i /Users/erwin/development/qse/Quantum-DDay -l .py   (scan completed, QSE 2.2.3)
+- Results written by the CLI to: Quantum-DDay/qs_explorer_result/ (findings, cbom, crypto_inventory, report). Side effect: tracked Quantum-DDay/qs_scan_result.zip was modified.
+- repositoryUrl stamped in findings JSON: https://github.com/ncee-dp-tech-sme/qdday.git (jq validation OK).
+- Rescan: 13 artifacts, 6 with vulnerability entries (was 11 with vulnerabilities, 13 findings before).
+  Gone: all RSA/ECDH quantum-vulnerable findings, AES-ECB/CBC-IV findings, SHA-1, hard CWE-1204.
+  Remaining: 3x CWE-327 "AES.new" (routes.py:51, settings.py:38, user.py:46) = the AES-GCM calls, still flagged high by the scanner's generic AES-mode rule (suggestive; GCM is the recommended AEAD mode, so treated as scanner false positives, not fixed);
+  3x CWE-759 (low) in auth.py lines 35/38/39 = file-integrity sha512 fingerprint (previously skipped as false positive).
+- QCM upload: not performed (not requested; gcm-mcp-server is disconnected).

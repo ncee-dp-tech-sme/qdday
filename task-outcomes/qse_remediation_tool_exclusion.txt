@@ -1,0 +1,23 @@
+The @.bob/skills/qse-remediation/remediation_tool.py you created is also marked with 3 QSE findings. Is this as expected?  If yes, this file should also be excluded from the scan
+Fri Nov 20 18:14:35 CET 2026
+
+Analysis & Findings:
+1. Why QSE flagged remediation_tool.py:
+   - Line 37: `hashlib.sha256()` (ID 0)
+   - Line 39: `h.update(...)` (ID 1)
+   - Line 40: `h.hexdigest()` (ID 2)
+   - QSE's static AST scanner flags all cryptographic library calls and suggests CWE-759 ("Hashes should include an unpredictable salt").
+
+2. Is this expected?
+   - Yes, from the scanner's perspective: QSE analyzes all Python files found under the input root.
+   - However, `remediation_tool.py` is tooling / Bob skill helper infrastructure located under `.bob/` used purely for calculating file SHA-256 checksums to verify pristine/remediated states, NOT application domain code.
+
+3. Resolution & Configuration Update:
+   - `.bob` directory has been added to the default `-ef` exclusion parameter list across the QSE skill documentation and command construction guides:
+     `-ef ".bob,.venv,venv,env,.env,node_modules,site-packages,vendor,.git,__pycache__"`
+   - Updated files:
+     - `.bob/skills/qse/SKILL.md`
+     - `.bob/skills/qse/1_workflow.md`
+     - `.bob/skills/qse/2_best_practices.md`
+     - `.bob/skills/qse/3_command_construction.md`
+     - `.bob/skills/qse/5_examples.md`

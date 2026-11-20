@@ -1,0 +1,4 @@
+PROMPT: Create a comprehensive remediation skill for QSE mode (read findings, group by file, propose/approve/apply fixes with comments + change log, final report, persistence).
+Fri Nov 20 17:07:41 CET 2026
+
+Created .bob/skills/qse-remediation/{SKILL.md,remediation_tool.py,references/remediation_patterns.md}. Tool tested on a temp copy of qs_explorer_result (init/show/backup/record/record-validation/report OK). Note: qse mode lacks edit group; skill asks user to switch to Agent mode for edits. Finding auth.py:35 on disk is already sha512 (stale scan).

@@ -1,0 +1,77 @@
+PROMPT: You are a code analysis and documentation assistant. Your task is to analyze the file @task-outcomes/qse_detections.txt which contains a comprehensive list of Vulnerabilities and Crypto-agility Anti-patterns detected by QSE (Quantum-Safe Encryption assessment tool). Compare this list against the existing remediation guidance in @bob/skills/qse-remediation/references/remediation_patterns.md.
+
+Identify all findings from qse_detections.txt that are NOT currently covered in remediation_patterns.md. For each missing finding, generate detailed remediation guidance following the same structure, format, tone, and level of detail as the existing entries in remediation_patterns.md.
+
+Update remediation_patterns.md by adding the new remediation patterns for all additional findings discovered by QSE. Ensure consistency in formatting, terminology, code examples, and remediation approach across all entries.
+
+Preserve the original file structure, maintain the existing documentation style, and ensure the updated file is production-ready.
+Fri Nov 20 17:28:00 CET 2026
+
+RESULT
+File updated: .bob/skills/qse-remediation/references/remediation_patterns.md (the prompt's "@bob/" path is ".bob/" in this repo).
+Scope: 44 findings in qse_detections.txt (21 vulnerabilities, 23 crypto-agility anti-patterns).
+- 10 findings were already covered by existing rows and were left unchanged.
+- 34 findings were not covered. They are documented in 27 new rows appended to the single existing table (10 vulnerability rows, then 17 crypto-agility rows in catalog order). The "Proposal checklist" section is unchanged.
+- Diff against the original: 27 lines added, 0 removed.
+
+COVERAGE MAP
+Already covered (existing rows, no change):
+- V4 Non quantum-resistant public-key algorithm -> "RSA / DSA / DH" and "ECDSA / ECDH / EC keygen"
+- V7 / A13 Hardcoded key (symmetric) -> "Hard-coded keys/IVs"
+- V8 / A14 Hardcoded IV -> "Hard-coded keys/IVs"
+- V10 One-way hash without salt -> "CWE-759"
+- V12 Weak hash -> "SHA-1 / MD5"
+- V13 Generation of weak IV -> "CBC with static/predictable IV"
+- V14 Low iteration count (password hash) -> "Weak/low PBKDF2 params"
+- V18 Small key size -> "RSA / DSA / DH" (RSA >= 3072) and "AES with 128-bit key"
+
+New rows, one per uncovered finding (finding IDs from qse_detections.txt):
+- V1 Hard-coded password (CWE-259); A16 same -> "Hard-coded password (CWE-259)"
+- V2 Outdated encryption algorithm -> "Outdated cipher: DES, 3DES, RC2, RC4, Blowfish, IDEA, CAST5, SEED (CWE-327)"
+- V3 Broken variant and mode combination -> "Unsafe algorithm and mode combination ... (CWE-327)" (ECB row only covers AES-ECB)
+- V6 SHA2/SHA3 digest below 256 bits -> "SHA2 or SHA3 with digest below 256 bits ... (CWE-327)"
+- V9 Hard-coded salt; A15 same -> "Hard-coded salt (CWE-321)"
+- V15, V16, V17, V21 Weak PRNG for IV / salt / seed / key -> "Cryptographically weak PRNG for IV, salt, seed or key (CWE-338)"
+- V19 RSA without OAEP -> "RSA without OAEP: PKCS#1 v1.5 or NoPadding (CWE-780)"
+- V20 Encryption without explicit IV or default IV -> "Encryption without explicit IV or relying on default IV (CWE-1204)" (CBC row only covers static IV)
+- V22 Hard-coded seed; A20 hard-coded source of randomness -> "Hard-coded seed or source of randomness (CWE-335)"
+- V23 Password-based key spec without salt / iteration count -> "Password-based key material without salt or iteration count (CWE-916)" (PBKDF2 row only covers iterations)
+- A1 Hard-coded private key -> "Hard-coded private key (CWE-321)"
+- A2 Programmatically editing providers list -> "Programmatically editing providers list (crypto-agility, no CWE)"
+- A3 Programmatically editing security properties -> "Programmatically editing security properties (crypto-agility, no CWE)"
+- A4 Hard-coded provider name -> "Hard-coded provider name (crypto-agility, no CWE)"
+- A5 Hard-coded key length -> "Hard-coded key length (crypto-agility, no CWE)"
+- A6 Hard-coded protocol choice -> "Hard-coded protocol choice (crypto-agility, no CWE)"
+- A7 Hard-coded algorithm choice -> "Hard-coded algorithm choice (crypto-agility, no CWE)"
+- A8 Hard-coded algorithm-specific parameters -> "Hard-coded algorithm-specific parameters (crypto-agility, no CWE)"
+- A9 Hard-coded ciphersuite choice -> "Hard-coded ciphersuite choice (crypto-agility, no CWE)"
+- A10 Hard-coded certificate -> "Hard-coded certificate (CWE-321)"
+- A11 Directly setting protocols/ciphersuites on SSL objects -> "Directly setting protocols or ciphersuites on SSL objects (crypto-agility, no CWE)"
+- A12 Setting SSL context as system default -> "Setting SSL context as system default (crypto-agility, no CWE)"
+- A17 Hard-coded mode choice -> "Hard-coded mode choice (crypto-agility, no CWE)"
+- A18, A19 Hard-coded iteration count (PBE, password hashing) -> "Hard-coded iteration count, PBE and password hashing (crypto-agility, no CWE)"
+- A21 Hard-coded tag length -> "Hard-coded tag length (crypto-agility, no CWE)"
+- A22 Hard-coded IV length -> "Hard-coded IV length (crypto-agility, no CWE)"
+- A23 Hard-coded salt length (PBE) -> "Hard-coded salt length, PBE (crypto-agility, no CWE)"
+
+SOURCES CHECKED BEFORE WRITING
+- OWASP Password Storage Cheat Sheet: PBKDF2-HMAC-SHA256 at 600,000 iterations.
+- NIST SP 800-132: salt random portion at least 128 bits; minimum iteration count 1,000 (the QSE threshold is this floor).
+- NIST SP 800-38D: GCM tag lengths 128/120/112/104/96 (64/32 for specific applications); 96-bit IV recommended.
+- NIST SP 800-131A Rev. 2: three-key TDEA disallowed for encryption after 31 Dec 2023.
+- Oracle JCA docs: SunJCE defaults to ECB/PKCS5Padding when mode/padding are omitted; SecureRandom does not self-seed after setSeed; Security.insertProviderAt/removeProvider; GCMParameterSpec(tLen in bits, IV); standard transformation RSA/ECB/OAEPWithSHA-256AndMGF1Padding; java.security.properties "=" appends, "==" overrides.
+- OAEP pitfall: with OAEPWithSHA-256AndMGF1Padding, MGF1 defaults to SHA-1 unless OAEPParameterSpec sets MGF1ParameterSpec.SHA256. The RSA OAEP row says so explicitly.
+- cryptography docs: TripleDES, ARC4, Blowfish, CAST5, SEED, IDEA moved to cryptography.hazmat.decrepit; AESGCM.encrypt(nonce, data, associated_data) with 12-byte nonce and 16-byte tag.
+
+VALIDATION
+- Table integrity: 38 table lines (header, separator, 36 data rows), each with exactly 3 cells.
+- Original 9 rows and checklist: byte-for-byte unchanged (diff: 0 removed lines).
+- Python stdlib names cited in the rows (hashlib.pbkdf2_hmac/sha256/sha3_256, secrets.token_bytes, os.urandom, ssl.create_default_context, ssl.PROTOCOL_TLS_CLIENT, ssl.TLSVersion.TLSv1_2, ssl.SSLContext.minimum_version/set_ciphers, ssl._create_default_https_context): all present on local Python 3.14.
+- Java JCA names: verified against Oracle documentation. Not compiled locally: javac is not installed and the java source launcher cannot run (jdk.compiler module missing).
+- cryptography and PyCryptodome names: verified against documentation. Not installed locally; no project venv exists in the workspace, and no packages were installed.
+- Backup of the original: /var/folders/fr/16sgsyw1083_4hd8rx88jzt40000gn/T/bob/remediation_patterns.orig.md
+
+NOTES
+- Local QSE scan output is Python-only (qs_explorer_result_/qs_scan_result/py/ and scan log: hashlib.sha1, Crypto.Cipher AES ECB/CBC, pbkdf2_hmac, RSA/EC keygen). The JCA crypto-agility rows apply to Java scans; they are included because they are part of the QSE catalog.
+- No other files reference remediation_patterns.md content, so SKILL.md and remediation_tool.py did not need changes.
+- The qse-remediation skill reads this file as guidance only; the new rows are not machine-parsed.

@@ -1,0 +1,10 @@
+flask>=2.3.0
+sqlalchemy>=2.0.0
+pycryptodome>=3.19.0
+# QSE remediation (Fri Nov 20 18:38:31 CET 2026): >=50.0.2 provides MLKEM768PublicKey used in qseremediation/crypto/keys.py
+cryptography>=50.0.2
+pyjwt>=2.8.0
+requests>=2.31.0
+python-dotenv>=1.0.0
+# liboqs-python: PQC algorithm support (ML-KEM, ML-DSA, SLH-DSA, XMSS)
+liboqs-python>=0.10.0

@@ -1,0 +1,24 @@
+PROMPT: Use skill qse-remediation: "remediate and document the findings. Use the .venv when required"
+DATE: Fri Nov 20 18:40:30 CET 2026
+
+RESULT: 17/17 findings applied, 0 pending (14 with vulnerabilities + 3 informational), each file approved by the user before editing.
+Report: qs_explorer_result/remediation/remediation_report.md | state.json | changelog.md | originals/ (pre-change copies)
+
+Changes (all BEHAVIOR-CHANGING, each documented by an in-code "QSE remediation" comment):
+- api/routes.py F-001/002: RSA 1024->3072; PKCS1v15->OAEP-SHA256. INTERIM, NOT quantum-safe (TODO ML-DSA / ML-KEM).
+- utils/tokens.py F-004/005: PKCS1v15+SHA1 -> RSA-PSS+SHA-256. INTERIM, NOT quantum-safe (TODO ML-DSA/SLH-DSA).
+- crypto/keys.py F-014/015: ECDH -> ML-KEM-768 encapsulation, returns (secret, ciphertext) (quantum-safe KEM; no hybrid).
+  F-016/017: AES-CBC -> AES-256-GCM (CWE-1204 was a false positive: IV was already random).
+- services/auth.py F-010..013: AES-ECB and Blowfish-ECB -> AES-256-GCM (shared helper, 32-byte key).
+- services/user.py F-006/007: static-IV AES-CBC -> AES-256-GCM. F-008/009: MD5 -> salted PBKDF2-SHA256 600k + verify_password.
+- config/settings.py F-003 (informational, beyond scan evidence): PBKDF2 SHA1/100/16B -> SHA256/600000/32B.
+- requirements.txt: cryptography>=50.0.2 (needed for MLKEM768 API; OSV: no known vulns).
+
+Validation (.venv, Python 3.14, cryptography 50.0.2): py_compile + functional roundtrip scripts per file all passed.
+tests/test_auth.py (pytest not installed, logic run inline): hash_password test PASS; test_generate_token_not_empty FAIL
+(pre-existing: generate_reset_token does not exist, also absent in original).
+
+Follow-ups: (1) rescan with QSE to confirm; RSA remains flagged until moved to PQC. (2) Migrate stored data: MD5 hashes,
+ECB/CBC ciphertexts, old signatures. (3) Not in scan, not changed: hardcoded secrets (routes.py _JWT_SECRET, tokens.py DB_CONFIG,
+auth.py METRICS_ENCRYPTION_KEY, settings.py), HMAC-SHA1 sign_jwt, HMAC-MD5 sign_request, TLS verification disabled and
+MIN_TLS_VERSION="TLSv1" in settings.py.
