@@ -1,8 +1,8 @@
 {
-  "scanId": "23c1380c-5c8d-49c1-a81d-b3d6f6d4f69c",
+  "scanId": "7f7bd528-9d9e-4bc6-89ad-0b0396091d15",
   "applicationId": "Quantum-DDay",
   "applicationVersion": "1.0.2",
-  "scanTime": "2026-11-23T19:56:51.393156332Z",
+  "scanTime": "2026-11-23T20:43:26.999669405Z",
   "totalCryptoArtifacts": "21",
   "findings": [
     {
@@ -188,7 +188,7 @@
               "library": "hashlib",
               "locations": [
                 {
-                  "line": 37,
+                  "line": 38,
                   "startColumn": 17,
                   "endColumn": 23
                 }
@@ -199,7 +199,7 @@
               "library": "hashlib",
               "locations": [
                 {
-                  "line": 39,
+                  "line": 40,
                   "startColumn": 11,
                   "endColumn": 17
                 }
@@ -210,7 +210,7 @@
               "library": "hashlib",
               "locations": [
                 {
-                  "line": 40,
+                  "line": 41,
                   "startColumn": 14,
                   "endColumn": 23
                 }
