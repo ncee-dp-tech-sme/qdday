@@ -1,10 +1,10 @@
 {
-  "scanId": "ea621044-e09d-4c3c-9524-eb6c17161260",
+  "scanId": "5c36da47-d90b-48bf-8983-3d48a1731357",
   "name": "crypto artifacts",
   "applicationId": "Quantum-DDay",
   "applicationVersion": "1.0.2",
-  "scanTime": "2026-11-23T11:07:20.556407663Z",
-  "num_artifacts": 21,
+  "scanTime": "2026-11-23T19:56:51.403969836Z",
+  "num_artifacts": 24,
   "repositoryId": "ncee-dp-tech-sme/qdday",
   "repositoryUrl": "https://github.com/ncee-dp-tech-sme/qdday",
   "children": [
@@ -12,7 +12,7 @@
       "file_type": "py",
       "children": [
         {
-          "file_id": "447ebf69-1b9d-4a30-910f-10ed4fdd8b06",
+          "file_id": "5b7fa74f-6a46-48c4-bd7e-79a030a0a9bd",
           "name": "routes.py",
           "full_name": "qseremediation/api/routes.py",
           "num_artifacts": 5,
@@ -314,7 +314,7 @@
           ]
         },
         {
-          "file_id": "c98a995d-82ef-48ef-b805-5a78b8f611b4",
+          "file_id": "402507d5-fbf9-4070-8c66-6f127e87bde5",
           "name": "user.py",
           "full_name": "qseremediation/services/user.py",
           "num_artifacts": 5,
@@ -453,7 +453,7 @@
           ]
         },
         {
-          "file_id": "8d74e4fe-711c-4bfc-a2cb-b1c5435bb6de",
+          "file_id": "d41980a1-8ab3-40cd-8e5f-e300feeeef55",
           "name": "tokens.py",
           "full_name": "qseremediation/utils/tokens.py",
           "num_artifacts": 4,
@@ -687,7 +687,7 @@
           ]
         },
         {
-          "file_id": "0b5f461f-9bcc-483b-9578-a0835007a8ea",
+          "file_id": "3bf6ed8b-5607-4e5b-b3b5-af8c54a17f65",
           "name": "auth.py",
           "full_name": "qseremediation/services/auth.py",
           "num_artifacts": 3,
@@ -782,7 +782,147 @@
           ]
         },
         {
-          "file_id": "6fb85304-28c9-4810-9d01-75fce0c1f5b5",
+          "file_id": "7bda67cc-26d5-4857-8c8b-eff976b3f4a4",
+          "name": "remediation_tool.py",
+          "full_name": "dist/.bob/skills/qse-remediation/remediation_tool.py",
+          "num_artifacts": 3,
+          "crypto_info": [
+            {
+              "id": 0,
+              "title": "hashlib.sha256",
+              "tooltip": [
+                "hashlib.sha256"
+              ],
+              "crypto_properties": {
+                "library": "hashlib",
+                "name": "hashlib.sha256",
+                "primitive": "hash",
+                "variant": "SHA2",
+                "oid": "2.16.840.1.101.3.4.2.1",
+                "digestSize": "256",
+                "assetType": "algorithm",
+                "blockSize": "512"
+              },
+              "crypto_vulnerabilities": [
+                {
+                  "vulnerabilityId": "10",
+                  "classification": "cwe759",
+                  "vulnerabilityScore": "low",
+                  "vulnerabilityDocumentationReference": "https://cwe.mitre.org/data/definitions/759.html",
+                  "debugMessage": "Hashes should include an unpredictable salt.",
+                  "type": "Suggestive",
+                  "references": [
+                    {
+                      "type": "variant",
+                      "value": "SHA2",
+                      "context": {
+                        "location": {
+                          "fileName": "dist/.bob/skills/qse-remediation/remediation_tool.py",
+                          "line": 37,
+                          "startColumn": 17,
+                          "endColumn": 23
+                        }
+                      }
+                    }
+                  ]
+                }
+              ],
+              "file_path": "dist/.bob/skills/qse-remediation/remediation_tool.py",
+              "call_line": 37,
+              "start": 17,
+              "end": 23,
+              "startScoped": 17,
+              "endScoped": 23
+            },
+            {
+              "id": 1,
+              "title": "hashlib.hash.update",
+              "tooltip": [
+                "hashlib.hash.update"
+              ],
+              "crypto_properties": {
+                "library": "hashlib",
+                "name": "hashlib.hash.update",
+                "primitive": "hash",
+                "assetType": "algorithm"
+              },
+              "crypto_vulnerabilities": [
+                {
+                  "vulnerabilityId": "10",
+                  "classification": "cwe759",
+                  "vulnerabilityScore": "low",
+                  "vulnerabilityDocumentationReference": "https://cwe.mitre.org/data/definitions/759.html",
+                  "debugMessage": "Hashes should include an unpredictable salt.",
+                  "type": "Suggestive",
+                  "references": [
+                    {
+                      "type": "variant",
+                      "context": {
+                        "location": {
+                          "fileName": "dist/.bob/skills/qse-remediation/remediation_tool.py",
+                          "line": 39,
+                          "startColumn": 11,
+                          "endColumn": 17
+                        }
+                      }
+                    }
+                  ]
+                }
+              ],
+              "file_path": "dist/.bob/skills/qse-remediation/remediation_tool.py",
+              "call_line": 39,
+              "start": 11,
+              "end": 17,
+              "startScoped": 11,
+              "endScoped": 17
+            },
+            {
+              "id": 2,
+              "title": "hashlib.hash.hexdigest",
+              "tooltip": [
+                "hashlib.hash.hexdigest"
+              ],
+              "crypto_properties": {
+                "library": "hashlib",
+                "name": "hashlib.hash.hexdigest",
+                "primitive": "hash",
+                "assetType": "algorithm",
+                "cryptoFunction": "digest"
+              },
+              "crypto_vulnerabilities": [
+                {
+                  "vulnerabilityId": "10",
+                  "classification": "cwe759",
+                  "vulnerabilityScore": "low",
+                  "vulnerabilityDocumentationReference": "https://cwe.mitre.org/data/definitions/759.html",
+                  "debugMessage": "Hashes should include an unpredictable salt.",
+                  "type": "Suggestive",
+                  "references": [
+                    {
+                      "type": "variant",
+                      "context": {
+                        "location": {
+                          "fileName": "dist/.bob/skills/qse-remediation/remediation_tool.py",
+                          "line": 40,
+                          "startColumn": 14,
+                          "endColumn": 23
+                        }
+                      }
+                    }
+                  ]
+                }
+              ],
+              "file_path": "dist/.bob/skills/qse-remediation/remediation_tool.py",
+              "call_line": 40,
+              "start": 14,
+              "end": 23,
+              "startScoped": 14,
+              "endScoped": 23
+            }
+          ]
+        },
+        {
+          "file_id": "18334027-f6fb-457a-9c10-85316c92b865",
           "name": "settings.py",
           "full_name": "qseremediation/config/settings.py",
           "num_artifacts": 1,
@@ -812,7 +952,7 @@
           ]
         },
         {
-          "file_id": "3a4b3c83-54ff-419a-8bbb-cd1e4cf724f4",
+          "file_id": "3dc99f2f-3a6c-4bb7-9176-74d984bb088c",
           "name": "keys.py",
           "full_name": "qseremediation/crypto/keys.py",
           "num_artifacts": 3,
