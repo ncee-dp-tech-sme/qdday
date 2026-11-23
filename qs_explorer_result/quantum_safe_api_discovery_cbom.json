@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "1c0f51a7-692c-4557-92b3-f52c064709c9",
+  "serialNumber": "a95939c7-a491-46f0-bb9b-52710105c21e",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-20T18:26:02Z",
+    "timestamp": "2026-11-23T11:07:19Z",
     "tools": {
       "services": [
         {
@@ -35,7 +35,7 @@
   "components": [
     {
       "type": "cryptographic-asset",
-      "bom-ref": "39eede04-1544-423e-852e-cc2d09328346",
+      "bom-ref": "6b69a370-c67d-421f-bd92-fe8a8df56c18",
       "name": "cryptography.hazmat.primitives.asymmetric.rsa.generate_private_key",
       "evidence": {
         "occurrences": [
@@ -59,7 +59,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "77c4c624-6094-4c0b-9c4f-44eef8414431",
+      "bom-ref": "08597795-cc7b-44a1-a160-a1678c196348",
       "name": "cryptography.hazmat.primitives.asymmetric.padding.OAEP",
       "evidence": {
         "occurrences": [
@@ -81,7 +81,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "bd3dfb87-801a-455d-8195-ef939e220389",
+      "bom-ref": "cd109e98-8397-4438-89ae-a13aafd7e7d3",
       "name": "cryptography.hazmat.primitives.asymmetric.padding.MGF1",
       "evidence": {
         "occurrences": [
@@ -102,7 +102,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "703d55ae-adc5-47bc-ba6c-0c38efdc7226",
+      "bom-ref": "02747df2-c665-41bf-bb65-c16186836e9a",
       "name": "cryptography.hazmat.primitives.hashes.SHA256",
       "evidence": {
         "occurrences": [
@@ -123,7 +123,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "cd98645b-a541-4fc6-ae5f-2193825a31d6",
+      "bom-ref": "a317101a-6a05-438f-ad42-3759db79f6de",
       "name": "cryptography.hazmat.primitives.hashes.SHA256",
       "evidence": {
         "occurrences": [
@@ -144,7 +144,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "da28c2eb-2208-410e-9a56-28de0e800d59",
+      "bom-ref": "a8d561f1-c30c-48b7-b897-15c2106b4b21",
       "name": "Crypto.Cipher.AES.new",
       "evidence": {
         "occurrences": [
@@ -163,7 +163,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "2c08348f-cf5c-4012-8c34-4571e38011df",
+      "bom-ref": "3544d5e3-fa17-473a-86df-773dae8f8ae2",
       "name": "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
       "evidence": {
         "occurrences": [
@@ -188,7 +188,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "37195ae9-28d1-41bc-936a-c1584eebfb73",
+      "bom-ref": "142920bf-3086-4467-8426-b0d580c84822",
       "name": "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
       "evidence": {
         "occurrences": [
@@ -213,7 +213,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "b88d8a2d-f4ea-4ddb-9947-59f06b0cb35e",
+      "bom-ref": "e9c4fbda-d8f1-46b4-a3bc-8799ff066a07",
       "name": "hashlib.pbkdf2_hmac",
       "evidence": {
         "occurrences": [
@@ -237,7 +237,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "fcddf252-78b1-4b31-a736-6ab1fa4a6682",
+      "bom-ref": "d8460a9d-5a21-485d-8738-14409e932bfd",
       "name": "hashlib.pbkdf2_hmac",
       "evidence": {
         "occurrences": [
@@ -261,7 +261,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "be174f64-5afb-412c-b04c-b1ee0b3ee76f",
+      "bom-ref": "abd34dfd-8eae-48ec-8851-58f7d95eef1e",
       "name": "cryptography.hazmat.primitives.asymmetric.padding.PSS",
       "evidence": {
         "occurrences": [
@@ -282,7 +282,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "332825c9-0e80-487c-86ec-00dc733df8ee",
+      "bom-ref": "a7c49ac2-20ba-47e3-b063-ae3f70bfe15d",
       "name": "cryptography.hazmat.primitives.asymmetric.padding.MGF1",
       "evidence": {
         "occurrences": [
@@ -303,7 +303,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "9916ecc1-7e58-4265-8e31-2a41e8d23052",
+      "bom-ref": "47460064-c4c7-499e-b9cb-08d3ef471d60",
       "name": "cryptography.hazmat.primitives.hashes.SHA256",
       "evidence": {
         "occurrences": [
@@ -324,7 +324,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "e928b9dd-fb12-43d0-9ea3-0b79ffebb241",
+      "bom-ref": "ef100dcd-c234-402d-81d6-299e44aea0cb",
       "name": "cryptography.hazmat.primitives.hashes.SHA256",
       "evidence": {
         "occurrences": [
@@ -345,7 +345,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "3839b7e6-a260-4bf4-bf3f-8cb028e8445d",
+      "bom-ref": "d8cb0725-1d38-4a23-9e7b-089b55ac6056",
       "name": "Crypto.Cipher.AES.new",
       "evidence": {
         "occurrences": [
@@ -364,7 +364,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "19c35bff-0e6f-4c24-b105-729b48fb9a5e",
+      "bom-ref": "30130d28-7ef0-40d3-8d0e-3f0c563993fd",
       "name": "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
       "evidence": {
         "occurrences": [
@@ -389,7 +389,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "6f126fd4-b3c9-4188-ab65-bd14a5dc97ff",
+      "bom-ref": "e4e726f7-d437-442d-819a-bc4adc19e757",
       "name": "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
       "evidence": {
         "occurrences": [
@@ -414,7 +414,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "35e4af05-3059-4d5c-870c-91f016cee908",
+      "bom-ref": "e8f8620c-b670-499c-8bf3-1c2268461357",
       "name": "hashlib.pbkdf2_hmac",
       "evidence": {
         "occurrences": [
@@ -438,7 +438,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "450a2d87-45ee-4356-ba88-e242b5170bc2",
+      "bom-ref": "04349389-5a80-4221-bf2f-5112e5cd4450",
       "name": "Crypto.Cipher.AES.new",
       "evidence": {
         "occurrences": [
@@ -457,7 +457,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "eebe5d33-1857-410c-81ff-b74186f7ecd7",
+      "bom-ref": "b60b07f7-ee21-47d4-bb65-c93674cbd0a8",
       "name": "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
       "evidence": {
         "occurrences": [
@@ -482,7 +482,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "4ca6e56f-d724-4b9a-918f-dd3b135239d0",
+      "bom-ref": "34358b29-3403-4ff1-9fb7-d18b52aebc40",
       "name": "Crypto.Cipher._mode_gcm.GcmMode.encrypt_and_digest",
       "evidence": {
         "occurrences": [
@@ -523,19 +523,19 @@
       ],
       "affects": [
         {
-          "ref": "39eede04-1544-423e-852e-cc2d09328346"
+          "ref": "6b69a370-c67d-421f-bd92-fe8a8df56c18"
         },
         {
-          "ref": "77c4c624-6094-4c0b-9c4f-44eef8414431"
+          "ref": "08597795-cc7b-44a1-a160-a1678c196348"
         },
         {
-          "ref": "bd3dfb87-801a-455d-8195-ef939e220389"
+          "ref": "cd109e98-8397-4438-89ae-a13aafd7e7d3"
         },
         {
-          "ref": "332825c9-0e80-487c-86ec-00dc733df8ee"
+          "ref": "a7c49ac2-20ba-47e3-b063-ae3f70bfe15d"
         },
         {
-          "ref": "be174f64-5afb-412c-b04c-b1ee0b3ee76f"
+          "ref": "abd34dfd-8eae-48ec-8851-58f7d95eef1e"
         }
       ]
     }
