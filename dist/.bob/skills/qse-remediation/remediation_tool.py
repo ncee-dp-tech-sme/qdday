@@ -3,6 +3,7 @@
 
 Change log:
 - Fri Nov 20 17:05:41 CET 2026: Initial version (init/show/backup/record/record-validation/status/report).
+- Mon Nov 23 21:30 CET 2026: cmd_backup hashes once and guards the Optional sha256() result (fixes "None is not subscriptable" type warning).
 
 Standard library only. State lives in <result-dir>/remediation/ so work survives across sessions:
   state.json          findings, statuses, validation results (source of truth)
@@ -254,9 +255,10 @@ def cmd_backup(args):
     os.makedirs(os.path.dirname(dest), exist_ok=True)
     with open(disk, "rb") as s, open(dest, "wb") as d:
         d.write(s.read())
-    state.setdefault("files", {})[args.file] = {"original_sha256": sha256(disk), "backed_up": now()}
+    digest = sha256(disk) or ""
+    state.setdefault("files", {})[args.file] = {"original_sha256": digest, "backed_up": now()}
     save_state(args, state)
-    log_change(args, "backup: %s (sha256 %s)" % (args.file, sha256(disk)[:12]))
+    log_change(args, "backup: %s (sha256 %s)" % (args.file, digest[:12]))
     print("Backed up to %s" % dest)
 
 

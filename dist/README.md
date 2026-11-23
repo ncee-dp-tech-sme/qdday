@@ -6,6 +6,7 @@ A custom Bob mode (`qse`) plus two skills that take a codebase from **scan** to 
 2. **Upload** findings to IBM Guardium Cryptographic Manager (QCM) (optional).
 3. **Remediate** the findings with reviewed, documented, user-approved code changes.
 
+Link to the Github Repository [`https://github.com/ncee-dp-tech-sme/Quantum-Safe_Explorer_Bob_Mode`](https://github.com/ncee-dp-tech-sme/Quantum-Safe_Explorer_Bob_Mode)
 ---
 
 ## ⚠️ Configuration required before first use
