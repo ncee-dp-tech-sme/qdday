@@ -1,0 +1,74 @@
+You are a coding agent assistant. Your task is to implement and document Recommendation 1, 5, and 6 from a previous comparative analysis between a reference Quantum Safe Mode implementation and the current QSE (Quantum Safe Explorer) configuration in a codebase.
+
+**Core Requirements:**
+
+1. **Recommendation 1**: Implement the first identified recommendation from the analysis. Provide complete, production-ready code changes with inline documentation explaining the rationale and impact of each modification.
+
+2. **Recommendation 5**: Implement the fifth identified recommendation, with a critical modification: before executing any web research or external API calls, your implementation must explicitly prompt the user for permission, display what data will be accessed and why, and proceed only upon affirmative user consent. Document the permission request flow clearly.
+
+3. **Recommendation 6**: Implement the sixth identified recommendation with full code integration and documentation.
+
+**Documentation Requirements:**
+
+For each recommendation implementation:
+- Include detailed comments explaining the changes
+- Document any new parameters, configurations, or features added
+- Explain the reasoning behind design decisions
+- Provide migration guidance if changes affect existing configurations
+- Include examples of usage where applicable
+
+**Context:**
+
+The analysis compares @reference/reference_mode.yaml against current configurations in .bob/custom_modes.yaml, the qse skill, and the qse-remediation skill.
+
+Preserve all code formatting, existing functionality, and backward compatibility unless explicitly required otherwise. Respond in English.
+
+Mon Nov 23 20:42:52 CET 2026
+
+# Implementation & Documentation Report: QSE Mode & Skill Enhancements (Recommendations 1, 5, 6)
+
+## Overview
+This report documents the implementation of Recommendations 1, 5, and 6 to enhance the Quantum Safe Explorer (`qse`) mode and `qse-remediation` skill.
+
+---
+
+### 1. Recommendation 1: Mode Description & Role Definition Enhancement
+- **Files Modified:**
+  - `.bob/custom_modes.yaml`
+  - `dist/.bob/custom_modes.yaml`
+- **Modifications:**
+  - Populated `description` parameter: `"Scan codebases for quantum-readiness, analyze cryptographic APIs, and remediate vulnerabilities with post-quantum cryptography best practices."`
+  - Expanded `roleDefinition` to include post-quantum cryptography standards (FIPS 203 ML-KEM, FIPS 204 ML-DSA, FIPS 205 SLH-DSA), identifying weak and quantum-vulnerable algorithms (RSA, DSA, ECDSA, DH, MD5, SHA-1, DES, 3DES, RC4), and providing safe, stepwise code replacements and crypto-agility refactoring.
+  - Added timestamped inline change log and rationale comments.
+
+---
+
+### 2. Recommendation 5: Permission-Gated Web Research Protocol
+- **Files Modified:**
+  - `.bob/skills/qse-remediation/SKILL.md`
+  - `dist/.bob/skills/qse-remediation/SKILL.md`
+- **Modifications:**
+  - Added Ground Rule for explicit consent before external search.
+  - Integrated workflow Step 4 ("Research & guidance"):
+    - Primary: Offline curated reference `remediation_patterns.md`.
+    - Secondary: Permission-gated Web Research fallback.
+  - Defined explicit `ask_followup_question` permission flow specifying:
+    1. Exact search query to be transmitted (sanitized of repository names/code).
+    2. Target domains to be accessed (e.g., NIST CSRC, OWASP, CVE databases).
+    3. Purpose and justification of research.
+    4. Disclosure affirming that no proprietary source code or secrets are sent.
+    5. User consent gate: Executes web research ONLY upon affirmative selection.
+
+---
+
+### 3. Recommendation 6: Structured Pull Request Description Generation
+- **Files Created / Modified:**
+  - Created `.bob/skills/qse-remediation/references/pr_template.md`
+  - Created `dist/.bob/skills/qse-remediation/references/pr_template.md`
+  - Updated `.bob/skills/qse-remediation/SKILL.md` (Step 9)
+  - Updated `dist/.bob/skills/qse-remediation/SKILL.md` (Step 9)
+  - Updated `QSE-MODE-README.md` and `dist/README.md`
+  - Rebuilt `dist/bob-qse-remediation-1.0.0.zip`
+- **Modifications:**
+  - Created comprehensive PR markdown template including Executive Summary, Modified Files matrix, Categorized Findings breakdown (CWEs, why vulnerable, fixes applied, behavior impacts), Security Impact matrix (before vs. after), Verification checklist, and Compliance checklist (NIST SP 800-175B, FIPS 140-3, FIPS 203/204/205, OWASP).
+  - Added Step 9 to the remediation workflow for generating PR descriptions from `state.json` and `remediation_report.md`.

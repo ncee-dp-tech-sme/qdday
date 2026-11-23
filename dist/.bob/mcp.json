@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "gcm-mcp-server": {
+      "type": "streamable-http",
+      "url": "<GCM_MCP_SERVER_URL>",
+      "headers": {
+        "Authorization": "Bearer <GCM_BEARER_TOKEN>",
+        "token_type": "api_key",
+        "x-mcp-enable-discovery": "true"
+      },
+      "disabled": false,
+      "alwaysAllow": []
+    }
+  }
+}

@@ -11,12 +11,13 @@ platform_guard.py
 .bob/skills/qse/5_examples.md
 .bob/skills/qse/6_qcm_integration.md
 .bob/skills/qse/SKILL.md
-__pycache__/platform_guard.cpython-314.pyc
+__pycache__/
+*.pyc
 Quantum-DDay/.DS_Store
 .venv/
 .bob/.devsecignore.findings
-.gitignore
 .bob/skills/qse-remediation/SKILL.md
 .bob/skills/qse-remediation/references/remediation_patterns.md
 .bob/skills/qse-remediation/remediation_tool.py
+.bob/skills/qse-remediation/references/pr_template.md
 qs_scan_result.zip

@@ -16,3 +16,15 @@
 [2026-11-23 09:31:00,796] [ousekeeper] [ WARN] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=28m9s736ms).
 [2026-11-23 09:55:35,553] [ousekeeper] [ WARN] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=24m34s756ms).
 [2026-11-23 10:31:18,902] [ousekeeper] [ WARN] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=35m43s350ms).
+[2026-11-23 12:21:22,082] [ousekeeper] [ WARN] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m32s897ms).
+[2026-11-23 12:22:48,299] [ousekeeper] [ WARN] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m26s218ms).
+[2026-11-23 12:38:55,688] [ousekeeper] [ WARN] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m7s388ms).
+[2026-11-23 13:10:10,502] [ousekeeper] [ WARN] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m14s815ms).
+[2026-11-23 13:27:54,610] [ousekeeper] [ WARN] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m14s107ms).
+[2026-11-23 13:32:30,072] [ousekeeper] [ WARN] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m35s461ms).
+[2026-11-23 16:23:55,764] [heduling-1] [ INFO] [com.ibm.quantumsafe.service.DeleteDbRecordsService] - QS-Explorer: Initiated deletion of DB records older than 15 Days
+[2026-11-23 16:23:55,789] [heduling-1] [ INFO] [com.ibm.quantumsafe.service.DeleteDbRecordsService] - QS-Explorer: Number of DB records older than 15 Days - 5
+[2026-11-23 16:23:55,807] [heduling-1] [ INFO] [com.ibm.quantumsafe.service.DeleteDbRecordsService] - QS-Explorer: Successfully deleted 5 DB records older than 15 Days
+[2026-11-23 18:32:25,930] [ousekeeper] [ WARN] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m55s14ms).
+[2026-11-23 18:37:50,085] [ousekeeper] [ WARN] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m23s667ms).
+[2026-11-23 18:43:01,765] [ousekeeper] [ WARN] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m11s677ms).

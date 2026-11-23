@@ -1,0 +1,16 @@
+# Python dependencies for bob-qse-remediation 1.0.0
+#
+# remediation_tool.py (.bob/skills/qse-remediation/) was analyzed and imports only
+# Python standard-library modules: argparse, datetime, difflib, glob, hashlib,
+# json, os, re, subprocess, sys.
+# There are NO third-party packages to install, so this file intentionally lists none.
+#
+# Python: 3.11 or later (the script itself runs on 3.7+, but older releases are end-of-life).
+#
+# External (non-pip) tools required by the skills:
+#   - IBM Quantum Safe Explorer CLI (licensed; see <QSE_CLI_DIR> in README.md)
+#   - git   (remediation_tool.py records the repository HEAD; repositoryUrl lookup)
+#   - jq    (validates repositoryUrl in the findings JSON)
+#
+# Install (inside the activated virtual environment):
+#   python -m pip install -r requirements.txt

@@ -1,0 +1,10 @@
+Create a distribution package in the @dist folder ... (placeholders for QSE CLI path, mcp.json url/token, README config notes; include previous QSE mode files)
+
+Mon Nov 23 13:44:02 CET 2026
+
+Created dist/: README.md, .bob/{custom_modes.yaml, mcp.json (gcm-mcp-server only, placeholders <GCM_MCP_SERVER_URL>/<GCM_BEARER_TOKEN>), skills/qse (CLI path -> <QSE_CLI_DIR>, config section in 3_command_construction.md, note in SKILL.md; /Users/shetty/ -> /path/to/), skills/qse-remediation}. Excluded: original mcp.json (token), .devsecignore.findings, .DS_Store.
+Analyze remediation_tool.py deps; add Virtual Environment Setup, Requirements, Package Contents, Release Notes, Disclaimer to README; create dist/bob-qse-remediation-1.0.0.zip and reference it.
+
+Mon Nov 23 13:52:16 CET 2026
+
+Result: remediation_tool.py has no third-party deps (stdlib only; min Python 3.7 per vermin; README requires 3.11+). Added dist/requirements.txt (no packages, documents git/jq/QSE). README updated with all sections. Built dist/bob-qse-remediation-1.0.0.zip (bob-qse-remediation-1.0.0/{.bob,README.md,requirements.txt}); verified in fresh venv: pip check OK, tool --help OK, no leaked identifiers.
